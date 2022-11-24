@@ -1,10 +1,10 @@
 
 
 .brand{
-      background-color: blue;
+      background-color: #0014FF;
       color: white;
-      border-radius: 4px;
-      padding: 3px 3px;
+      /* border-radius: 4px; */
+      padding: 6px 10px;
 }
 .brand:hover{
       color: white;
@@ -15,7 +15,7 @@
      
 }
 .nav-link{
-      font-size: 25px;
+      font-size: 20px;
 }
 .navForm{
       display: flex;
@@ -50,5 +50,50 @@
       background-color:white;
       
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+      .navInput{
+            width: 100%;
+      }
+      .navInput:focus{
+            width: 100%;
+      }
+      .navButton{
+            width:100%;
+            padding-top: 12px;
+            padding-bottom: 12px;
+      }
+      .navForm{
+            display: flex;
+            flex-direction: column;
+      }
+  
+      /* CSS */
+      
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .navInput{
+            width: 60%;
+            height: 80px;
+      }
+      .navButton{
+            width: 40%;
+            font-size: 35px;
+      }
+      .navInput:hover{
+            width: 60%;
+      }
+      .navInput::placeholder{
+            font-size: 40px;
+            text-align: center;
+      }
+      .nav-link{
+            font-size: 30px;
+      }
+  
+      /* CSS */
+      
+    }
+
 
 
