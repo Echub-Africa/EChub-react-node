@@ -1,99 +1,62 @@
-
-
-.brand{
-      background-color: #0014FF;
-      color: white;
-      /* border-radius: 4px; */
-      padding: 6px 10px;
-}
-.brand:hover{
-      color: white;
-}
-.searchButton{
-      width: 150px;
-      
-     
-}
-.nav-link{
-      font-size: 20px;
-}
-.navForm{
+.logo{
       display: flex;
-      gap: 10px;
+      flex-direction: row-reverse;
+
 }
-.navInput{
-      width: 250px;
-      height: 45px;
-      pad: 3px 6px;
-      border-radius: 15px;
-      border: 3px solid blue;
-      
-     
-}
-.navInput:focus{
-      border: 6px solid blue;
-      -webkit-box-shadow: none;
+.navbar{
+      background-color: transparent;
       box-shadow: none;
-      outline: none;
-      width: 350px;
-
-
 }
-.navButton{
-      width: 150px;
-      border-radius: 5px;
-      background-color: blue;
-      color: white;
-      border: none;
+.active,.bold{
+      font-weight: bold;
+      font-size: 17px;
 }
-.container-fluid{
-      background-color:white;
+.brand{
+      color: #085bda;
+}
+.terry{
+      color: red;
+}
+.firstSection{
+      /* margin-left: 24px; */
+      /* margin-left: 24px; */
+      padding-left: 36px;
+      padding-right: 36px;
       
+      background-image: linear-gradient(to right, #E6EBF3 , #84ADEC);
+          
 }
+.electrician{
+      height: 500px;
+      width: auto;
+      
+      float: right;
+}
+
+.leftSection{
+      display: flex;
+      flex-direction: column;
+      float: right;
+      
+      
+      
+      justify-content: center;
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
-      .navInput{
-            width: 100%;
-      }
-      .navInput:focus{
-            width: 100%;
-      }
-      .navButton{
-            width:100%;
-            padding-top: 12px;
-            padding-bottom: 12px;
-      }
-      .navForm{
-            display: flex;
-            flex-direction: column;
+      .bold{
+            font-size: 15px;
       }
   
       /* CSS */
       
     }
     @media (min-width: 768px) and (max-width: 1024px) {
-      .navInput{
-            width: 60%;
-            height: 80px;
-      }
-      .navButton{
-            width: 40%;
-            font-size: 35px;
-      }
-      .navInput:hover{
-            width: 60%;
-      }
-      .navInput::placeholder{
-            font-size: 40px;
-            text-align: center;
-      }
-      .nav-link{
-            font-size: 30px;
-      }
   
-      /* CSS */
+      .electrician{
+            width: 400px;
+            
+      }
       
     }
-
-
-
