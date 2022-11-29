@@ -29,6 +29,11 @@
       background-image: linear-gradient(to right,  #84ADEC,#C1D6F6 );
           
 }
+.thirdSection{
+      padding-left: 36px;
+      padding-right: 36px;
+      background-color: #e6ebf3;
+}
 .electrician{
       height: 500px;
       width: auto;
@@ -46,7 +51,7 @@
       justify-content: center;
 }
 iframe{
-      border: 5px solid #085bda ;
+      /* border: 5px solid #085bda ; */
       position: relative;
       bottom: 1150px;
       left: 70px;
@@ -58,7 +63,7 @@ iframe{
       position: relative;
       
       top: 0px;
-      left: 250px;
+      left: 280px;
 }
 .secondFirst{
       display: flex;
