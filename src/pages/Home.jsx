@@ -1,28 +1,15 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import electrician from "../assets/Technician image.png"
+import FirstSection from '../components/FirstSection'
+import SecondSection from '../components/SecondSection'
 
 export default function Home() {
   return (
     <div className='Home'>
       <NavBar />
-      <div className='firstSection'>
-        <div className='row'>
-          <div className='col col-lg-6  col-sm-6 col-md-5 col-sm-12 leftSection'>
-          <p className='bold'>Switch to competence</p>
-          <h1>We have tried and tested <b className='terry'>Terrible</b> artisans so you don't have to</h1>
-          <p className='bold'>Led by executives with a total experience of 3 decades ,we are the leading go-to company to find plumbers ,electricians and carpenters</p>
-          <button type="button" class="btn btn-primary">I want an easy life <i class="fas fa-angle-right"></i></button>
-
-          </div>
-          <div className='col col-lg-6  col-sm-6 col-md-7 col-sm-12'>
-          <img className='electrician' src={electrician} alt="electrician"/>
-
-          </div>
-
-        </div>
-
-      </div>
+      <FirstSection/>
+      <SecondSection/>
+      
     
     
     

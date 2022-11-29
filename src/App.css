@@ -14,6 +14,9 @@
 .brand{
       color: #085bda;
 }
+.check{
+      position: absolute;
+}
 .terry{
       color: red;
 }
@@ -23,7 +26,7 @@
       padding-left: 36px;
       padding-right: 36px;
       
-      background-image: linear-gradient(to right, #E6EBF3 , #84ADEC);
+      background-image: linear-gradient(to right,  #84ADEC,#C1D6F6 );
           
 }
 .electrician{
@@ -36,11 +39,61 @@
 .leftSection{
       display: flex;
       flex-direction: column;
-      float: right;
+      
       
       
       
       justify-content: center;
+}
+iframe{
+      border: 5px solid #085bda ;
+      position: relative;
+      bottom: 1150px;
+      left: 70px;
+      border-radius: 5px;
+      
+     
+}
+.exclude{
+      position: relative;
+      
+      top: 0px;
+      left: 260px;
+}
+.secondFirst{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.firstButton{
+      width: 150px;
+      padding-left: 5px;
+      padding-right: 5px;
+}
+.secondLeft{
+      height: 400px;
+      overflow: hidden;
+
+      
+     
+}
+.secondSection{
+      background-color: #ffffff;
+      padding-left: 34px;
+      padding-right: 34px;
+      height: 400px;
+      /* background-color: red; */
+}
+.paragraph{
+      display: flex;
+      /* align-items: center; */
+      gap: 4px;
+      
+}
+.para{
+      margin-bottom: 0;
+      font-weight: bold;
+      /* font-size: 20px; */
 }
 
 
@@ -48,6 +101,25 @@
       .bold{
             font-size: 15px;
       }
+      .secondRow{
+            display: flex;
+            flex-direction: column;
+      }
+      iframe{
+            left: 10px;
+      }
+      .secondRow{
+            height: 750px;
+            overflow: hidden;
+      }
+      .imageDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+     
+     
+      
   
       /* CSS */
       
