@@ -23,7 +23,7 @@ export default function secondSection() {
                                 <p className='para'>Unexplained costs that lead to lack of transparency</p>
 
                           </div>
-                          <div className='paragraph'>
+                          <div className='paragraph mb-3'>
                                 <img src={check} alt="check" />
                                 <p className='para'>Difficulty in tracking your maintenance requests leading to a long time on closing maintenance requests</p>
 
