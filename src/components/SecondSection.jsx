@@ -36,7 +36,7 @@ export default function secondSection() {
                     <div className='col col-lg-6 col-md-6 col-sm-12 secondLeft'>
                           <img className='exclude' src={exclude} alt="check" />
 
-                          <iframe width="300" height="200" src="https://www.youtube.com/embed/1lJ6_HE4Dnw" title="YouTube video player" frameborder="0" allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <iframe className='firstFrame' width="300" height="200" src="https://www.youtube.com/embed/1lJ6_HE4Dnw" title="YouTube video player" frameborder="0" allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     </div>
 

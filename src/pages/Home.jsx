@@ -3,6 +3,8 @@ import NavBar from '../components/NavBar'
 import FirstSection from '../components/FirstSection'
 import SecondSection from '../components/SecondSection'
 import ThirdSection from '../components/ThirdSection'
+import FourthSection from '../components/FourthSection'
+import FifthSection from '../components/FifthSection'
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <FirstSection/>
       <SecondSection/>
       <ThirdSection/>
+      <FourthSection/>
+      <FifthSection/>
       
     
     

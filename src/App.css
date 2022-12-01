@@ -3,6 +3,7 @@
       flex-direction: row-reverse;
 
 }
+
 .navbar{
       background-color: transparent;
       box-shadow: none;
@@ -50,7 +51,7 @@
       
       justify-content: center;
 }
-iframe{
+.firstFrame{
       /* border: 5px solid #085bda ; */
       position: relative;
       bottom: 1150px;
@@ -59,12 +60,100 @@ iframe{
       
      
 }
+.card1title,.card4title{
+      background-color: #c1d6f6;
+      border-top-left-radius: 0.4rem;
+      border-top-right-radius: 0.4rem;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+}
+.card1{
+      background-image: url("./assets/electrical.png");
+      object-fit: cover;
+}
+.fourth{
+      background-image: url("./assets//why\ blue\ collar.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-left: 36px;
+      padding-right: 36px;
+}
+.card2{
+      background-image: url("./assets/carpentry1.jpg");
+      border-radius: 15px;
+
+
+}
+.card3{
+      background-image: url("./assets/plumbing.jpg");
+      object-fit: cover;
+
+}
+.card4{
+      background-image: url("./assets/electronics.png");
+      object-fit: cover;
+      /* border-radius: 20px; */
+
+}
+.cardExplore{
+
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+
+
+      
+
+}
+.card-body{
+      
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      
+}
+.cardButton{
+      position: relative;
+      top: 180px;
+      margin-left: 50px;
+      background-color: #FDE8B3;
+      color: black;
+      text-transform: none ;
+
+}
+.third{
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+
+}
+.cardDiv{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+}
+.dualCard{
+      display: flex;
+      gap: 8px;
+}
 .exclude{
       position: relative;
       
       top: 0px;
       left: 280px;
 }
+
 .secondFirst{
       display: flex;
       flex-direction: column;
@@ -82,12 +171,23 @@ iframe{
       
      
 }
+.why{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
 .secondSection{
       background-color: #ffffff;
       padding-left: 34px;
       padding-right: 34px;
       height: 400px;
       /* background-color: red; */
+}
+.fifth{
+      background-color: #ffffff;
+      width: 100%;
+      overflow: hidden;
 }
 .paragraph{
       display: flex;
@@ -100,9 +200,64 @@ iframe{
       font-weight: bold;
       /* font-size: 20px; */
 }
+.card-title{
+      color: black;
+      padding-top: 15px;
+      padding-bottom: 15px;
+}
+.card2title,.card3title{
+      background-color: #FDE8B3;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+
+}
+.card2button{
+      background-color: #085bda ;
+      color: azure;
+
+
+}
+.card3button{
+      background-color: #085bda;
+      color: azure;
+}
+.card3button:hover{
+      background-color: #FDE8B3;
+      color: black;
+}
+.card2button:hover{
+      background-color: #FDE8B3;
+      color: black;
+}
+
+.lastLogo{
+      width: 100px;
+      height: 96px;
+      object-fit: contain;
+      /* background-color: red; */
+      background-color: transparent;
+      position: relative;
+      bottom: 35px;
+
+      
+}
+.logo1{
+      /* object-fit: unset; */
+}
+
+
 
 
 @media (min-width: 320px) and (max-width: 480px) {
+      body,html{
+            margin: 0;
+      
+      }
+      .secondFrame{
+            height: 300px;
+            width: 300px;
+      }
       .bold{
             font-size: 15px;
       }
@@ -110,7 +265,7 @@ iframe{
             display: flex;
             flex-direction: column;
       }
-      iframe{
+      .firstFrame{
             left: 10px;
       }
       .secondRow{
@@ -122,6 +277,14 @@ iframe{
             justify-content: center;
             align-items: center;
       }
+      .secondSection{
+            height: auto;
+      }
+      .dualCard{
+            display: flex;
+            flex-direction: column;
+      }
+  
      
      
       
@@ -135,5 +298,6 @@ iframe{
             width: 400px;
             
       }
+     
       
     }
