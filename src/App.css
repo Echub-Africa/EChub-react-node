@@ -182,12 +182,16 @@
       padding-left: 34px;
       padding-right: 34px;
       height: 400px;
+      
       /* background-color: red; */
 }
 .fifth{
       background-color: #ffffff;
+      /* background-color: red; */
       width: 100%;
       overflow: hidden;
+      /* margin-bottom: 100px; */
+      
 }
 .paragraph{
       display: flex;
@@ -238,13 +242,65 @@
       /* background-color: red; */
       background-color: transparent;
       position: relative;
-      bottom: 35px;
+      /* bottom: 35px; */
 
       
 }
-.logo1{
-      /* object-fit: unset; */
+.man{
+      height: 90px;
+      width: 90px;
+      object-fit: cover;
+      clip-path: circle();
+      position: relative;
+      bottom: 20px;
 }
+.secondFrame{
+      border-radius: 15px;
+}
+.testimonyCard{
+      width: 300px;
+      height: 200px;
+      padding: 15px;
+      /* border: 2px solid #085bda; */
+      /* box-shadow:
+      2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      100px 100px 80px rgba(0, 0, 0, 0.07)
+    ; */
+    
+    
+
+
+     
+}
+.cardText,.card-text{
+      position: relative;
+      bottom: 30px;
+}
+.jeffrey{
+      margin-bottom: 0px;
+}
+.testimony-card{
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.card-text{
+      margin: 0;
+}
+/* .sixthSection{
+      background-color: #ffffff;
+} */
+/* .testimonyCard{
+      margin-top: 100px;
+} */
 
 
 
@@ -253,6 +309,11 @@
       body,html{
             margin: 0;
       
+      }
+      .cardRow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
       }
       .secondFrame{
             height: 300px;
@@ -284,6 +345,17 @@
             display: flex;
             flex-direction: column;
       }
+      .sponsors,.fifth{
+          gap: 12px;
+          margin: auto;
+          align-items: center;
+          justify-content: center;
+      }
+      .sponsorLogo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
   
      
      
@@ -298,6 +370,61 @@
             width: 400px;
             
       }
+      .testimonyCard{
+            height: auto;
+            width: auto;
+      }
+      .man{
+            bottom: 60px;
+
+      }
+      .sponsors,.fifth{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            /* gap: 3px */
+      }
+      .sponsorLogo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+      
      
+      
+    }
+    @media (min-width: 1281px) {
+      .sponsors,.fifth{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+      }
+  
+      /* CSS */
+      
+    }
+    
+    /* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+    
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .sponsors,.fifth{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+      }
+      .cardRow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+      
+      
+      /* CSS */
       
     }

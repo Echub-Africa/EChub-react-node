@@ -10,34 +10,34 @@ import logo7 from "../assets/logo 7.png"
 
 export default function FifthSection() {
   return (
-    <div className='fifth mt-3'>
-      <div className='row'>
-        <div className='col col-lg-2 col col-sm-12 col-md-2'>
+    <div className='fifth mb-5  '>
+      <div className='row sponsors '>
+        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
         <img src={logo1} className="logo1" alt = "logo1"/>
 
         </div>
-        <div className='col col-lg-2 col col-sm-12 col-md-2'>
+        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
         <img src={logo2} alt = "logo2"/>
 
 
         </div>
-        <div className='col col-lg-2 col col-sm-12 col-md-2'>
-        <img src={logo3} alt = "logo3"/>
+        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
+        <img  src={logo3} alt = "logo3"/>
 
 
         </div>
-        <div className='col col-lg-2 col col-sm-12 col-md-2'>
+        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
         <img src={logo4} alt = "logo4"/>
 
 
         </div>
-        <div className='col col-lg-2 col col-sm-12 col-md-2'>
+        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
         <img src={logo5} alt = "logo5"/>
 
 
         </div>
        
-        <div className='col col-lg-2 col col-sm-12 col-md-2'>
+        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
         <img  className='lastLogo' src={logo7} alt = "logo7"/>
 
 
