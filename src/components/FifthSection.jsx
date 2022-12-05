@@ -10,7 +10,7 @@ import logo7 from "../assets/logo 7.png"
 
 export default function FifthSection() {
   return (
-    <div className='fifth mb-5  '>
+    <div className='fifth mb-5  ' data-aos="fade-left">
       <div className='row sponsors '>
         <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
         <img src={logo1} className="logo1" alt = "logo1"/>

@@ -4,21 +4,21 @@ import exclude from "../assets/Exclude2.png"
 
 export default function secondSection() {
   return (
-        <div className='secondSection'>
+        <div className='secondSection '>
               <div className='row secondRow'>
-                    <div className='col col-lg-6 col-md-6 col-sm-12 secondFirst'>
+                    <div className='col col-lg-6 col-md-6 col-sm-12 secondFirst' data-aos="zoom-in">
                           <h1> Are you presently facing these challenges</h1>
-                          <div className='paragraph'>
+                          <div className='paragraph mb-3'>
                                 <img src={check} alt="check" />
                                 <p className='para'>constant troubles with quack</p>
 
                           </div>
-                          <div className='paragraph'>
+                          <div className='paragraph mb-3'>
                                 <img src={check} alt="check" />
                                 <p className='para'>Distractions from core business areas due to frequent facility management issues</p>
 
                           </div>
-                          <div className='paragraph'>
+                          <div className='paragraph mb-3'>
                                 <img src={check} alt="check" />
                                 <p className='para'>Unexplained costs that lead to lack of transparency</p>
 
@@ -33,7 +33,7 @@ export default function secondSection() {
 
 
                     </div>
-                    <div className='col col-lg-6 col-md-6 col-sm-12 secondLeft'>
+                    <div className='col col-lg-6 col-md-6 col-sm-12 secondLeft 'data-aos="zoom-in-down">
                           <img className='exclude' src={exclude} alt="check" />
 
                           <iframe className='firstFrame' width="300" height="200" src="https://www.youtube.com/embed/1lJ6_HE4Dnw" title="YouTube video player" frameborder="0" allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

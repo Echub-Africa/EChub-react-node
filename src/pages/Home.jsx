@@ -6,6 +6,9 @@ import ThirdSection from '../components/ThirdSection'
 import FourthSection from '../components/FourthSection'
 import FifthSection from '../components/FifthSection'
 import SixthSection from "../components/SixthSection"
+import SeventhSection from "../components/SeventhSection"
+import Accordions from '../components/Accordions'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
       <FourthSection/>
       <FifthSection/>
       <SixthSection/>
+      <SeventhSection/>
+      <Accordions/>
+      <Footer/>
       
     
     

@@ -22,14 +22,14 @@ export default function ThirdSection() {
                     </div>
                     <div className='col col-lg-6 col-md-12 col-sm-12 cardDiv mt-4 mb-4'>
                     <div className='dualCard'>
-                    <div className="card card1 cardExplore">
+                    <div className="card card1 cardExplore" data-aos="flip-left">
                                 <div className="card-body">
                                       <h5 className="card-title text-center card1title">Electrical</h5>
                                       <p className="card-text"></p>
                                       <button type="button" className="btn btn-primary cardButton">Explore <i className="fas fa-long-arrow-alt-right"></i></button>
                                 </div>
                           </div>
-                          <div className="card card2 cardExplore">
+                          <div className="card card2 cardExplore " data-aos="flip-up">
                                 <div className="card-body">
                                       <h5 className="card-title text-center card2title">Carpentry</h5>
                                       <p className="card-text"></p>
@@ -39,14 +39,14 @@ export default function ThirdSection() {
 
                     </div>
                     <div className='dualCard '>
-                    <div className="card card3 cardExplore">
+                    <div className="card card3 cardExplore " data-aos="flip-right">
                                 <div className="card-body">
                                       <h5 className="card-title text-center card3title">Plumbing</h5>
                                       <p className="card-text"></p>
                                       <button type="button" className="btn btn-primary cardButton card3button">Explore<i className="fas fa-long-arrow-alt-right"></i></button>
                                 </div>
                           </div>
-                          <div className="card card4 cardExplore">
+                          <div className="card card4 cardExplore " data-aos="flip-down">
                                 <div className="card-body">
                                       <h5 className="card-title text-center card4title">Electronics and gadgets</h5>
                                       <p className="card-text"></p>

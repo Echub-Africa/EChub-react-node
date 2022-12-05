@@ -8,14 +8,14 @@ export default function NavBar() {
   return (
     
   
-    <nav className="navbar navbar-expand-lg sticky-top bg-light">
+    <nav className="navbar navbar-expand-lg sticky-top bg-light animate__animated animate__backInDown ">
 
       <div className="container ">
 
         <a className="navbar-brand me-2" href="https://mdbgo.com/">
         <div className='brandName'>
         <h1 className='brand'>Blue collar</h1>
-        <div className='logo'>
+        <div className='logo '>
           <img
             src={Echub}
             alt="MDB Logo"
