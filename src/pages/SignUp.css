@@ -1,0 +1,27 @@
+.form-input{
+    border: 1px solid black;
+    min-height: 100vh;
+    width: 50%;
+}
+.form-img {
+    width: 50%;
+    min-height: 100vh;
+}
+.form-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+form{
+    width: 80%;
+    margin: 90px auto;
+}
+form input, form button{
+    width: 100%;
+    margin: 20px 0;
+    height: 50px;
+}
+input{
+    padding: 0 20px;
+    letter-spacing: 1px;
+}
