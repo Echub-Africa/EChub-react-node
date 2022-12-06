@@ -47,11 +47,8 @@ const HandleSub = (e) =>{
    
 }
   return (
-    <div className='d-flex'>
-      <div className='form-img'>
-          {/* <img src={chef1} /> */}
-      </div>
-      <div className='form-input'>
+    <div >
+      <div className='form-input mx-auto'>
       <ToastContainer />
       <form onSubmit={HandleSub}>
           <h1 className='text-center '>Welcome Back To Sushi!</h1>

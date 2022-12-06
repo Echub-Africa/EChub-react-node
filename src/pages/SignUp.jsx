@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import './SignUp.css'
-// import Bg from '../asset/Bg.png'
+import sign from '../assets/sign.png'
+import sign1 from '../assets/sign1.png'
+import sign2 from '../assets/sign2.png'
+import sign3 from '../assets/sign3.png'
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
@@ -61,17 +64,31 @@ function HandleSubmit(e){
     return (
         <div className='d-flex'>
           <div className='form-img'>
-              {/* <img src={Bg} /> */}
+              <img src={sign} />
           </div>
           <div className='form-input'>
           <ToastContainer />
           <form onSubmit={HandleSubmit}>
-              <h1 className='text-center '>Welcome to Sushi!</h1>
+              <h2>Create an Account </h2>
+              <h6 className='pt-2'>SignUp as:</h6>
+              <div className='d-flex sign-img pb-3'>
+              <img src={sign2}/>
+              <img src={sign1}/>
+              </div>
+                <p>Create an account with </p>
+                <div className='d-flex justify-content-between google'>  
+                <img src={sign3}/>       
+                <img src={sign3}/>       
+                <img src={sign3}/>       
+                </div>
               <div>
                 <input type='text' name = 'name' onChange={HandleChange} placeholder='Enter your fullname'/>
               </div>
               <div>
                 <input  name = 'email' onChange={HandleChange} placeholder='Enter your Email'/>
+              </div>
+              <div>
+                <input type="number" placeholder='Phone Number' />
               </div>
               <div >
                 <input type={passwordShown?"text": "password"} placeholder='Enter your password' 
@@ -83,8 +100,15 @@ function HandleSubmit(e){
                   {passwordShown?<AiOutlineEyeInvisible />:<AiOutlineEye /> }
                 </label>
               </div>
+              <div className='d-flex'>
+                <input type="checkbox" style={{'width': '40px', 'marginRight': '20px'}} />
+              <p>I understand that TechVillage  will process my information in accordance with 
+                their Privacy Policy. I may withdraw my consent through unsubscribe links at
+                any time.
+              </p>
+              </div>
               <div>
-                <button>SIGN UP</button>
+                <button style={{'backgroundColor': '#085BDA', 'color':'white', 'border':'none'}}>SIGN UP</button>
               </div>
               <div className='text-center'>
                 <p>Already have an account. <Link to='/login'>LOGIN</Link></p>
