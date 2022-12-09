@@ -6,7 +6,7 @@ export default function secondSection() {
   return (
         <div className='secondSection '>
               <div className='row secondRow'>
-                    <div className='col col-lg-6 col-md-6 col-sm-12 secondFirst' data-aos="zoom-in">
+                    <div className='col col-lg-6 col-md-6 col-sm-12 secondFirst'>
                           <h1> Are you presently facing these challenges</h1>
                           <div className='paragraph mb-3'>
                                 <img src={check} alt="check" />
@@ -28,12 +28,13 @@ export default function secondSection() {
                                 <p className='para'>Difficulty in tracking your maintenance requests leading to a long time on closing maintenance requests</p>
 
                           </div>
-                          <button type="button" class="btn btn-primary firstButton">I want an easy life <i class="fas fa-angle-right"></i></button>
+                          <button type="button" class="btn btn-primary firstButton">SWITCH TO COMPETENCE <i class="fas fa-angle-right"></i></button>
+                          
 
 
 
                     </div>
-                    <div className='col col-lg-6 col-md-6 col-sm-12 secondLeft 'data-aos="zoom-in-down">
+                    <div className='col col-lg-6 col-md-6 col-sm-12 secondLeft '>
                           <img className='exclude' src={exclude} alt="check" />
 
                           <iframe className='firstFrame' width="300" height="200" src="https://www.youtube.com/embed/1lJ6_HE4Dnw" title="YouTube video player" frameborder="0" allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

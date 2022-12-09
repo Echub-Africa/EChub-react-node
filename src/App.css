@@ -1,11 +1,10 @@
-.logo{
-      display: flex;
-      flex-direction: row-reverse;
 
-}
-html,body{
+body::-webkit-scrollbar {
+      display: none;
+    }
+/* html,body{
       overflow-x: hidden;
-}
+} */
 
 .navbar{
       background-color: transparent;
@@ -15,9 +14,8 @@ html,body{
       font-weight: bold;
       font-size: 17px;
 }
-.brand{
-      color: #085bda;
-}
+
+
 .check{
       position: absolute;
 }
@@ -117,6 +115,7 @@ html,body{
       
 
 }
+
 .card-body{
       
       padding-top: 0;
@@ -133,6 +132,8 @@ html,body{
       text-transform: none ;
 
 }
+
+
 .third{
       display: flex;
       flex-direction: column;
@@ -166,7 +167,9 @@ html,body{
       justify-content: center;
 }
 .firstButton{
-      width: 150px;
+      width: 250px;
+      font-size: 17px;
+      font-weight: bold;
       padding-left: 5px;
       padding-right: 5px;
 }
@@ -346,7 +349,7 @@ html,body{
 }
 .footerIcons{
       display: flex;
-      gap: 4px;
+      gap: 15px;
 }
 .footer{
       background-color: black;
@@ -441,6 +444,39 @@ html,body{
 .footerHeader{
       color: #ffffff;
 }
+.white{
+      color: #ffffff;
+      font-size: 23px;
+      font-weight: bold;
+}
+.change:before {
+      font-size: 28px;
+      color: #FDE8B3;
+      content: "Plumbers";
+      animation: animate infinite 4s;
+
+ }
+  @keyframes animate {
+  
+      0% {
+          content: "Plumbers";
+      }
+
+      50% {
+          content: "Electricians";
+      }
+
+      75% {
+          content: "Carpenters";
+      }
+  }
+  .brand{
+      color: #085bda;
+      font-weight: bold;
+      font-size: 17.5px;
+      
+}
+
 /* .testimonyCard{
       margin-top: 100px;
 } */
@@ -453,6 +489,17 @@ html,body{
             margin: 0;
       
       }
+      .change{
+            font-size: 0px;
+            font-weight: 500px;
+            /* height: 1px; */
+            /* background-color: red; */
+      }
+      .cardExplore{
+      border-top-right-radius: 18px;
+
+      }
+   
       .firstButton{
             width: 100%;
             height: 55px;
@@ -499,7 +546,7 @@ html,body{
             width: 300px;
       }
       .bold{
-            font-size: 15px;
+            font-size: 20px;
       }
       .secondRow{
             display: flex;
@@ -547,7 +594,8 @@ html,body{
             padding-left: 36px;
             padding-right: 36px;
       }
-  
+    
+    
      
      
       
@@ -555,7 +603,7 @@ html,body{
       /* CSS */
       
     }
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 769px) and (max-width: 1024px) {
   
       .electrician{
             width: 400px;
@@ -620,6 +668,10 @@ html,body{
             align-items: center;
             justify-content: center;
       }
+      .firstSection{
+            padding-bottom: 15px;
+
+      }
       
      
       
@@ -631,6 +683,42 @@ html,body{
             justify-content: center;
             width: 100%;
       }
+      .cardRow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+      .top{
+            margin-bottom: 45px;
+      }
+      .accordions{
+            padding-top: 70px;
+            padding-bottom: 70px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* padding-top: 36px; */
+            
+            height: auto;
+            padding-left: 36px;
+            padding-right: 36px;
+      }
+      .leftFooter{
+            padding-top: 80px;
+            border-right: 3px solid #ffffff;
+            /* height: 100%; */
+      }
+      .footerRow{
+
+            height: 100%;
+      }
+      .rightFooter{
+            padding-top: 40px;
+      }
+      .footerDivs{
+            gap: 109px;
+      }
+   
   
       /* CSS */
       

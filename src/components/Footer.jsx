@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className='footer'>
+    <div className='footer '>
       <div className='row footerRow'>
         <div className='col col-lg-4 col-md-4 col-sm-12 leftFooter'>
           <h1 className='footerBrand'>Blue Collar</h1>
@@ -15,6 +15,7 @@ export default function Footer() {
           </div>
         </div>
         <div className='col col-lg-8 col-md-8 col-sm-12 rightFooter'>
+        
           <p className='know'>Want to know what we are up to?</p>
           <div className='subscribeDiv mb-4'>
             <input className='subscribe' type="email" placeholder=' Enter your Email' />

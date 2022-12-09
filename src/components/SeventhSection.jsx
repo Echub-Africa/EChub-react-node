@@ -14,7 +14,7 @@ export default function SeventhSection() {
                     <h1 className='trustHeader'>We are trusted by</h1>
 
                     </div>
-                    <div className='col col-lg-6 col-md-6 col-md-12  ' data-aos="zoom-in-left">
+                    <div className='col col-lg-6 col-md-6 col-md-12  '>
                           <div className='div1 mb-4 '>
                           <img className='trusted' src={logo22} alt =""/>
                           <img className='trusted' src={logo22} alt =""/>

@@ -14,7 +14,7 @@ export default function Accordions() {
 
               <div className='row accordionRow'>
                     <div className='col col-lg-6   col-md-6 col-sm-12 '>
-                          <div class="accordion  top" id="accordionExample" data-aos="zoom-out-down">
+                          <div class="accordion  top" id="accordionExample" >
                                 <div class="accordion-item ">
                                       <h2 class="accordion-header" id="headingOne">
                                             <button
@@ -43,7 +43,7 @@ export default function Accordions() {
 
 
                           </div>
-                          <div class="accordion" id="accordionExampleY" data-aos="zoom-out-down">
+                          <div class="accordion" id="accordionExampleY">
                                 <div class="accordion-item">
                                       <h2 class="accordion-header" id="headingOneY">
                                             <button class="accordion-button collapsed bold" type="button" data-mdb-toggle="collapse"
@@ -71,7 +71,7 @@ export default function Accordions() {
 
                     </div>
                     <div className='col col-lg-6   col-md-6 col-sm-12 '>
-                          <div class="accordion top " id="accordionFlushExample" data-aos="zoom-out-right">
+                          <div class="accordion top " id="accordionFlushExample">
                                 <div class="accordion-item">
                                       <h2 class="accordion-header" id="flush-headingOne">
                                             <button
@@ -106,7 +106,7 @@ export default function Accordions() {
 
 
                           </div>
-                          <div class="accordion " id="accordionPanelsStayOpenExample"  data-aos="zoom-out-left">
+                          <div class="accordion " id="accordionPanelsStayOpenExample" >
                                 <div class="accordion-item">
                                       <h2 class="accordion-header" id="headingTwo">
                                             <button class="accordion-button collapsed bold" type="button" data-mdb-toggle="collapse"
