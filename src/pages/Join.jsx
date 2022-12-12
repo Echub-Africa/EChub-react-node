@@ -4,7 +4,7 @@ import sign from '../assets/sign6.png'
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
 
-const NormalSign = () => {
+const Join = () => {
     // SETTING PASSWORD VISIBILITY
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePassword = () => {
@@ -50,7 +50,7 @@ function HandleSubmit(e){
 }
   return (
     <div className='d-flex'>
-    <div className='form-img'>
+    <div className='form-img' style={{'maxHeight': '3000px'}}>
         <img src={sign} />
     </div>
     <div className='form-input'>
@@ -61,23 +61,62 @@ function HandleSubmit(e){
               <h3></h3>
           </div>
         <div className='d-flex justify-content-between'>
-          <input type='text' style={{'width': '45%'}} name = 'name' onChange={HandleChange} placeholder='Company Name'/>
-          <input type="text" style={{'width': '45%'}}/>
+            <div style={{'width': '45%'}}>
+            <label htmlFor="bane">First Name</label>
+            <input type='text' name = 'name'
+             onChange={HandleChange} />
+            </div>
+            <div style={{'width': '45%'}}>
+                <label htmlFor="">Last Name</label>
+                <input type="text" />
+            </div>     
         </div>
         <div className='d-flex justify-content-between'>
-          <input  name = 'email' style={{'width': '45%'}} onChange={HandleChange} placeholder='Company Email'/>
-          <input type="number" style={{'width': '45%'}} placeholder='Phone Number' />
+          <div style={{'width': '45%'}}>
+            <label htmlFor="">Email</label>
+            <input  name = 'email' onChange={HandleChange}/>
+          </div>
+          <div style={{'width': '45%'}}>
+            <label htmlFor="">Phone Number</label>
+          <input type="number" />
+        </div>
         </div>
         <div className='d-flex justify-content-between'>
-            <input type="text" style={{'width': '45%'}} placeholder='Contact Address' />
-            <select placeholder= 'country' style={{'width': '45%'}}>
+          <div style={{'width': '45%'}}>
+            <label htmlFor="">English Proficiency</label>
+            <input  name = 'email' onChange={HandleChange}/>
+          </div>
+          <div style={{'width': '45%'}}>
+            <label htmlFor="">Years Of Working Experience</label>
+            <input type="number"  />
+        </div>
+        </div>
+        <div className='d-flex justify-content-between'>
+          <div style={{'width': '45%'}}>
+            <label htmlFor="">Primary Skill</label>
+            <input  name = 'email'  onChange={HandleChange}/>
+          </div>
+          <div style={{'width': '45%'}}>
+            <label htmlFor="">Years Of Experience with skills</label>
+          <input type="number"  />
+        </div>
+        </div>
+        <div className='d-flex justify-content-between'>
+                <div style={{'width': '45%'}}>
+                    <label htmlFor="">Resume</label>
+                    <input type="file" />
+                </div>
+                <div style={{'width': '45%'}}>
+            <label htmlFor="">Country</label>
+            <select placeholder= 'country'>
                 <option value=""></option>
                 <option value="Nigeria">Nigeria</option>
                 <option value="Ghana">Ghana</option>
                 <option value="Australia">Australia</option>
                 <option value="Kenya">Kenya</option>
                 <option value="USA">America</option>
-                    </select>
+                </select>
+                </div>
                 </div>
         <div className='d-flex'>
           <input type="checkbox" style={{'width': '40px', 'marginRight': '20px'}} />
@@ -87,7 +126,7 @@ function HandleSubmit(e){
         </p>
         </div>
         <div>
-          <button style={{'backgroundColor': '#085BDA', 'color':'white', 'border':'none'}}>SIGN UP</button>
+          <button style={{'backgroundColor': 'black', 'color':'white', 'border':'none'}}>SIGN UP</button>
         </div>
         <div className='text-center'>
           <p>Already have an account. <Link to='/login'>LOGIN</Link></p>
@@ -98,4 +137,4 @@ function HandleSubmit(e){
   )
 }
 
-export default NormalSign
+export default Join

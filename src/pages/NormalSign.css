@@ -17,9 +17,13 @@ body{
     position: absolute;
     width: 40%;
     z-index: 1;
+    
 }
 .form-img img{
-height: 100vh;
+background: linear-gradient( 0% #FFFFFF, 100% #2757FF);
+}
+.form-img img{
+height: 100%;
 width: 100%;
 }
 button{
