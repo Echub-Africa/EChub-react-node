@@ -21,41 +21,34 @@ export default function ThirdSection() {
 
                     </div>
                     <div className='col col-lg-6 col-md-12 col-sm-12 cardDiv mt-4 mb-4'>
-                    <div className='dualCard'>
-                    <div className="card card1 cardExplore" >
-                                <div className="card-body body">
-                                      <h5 className="card-title text-center card1title">Electrical</h5>
-                                      <p className="card-text"></p>
-                                      <button type="button" className="btn btn-primary cardButton">Explore <i className="fas fa-long-arrow-alt-right"></i></button>
+                          <div className='dualCard'>
+                                <div className='customCard card1'>
+                                      <h1 className='text-center card1Header'>Electrical</h1>
+                                      <button className='card1Button'>Explore <i class="fas fa-angle-right"></i></button>
+
+                                </div>
+                                <div className='customCard card2'>
+                                      <h1 className='text-center card2Header'>Carpentry</h1>
+                                      <button className='card2Button'>Explore <i class="fas fa-angle-right"></i></button>
+
                                 </div>
                           </div>
-                          <div className="card card2 cardExplore " >
-                                <div className="card-body body">
-                                      <h5 className="card-title text-center card2title">Carpentry</h5>
-                                      <p className="card-text"></p>
-                                      <button type="button" className="btn btn-primary cardButton card2button">Explore <i className="fas fa-long-arrow-alt-right"></i></button>
+                          <div className='dualCard '>
+                          <div className='customCard card4'>
+                                      <h1 className='text-center card1Header'>Electronics</h1>
+                                      <button className='card1Button'>Explore <i class="fas fa-angle-right"></i></button>
+
                                 </div>
+                          <div className='customCard card3'>
+                                      <h1 className='text-center card3Header'>Plumbing</h1>
+                                      <button className='card2Button'>Explore <i class="fas fa-angle-right"></i></button>
+
+                                </div>
+                                
+                                
+
                           </div>
 
-                    </div>
-                    <div className='dualCard '>
-                    <div className="card card3 cardExplore " >
-                                <div className="card-body body">
-                                      <h5 className="card-title text-center card3title">Plumbing</h5>
-                                      <p className="card-text"></p>
-                                      <button type="button" className="btn btn-primary cardButton card3button">Explore<i className="fas fa-long-arrow-alt-right"></i></button>
-                                </div>
-                          </div>
-                          <div className="card card4 cardExplore ">
-                                <div className="card-body body">
-                                      <h5 className="card-title text-center card4title">Electronics and gadgets</h5>
-                                      <p className="card-text"></p>
-                                      <button type="button" className="btn btn-primary cardButton">Explore <i className="fas fa-long-arrow-alt-right"></i></button>
-                                </div>
-                          </div>
-
-                    </div>
-                          
 
                     </div>
 

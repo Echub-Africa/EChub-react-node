@@ -1,14 +1,6 @@
 import * as React from 'react';
-
-
-
-
-
-
-
 export default function Accordions() {
-  return (
-        
+  return ( 
         <div className=' accordions'>
               <h1 className='text-center mb-5'>Frequently asked questions</h1>
 
@@ -40,8 +32,6 @@ export default function Accordions() {
                                             </div>
                                       </div>
                                 </div>
-
-
                           </div>
                           <div class="accordion" id="accordionExampleY">
                                 <div class="accordion-item">
@@ -65,10 +55,6 @@ export default function Accordions() {
                                       </div>
                                 </div>
                           </div>
-
-
-
-
                     </div>
                     <div className='col col-lg-6   col-md-6 col-sm-12 '>
                           <div class="accordion top " id="accordionFlushExample">
@@ -103,8 +89,6 @@ export default function Accordions() {
                                             </div>
                                       </div>
                                 </div>
-
-
                           </div>
                           <div class="accordion " id="accordionPanelsStayOpenExample" >
                                 <div class="accordion-item">
@@ -127,20 +111,9 @@ export default function Accordions() {
                                             </div>
                                       </div>
                                 </div>
-
-
                           </div>
-
                     </div>
-
               </div>
-
         </div>
-
-
-
-
-
-
   )
 }
