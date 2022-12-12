@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css';
+import CompanySign from "./pages/CompanySign.jsx";
+import NormalSign from "./pages/NormalSign.jsx";
 
 
 
@@ -17,6 +19,8 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/sign" element={<SignUp/>}/>
+      <Route path="/companySign" element={<CompanySign/>} />
+      <Route path="/normalSign" element={<NormalSign/>} />
       </Routes>
     </Router>
  
