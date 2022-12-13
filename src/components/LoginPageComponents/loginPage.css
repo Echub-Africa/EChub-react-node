@@ -1,3 +1,5 @@
+/* styles for the first div */
+
 .LoginFirstDiv{
       background-image: url("../../assets/First\ section.png");
       background-position: center;
@@ -44,7 +46,7 @@
 .searchBar::placeholder{
       display: flex;
       justify-content: space-between;
-      /* text-align: center; */
+      text-align: center;
       
 }
 .LoginFirstDiv{
@@ -96,4 +98,23 @@
             gap: 30px;
       }
      
+}
+/* styles for the second div */
+.loginSecondDiv{
+      margin-top: 18px;
+      /* display: flex; */
+      /* align-items: center; */
+      justify-content: center;
+      padding-left: 40px;
+      padding-right: 40px;
+}
+.frame{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+      .facing{
+            margin-bottom: 18px;
+      }
 }
