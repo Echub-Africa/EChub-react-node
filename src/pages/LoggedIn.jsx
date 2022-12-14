@@ -3,6 +3,7 @@ import { MDBInput } from 'mdb-react-ui-kit';
 import LoginFirstDiv from '../components/LoginPageComponents/LoginFirstDiv';
 import NavBar from '../components/NavBar';
 import LoginSecondDiv from '../components/LoginPageComponents/LoginSecondDiv';
+import LoginThirdDiv from '../components/LoginPageComponents/LoginThirdDiv.jsx'
 
 export default function LoggedIn() {
   return (
@@ -10,6 +11,7 @@ export default function LoggedIn() {
     <NavBar/>
     <LoginFirstDiv/>
     <LoginSecondDiv/>
+    <LoginThirdDiv/>
 
 
     </div>

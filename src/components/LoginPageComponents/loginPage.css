@@ -1,5 +1,4 @@
 /* styles for the first div */
-
 .LoginFirstDiv{
       background-image: url("../../assets/First\ section.png");
       background-position: center;
@@ -27,7 +26,6 @@
       gap: 40px;
       align-items: center;
 }
-
 .searchDiv{
       display: flex;
       gap: 80px;
@@ -102,8 +100,8 @@
 /* styles for the second div */
 .loginSecondDiv{
       margin-top: 18px;
-      /* display: flex; */
-      /* align-items: center; */
+      display: flex;
+      align-items: center;
       justify-content: center;
       padding-left: 40px;
       padding-right: 40px;
@@ -113,8 +111,36 @@
       align-items: center;
       justify-content: center;
 }
+.loginFrame{
+      border-radius: 8px;
+}
 @media (min-width: 320px) and (max-width: 480px) {
       .facing{
             margin-bottom: 18px;
       }
+}
+/* styles for the third section */
+
+.thirdDiv{
+      background-color: #FDE8B3;
+      padding-left: 40px;
+      padding-right: 40px;
+
+}
+.expertiseCard{
+      width: 250px;
+      height: 300px;
+      background-color: #DEDEDE;
+}
+.expertiseCard{
+      padding-top: 80px;
+      /* align-items: center; */
+      /* justify-content: center; */
+}
+.expertiseImage{
+      background-color: white;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+object-fit: inherit;
 }
