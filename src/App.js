@@ -1,9 +1,11 @@
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 import Home from "./pages/Home.jsx"
-import LoggedIn from "./pages/LoggedIn.jsx"
 
 
 import './App.css';
+import CompanySign from "./pages/CompanySign.jsx";
+import NormalSign from "./pages/NormalSign.jsx";
+
 
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
     <>
     <Router>
       <Routes>
-      <Route path="/" element={<LoggedIn/>}/>
+
       </Routes>
     </Router>
  

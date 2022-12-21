@@ -1,0 +1,39 @@
+body{
+    max-height: 100vh !important;
+    max-width: 100%;
+   
+}
+ .form-input{
+    min-height: 100vh !important;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    max-width: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    right: 40px;
+}
+.form-img{
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+    
+}
+.form-img img{
+background: linear-gradient( 0% #FFFFFF, 100% #2757FF);
+}
+.form-img img{
+height: 100%;
+width: 100%;
+}
+button{
+    width: 40% !important;
+}
+@media only screen and (max-width: 760px){
+    .form-img{
+        display: none;
+    }
+    .form-input{
+        width: 100%;
+    }
+}

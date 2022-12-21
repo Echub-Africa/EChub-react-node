@@ -1,0 +1,44 @@
+.form-input{
+    min-height: 100vh;
+    min-width: 50%;
+}
+.form-img {
+    min-width: 50%;
+    min-height: 100vh;
+}
+.sign-img img{
+    width: 70px;
+    margin-right: 30px;
+}
+.form-img img{
+    width: 100%;
+    object-fit: cover;
+   min-height: 100vh;
+}
+.google{
+    width: 20%;
+}
+form{
+    width: 80%;
+    margin: 30px auto;
+}
+form input, form button, form select{
+    width: 100%;
+    margin: 15px 0;
+    height: 50px;
+    
+}
+input{
+    padding: 0 20px;
+    letter-spacing: 1px;
+    border: 1px solid #C4C4C4;
+}
+
+@media only screen and (max-width: 760px){
+    .form-img{
+        display: none;
+    }
+    .form-input{
+        width: 100%;
+    }
+}
