@@ -5,6 +5,8 @@ import Home from "./pages/Home.jsx"
 import './App.css';
 import CompanySign from "./pages/CompanySign.jsx";
 import NormalSign from "./pages/NormalSign.jsx";
+import SignUp from "./pages/SignUp.jsx";
+import Join from "./pages/Join.jsx";
 
 
 
@@ -13,7 +15,11 @@ function App() {
     <>
     <Router>
       <Routes>
-
+        <Route path="/sign" element={<SignUp />} />
+        <Route path="companySign" element={<CompanySign />} />
+        <Route path="normalSign" element={<NormalSign />} />
+        <Route path="/join" element= {<Join />} />
+        
       </Routes>
     </Router>
  
