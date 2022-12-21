@@ -1,4 +1,4 @@
-body{
+/* body{
     max-height: 100vh !important;
     max-width: 100%;
    
@@ -28,12 +28,4 @@ width: 100%;
 }
 button{
     width: 40% !important;
-}
-@media only screen and (max-width: 760px){
-    .form-img{
-        display: none;
-    }
-    .form-input{
-        width: 100%;
-    }
-}
+} */

@@ -1,6 +1,6 @@
 .form-input{
     min-height: 100vh;
-    min-width: 50%;
+    width: 50%;
 }
 .form-img {
     min-width: 50%;
@@ -39,6 +39,6 @@ input{
         display: none;
     }
     .form-input{
-        width: 100%;
-    }
-}
+        width: 100% !important;
+    } 
+} 
