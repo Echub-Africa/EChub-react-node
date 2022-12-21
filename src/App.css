@@ -1,29 +1,24 @@
-.logo{
-      display: flex;
-      flex-direction: row-reverse;
 
-}
-html,body{
+body::-webkit-scrollbar {
+      display: none;
+    }
+/* html,body{
       overflow-x: hidden;
-}
+} */
 
-.navbar{
-      background-color: transparent;
-      box-shadow: none;
-}
+
 .active,.bold{
       font-weight: bold;
       font-size: 17px;
 }
-.brand{
-      color: #085bda;
-}
-.check{
-      position: absolute;
-}
 .terry{
       color: red;
 }
+
+.check{
+      position: absolute;
+}
+
 .firstSection{
       /* margin-left: 24px; */
       /* margin-left: 24px; */
@@ -64,16 +59,93 @@ html,body{
       
      
 }
-.card1title,.card4title{
-      background-color: #c1d6f6;
-      border-top-left-radius: 0.4rem;
-      border-top-right-radius: 0.4rem;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+.customCard{
+      height: 250px;
+      width: 250px;
+      /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+      box-shadow: 20px 25px 10px -4px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      /* border: 3px solid; */
+      /* border-top: 2px solid #FDE8B3; */
+
 }
+
 .card1{
       background-image: url("./assets/electrical.png");
-      object-fit: cover;
+      
+      border-radius: 15px;
+
+}
+.card1Header{
+      color: black;
+      background-color: #FDE8B3;
+      padding-top: 5px;
+      /* border-top: 2px solid #FDE8B3; */
+    
+      
+      /* margin-bottom: 0; */
+      
+      
+      height: 17%;
+      border: 3px solid ;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 25px;
+}
+.card2Header{
+      background-color: #C1D6F6;
+      color: black;
+      height: 17%;
+      border: 3px solid black;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      font-size: 25px;
+      padding-top: 4px;
+
+
+}
+.card3Header{
+      background-color: #085bda;
+      color: black;
+      font-size: 25px;
+      height: 17%;
+      padding-top: 2px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border: 3px solid black;
+
+
+
+
+}
+.card1Button{
+      width: 40%;
+      background-color: #085bda;
+      
+      color: #ffffff;
+      padding: 6px 6px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      position: relative;
+      top: 150px;
+      left: 50px;
+}
+.card2Button{
+      width: 40%;
+      background-color: #FDE8B3;
+      padding: 6px 6px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      position: relative;
+      top: 150px;
+      left: 50px;
+      
 }
 .fourth{
       background-image: url("./assets//why\ blue\ collar.png");
@@ -86,17 +158,25 @@ html,body{
 .card2{
       background-image: url("./assets/carpentry1.jpg");
       border-radius: 15px;
+      outline: none;
+      /* border-top:3px solid #085bda; */
 
 
 }
 .card3{
       background-image: url("./assets/plumbing.jpg");
-      object-fit: cover;
+      border-radius: 15px;
+      
+
+
+
 
 }
 .card4{
       background-image: url("./assets/electronics.png");
       object-fit: cover;
+      border-radius: 15px;
+
       /* border-radius: 20px; */
 
 }
@@ -117,6 +197,7 @@ html,body{
       
 
 }
+
 .card-body{
       
       padding-top: 0;
@@ -124,15 +205,9 @@ html,body{
       padding-right: 0;
       
 }
-.cardButton{
-      position: relative;
-      top: 180px;
-      margin-left: 50px;
-      background-color: #FDE8B3;
-      color: black;
-      text-transform: none ;
 
-}
+
+
 .third{
       display: flex;
       flex-direction: column;
@@ -166,7 +241,9 @@ html,body{
       justify-content: center;
 }
 .firstButton{
-      width: 150px;
+      width: 250px;
+      font-size: 17px;
+      font-weight: bold;
       padding-left: 5px;
       padding-right: 5px;
 }
@@ -210,36 +287,8 @@ html,body{
       font-weight: bold;
       /* font-size: 20px; */
 }
-.card-title{
-      color: black;
-      padding-top: 15px;
-      padding-bottom: 15px;
-}
-.card2title,.card3title{
-      background-color: #FDE8B3;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
 
 
-}
-.card2button{
-      background-color: #085bda ;
-      color: azure;
-
-
-}
-.card3button{
-      background-color: #085bda;
-      color: azure;
-}
-.card3button:hover{
-      background-color: #FDE8B3;
-      color: black;
-}
-.card2button:hover{
-      background-color: #FDE8B3;
-      color: black;
-}
 
 .lastLogo{
       width: 100px;
@@ -346,7 +395,7 @@ html,body{
 }
 .footerIcons{
       display: flex;
-      gap: 4px;
+      gap: 15px;
 }
 .footer{
       background-color: black;
@@ -441,6 +490,39 @@ html,body{
 .footerHeader{
       color: #ffffff;
 }
+.white{
+      color: #ffffff;
+      font-size: 23px;
+      font-weight: bold;
+}
+.change:before {
+      font-size: 28px;
+      color: #FDE8B3;
+      content: "Plumbers";
+      animation: animate infinite 4s;
+
+ }
+  @keyframes animate {
+  
+      0% {
+          content: "Plumbers";
+      }
+
+      50% {
+          content: "Electricians";
+      }
+
+      75% {
+          content: "Carpenters";
+      }
+  }
+  .brand{
+      color: #085bda;
+      font-weight: bold;
+      font-size: 17.5px;
+      
+}
+
 /* .testimonyCard{
       margin-top: 100px;
 } */
@@ -453,6 +535,17 @@ html,body{
             margin: 0;
       
       }
+      .change{
+            font-size: 0px;
+            font-weight: 500px;
+            /* height: 1px; */
+            /* background-color: red; */
+      }
+      .cardExplore{
+      border-top-right-radius: 18px;
+
+      }
+   
       .firstButton{
             width: 100%;
             height: 55px;
@@ -499,7 +592,7 @@ html,body{
             width: 300px;
       }
       .bold{
-            font-size: 15px;
+            font-size: 20px;
       }
       .secondRow{
             display: flex;
@@ -547,7 +640,8 @@ html,body{
             padding-left: 36px;
             padding-right: 36px;
       }
-  
+    
+    
      
      
       
@@ -555,7 +649,7 @@ html,body{
       /* CSS */
       
     }
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 769px) and (max-width: 1024px) {
   
       .electrician{
             width: 400px;
@@ -620,6 +714,10 @@ html,body{
             align-items: center;
             justify-content: center;
       }
+      .firstSection{
+            padding-bottom: 15px;
+
+      }
       
      
       
@@ -631,6 +729,42 @@ html,body{
             justify-content: center;
             width: 100%;
       }
+      .cardRow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+      .top{
+            margin-bottom: 45px;
+      }
+      .accordions{
+            padding-top: 70px;
+            padding-bottom: 70px;
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* padding-top: 36px; */
+            
+            height: auto;
+            padding-left: 36px;
+            padding-right: 36px;
+      }
+      .leftFooter{
+            padding-top: 80px;
+            border-right: 3px solid #ffffff;
+            /* height: 100%; */
+      }
+      .footerRow{
+
+            height: 100%;
+      }
+      .rightFooter{
+            padding-top: 40px;
+      }
+      .footerDivs{
+            gap: 109px;
+      }
+   
   
       /* CSS */
       

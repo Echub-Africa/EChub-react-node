@@ -1,12 +1,14 @@
-import React from 'react'
-import check from "../assets/checks check.svg"
-import exclude from "../assets/Exclude2.png"
+import check from "../../assets/checks check.svg"
+import "./loginPage.css"
 
-export default function secondSection() {
+
+
+export default function LoginSecondDiv() {
   return (
-        <div className='secondSection '>
-              <div className='row secondRow'>
-                    <div className='col col-lg-6 col-md-6 col-sm-12 secondFirst'>
+        <div className="loginSecondDiv">
+              <div className="secondDivContainer">
+                    <div className="row">
+                          <div className="col col-lg-6 col-md-6 col-sm-12 facing">
                           <h1> Are you presently facing these challenges</h1>
                           <div className='paragraph mb-3'>
                                 <img src={check} alt="check" />
@@ -33,16 +35,14 @@ export default function secondSection() {
 
 
 
-                    </div>
-                    <div className='col col-lg-6 col-md-6 col-sm-12 secondLeft '>
-                          <img className='exclude' src={exclude} alt="check" />
-
-                          <iframe className='firstFrame' width="300" height="200" src="https://www.youtube.com/embed/1lJ6_HE4Dnw" title="YouTube video player" frameborder="0" allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                          <div className="col col-lg-6 col-md-6 col-sm-12 frame">
+                          <iframe className="loginFrame"  width="300" height="200" src="https://www.youtube.com/embed/1lJ6_HE4Dnw" title="YouTube video player" frameborder="0" allow="fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
 
                     </div>
 
               </div>
-
         </div>
   )
 }
