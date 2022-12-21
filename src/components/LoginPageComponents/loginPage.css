@@ -105,6 +105,7 @@
       justify-content: center;
       padding-left: 40px;
       padding-right: 40px;
+      padding-bottom: 20px;
 }
 .frame{
       display: flex;
@@ -122,25 +123,45 @@
 /* styles for the third section */
 
 .thirdDiv{
-      background-color: #FDE8B3;
+      background-color: #EBE6D9;
       padding-left: 40px;
       padding-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
 }
 .expertiseCard{
-      width: 250px;
-      height: 300px;
+      width: 287px;
+      height: 295px;
       background-color: #DEDEDE;
+      padding-top: 61px;
+      padding-left: 20px;
+      padding-right: 20px;
+      
+
+
 }
-.expertiseCard{
-      padding-top: 80px;
-      /* align-items: center; */
-      /* justify-content: center; */
-}
+
 .expertiseImage{
       background-color: white;
       border-radius: 50%;
       height: 30px;
       width: 30px;
-object-fit: inherit;
+      margin-bottom: 10px;
+/* object-fit: inherit; */
 }
+.cardItem{
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 18px;
+}
+.cardP{
+      font-size: 13px;
+      font-weight: bold;
+}
+.rightSection{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
