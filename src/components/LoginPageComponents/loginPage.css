@@ -1,0 +1,167 @@
+/* styles for the first div */
+.LoginFirstDiv{
+      background-image: url("../../assets/First\ section.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-blend-mode: overlay; */
+      /* background-color: #254d9a; */
+      /* background-blend-mode:screen; */
+      height: 600px;
+      padding-left: 40px;
+      padding-right: 40px;
+}
+.searchHeader{
+      color: white;
+      /* margin-left: 130px; */
+      font-size: 50px;
+}
+.offer{
+      color: white;
+      margin-bottom: 0;
+      cursor: pointer;
+}
+.hireDiv{
+      display: flex;
+      gap: 40px;
+      align-items: center;
+}
+.searchDiv{
+      display: flex;
+      gap: 80px;
+      /* gap: 170px; */
+      align-items: center;
+      /* margin-bottom: 30px; */
+}
+.searchBar{
+      height: 50px;
+      outline: none;
+      border-radius: 10px;
+      width: 550px;
+      border: none;
+      font-family:"Arial", "FontAwesome";
+}
+.searchBar::placeholder{
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      
+}
+.LoginFirstDiv{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.hireButton{
+      background-color: #085bda;
+      width: 250px;
+      height: 45px;
+      /* padding: 13px 15px; */
+}
+.loginContainer{
+      margin-top: 180px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+      .searchDiv{
+            flex-direction: column;
+            gap: 10px;
+      }
+      .searchHeader{
+            font-size: 30px;
+      }
+      .searchBar{
+            width: 100%;
+      }
+      .hireDiv{
+            flex-direction: column;
+      }
+      .offer{
+            text-align: center;
+      }
+      .LoginFirstDiv{
+            padding-left: 10px;
+            padding-right: 10px;
+      }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+      .searchHeader{
+            font-size: 27px;
+            width: 30%;
+      }
+      .LoginFirstDiv{
+            padding-left: 20px;
+            padding-right: 20px;
+      }
+      .searchDiv{
+            gap: 30px;
+      }
+     
+}
+/* styles for the second div */
+.loginSecondDiv{
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 20px;
+}
+.frame{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.loginFrame{
+      border-radius: 8px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+      .facing{
+            margin-bottom: 18px;
+      }
+}
+/* styles for the third section */
+
+.thirdDiv{
+      background-color: #EBE6D9;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+}
+.expertiseCard{
+      width: 287px;
+      height: 295px;
+      background-color: #DEDEDE;
+      padding-top: 61px;
+      padding-left: 20px;
+      padding-right: 20px;
+      
+
+
+}
+
+.expertiseImage{
+      background-color: white;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      margin-bottom: 10px;
+/* object-fit: inherit; */
+}
+.cardItem{
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 18px;
+}
+.cardP{
+      font-size: 13px;
+      font-weight: bold;
+}
+.rightSection{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+

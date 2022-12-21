@@ -7,7 +7,7 @@ export default function SixthSection() {
       <div className='row '>
         <div className='col col-lg-4 col-sm-12 col-md-4 cardRow mb-4'>
           <div className="card  testimonyCard ">
-            <div className="card-body testimony-card" data-aos="flip-left">
+            <div className="card-body testimony-card" >
               <img className='man' src={man} alt="man" />
               <div className='cardText'>
                 <h1 className='text-center jeffrey'> Mr Jeffery</h1>
@@ -24,7 +24,7 @@ export default function SixthSection() {
 
           </div>
           <div className='col col-lg-4 col-sm-12 col-md-4 cardRow mb-4'>
-            <div className="card  testimonyCard " data-aos="flip-left">
+            <div className="card  testimonyCard " >
               <div className="card-body testimony-card">
                 <img className='man' src={man} alt="man" />
                 <div className='cardText'>
@@ -41,7 +41,7 @@ export default function SixthSection() {
       </div>
 
             <div className='col col-lg-4 col-sm-12 col-md-4 cardRow mb-4'>
-              <div className="card  testimonyCard " data-aos="flip-left">
+              <div className="card  testimonyCard " >
                 <div className="card-body testimony-card">
                   <img className='man' src={man} alt="man" />
                   <div className='cardText'>
