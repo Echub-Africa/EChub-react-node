@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './NormalSign.css'
+// import './NormalSign.css'
 import sign from '../assets/sign6.png'
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'

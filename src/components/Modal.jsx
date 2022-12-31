@@ -1,5 +1,5 @@
 import React from 'react'
-// import Good from '../asset/Good.png'
+import Good from '../assets/Good.png'
 import "./Modal.css";
 import { Link } from "react-router-dom";
 
@@ -17,14 +17,14 @@ const Modal = ({ setOpenModal }) => {
         </button>
       </div>
       <div className="title">
-        {/* <img src={Good} alt='good' height={50} width = {50} className="mx-auto"/> */}
+        <img src={Good} alt='good' height={50} width = {50} className="mx-auto"/>
         <h2>Login successful</h2>
       </div>
       <div className="body">
         <p>You have successfully signed into your account</p>
       </div>
-      <div className="footer">
-        <button><Link to='../menu' style={{'color': 'black', 'textDecoration':'none'}}>Menu</Link></button>
+      <div className="foot">
+        <button style={{'backgroundColor': '#085BDA', 'color': 'white'}}><Link to='/'>Menu</Link></button>
       </div>
     </div>
   </div>

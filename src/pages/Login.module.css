@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    background-color: #F6F6F6;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.formo{
+    min-height: 500px;
+    min-width: 30% !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+.exit{
+    font-size: 20px;
+    font-weight: 700;
+}
+.btn{
+    text-align: center;
+}
+.btn button{
+    background-color: #085BDA;
+    color: white;
+    border: none;
+}
+@media only screen and (max-width: 760px){
+    .formo{
+        width: 90%;
+    }
+}

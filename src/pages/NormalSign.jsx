@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './SignUp.css'
+import normaalCss from './NormalSign.module.css'
 import sign from '../assets/sign6.png'
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
@@ -49,11 +49,11 @@ function HandleSubmit(e){
 }
 }
   return (
-    <div className='d-flex'>
-    <div className='form-img'>
+    <div className='d-flex' >
+    <div className={normaalCss.formImg} >
         <img src={sign} />
     </div>
-    <div className='form-input'>
+    <div className={normaalCss.formy}>
     <ToastContainer />
     <form onSubmit={HandleSubmit}>
           <div className='text-center'>  

@@ -72,8 +72,8 @@ function HandleSubmit(e){
               <h2>Create an Account </h2>
               <h6 className='pt-2'>SignUp as:</h6>
               <div className='d-flex sign-img pb-3'>
-              <img src={sign2}/>
-              <img src={sign1}/>
+              <Link to='/companySign'> <img src={sign2} alt='company'/></Link>
+              <Link to ='/sign' ><img src={sign1} alt='personal'/></Link>
               </div>
                 <p>Create an account with </p>
                 <div className='d-flex justify-content-between google'>  

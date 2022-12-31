@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import './SignUp.css'
-// import chef1 from '../asset/chef1.jfif'
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
-import { Link } from 'react-router-dom'
+
 import Modal from '../components/Modal';
+import './SignUp.css'
 
 const Login = () => {
 
@@ -47,8 +46,8 @@ const HandleSub = (e) =>{
    
 }
   return (
-    <div >
-      <div className='form-input mx-auto'>
+    <div>
+      <div className='form-input' style={{'backgroundColor': 'red'}}>
       <ToastContainer />
       <form onSubmit={HandleSub}>
           <h1 className='text-center '>Welcome Back To Sushi!</h1>
@@ -70,7 +69,7 @@ const HandleSub = (e) =>{
           </div>
       </form>
           </div> 
-          {modalOpen && <Modal setOpenModal={setModalOpen} />}
+          
     </div>
   )
 }
