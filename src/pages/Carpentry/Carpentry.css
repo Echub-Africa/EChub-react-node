@@ -1,0 +1,642 @@
+.carpentry-hero{
+    height: 80vh;
+    background: linear-gradient(to right, rgba(230, 235, 243, .5), rgba(220, 137, 14, .3)), url('../../assets/carpentry3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: unset;    
+}
+.hero-section-1 small{
+    width: 610px;
+    height: 21px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1C1C1C;
+}
+.hero-section-2 h1{
+    width: 690px;
+    height: 106px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 53px;
+    color: #1C1C1C;   
+}
+.hero-section-3 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;      
+}
+.hero-section-3 li{
+    height: 23px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000; 
+    margin-left: -10px;   
+}
+.hero-section-4 button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    max-width: 25%;
+    color: white;    
+    background: #085BDA;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+}
+.hero-section-4 button svg{
+    font-size: 12px;
+}
+
+/* Feature Styles */
+.carpentry-features{
+    display: grid;
+    place-items: center;
+}
+.carpentry-features .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    position: relative;
+}
+.feature-item{
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    line-height: 5px;    
+    cursor: pointer;
+}
+.feature-item img{
+    width: 90px;
+    height: 90px;
+    margin-bottom: 8px;
+}
+.feature-item p{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;    
+    text-align: center;
+    color: #000000;
+}
+.carpentry-features .container hr{   
+    border: 1px solid grey;   
+    height: 7rem; 
+}
+
+
+
+/* Carpentry Styles */
+.carpentry-container{
+    margin-top: 4rem;
+    background: url('../../assets/Mask\ group.png');
+    background-size: cover;
+    background-repeat: no-repeat;      
+}
+.carpentry-container .container-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.carpentry-container .left-side{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    width: 80%;
+}
+.carpentry-container .left-side h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+}
+.left-side .carpentry-timeline{
+    position: relative;
+    max-width: 1200px;    
+    margin-top: 3rem;
+}
+.timeline-content h3{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1B1818;
+}
+.timeline-content p{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30 px;
+    color: #1B1818;
+}
+.left-side .carpentry-timeline::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 77%;
+    background-color: #085BDA;
+    top: 22px;
+    bottom: 0;
+    left: 1.8%;
+    margin-left: -3px;
+}
+.carpentry-timeline .timeline-right{
+    padding: 10px 40px;
+    position: relative;    
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.carpentry-timeline .timeline-right::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -17px;
+    background-color: #085BDA;
+    top: 22px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* .carpentry-timeline .timeline-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #085BDA;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #085BDA transparent transparent;
+} */
+.carpentry-timeline .timeline-right {
+  left: 3%;
+}
+.carpentry-timeline .timeline-right:after{
+    left: -16px;
+}
+
+.carpentry-container .right-side{
+    background: url('../../assets/Exclude.png');
+    background-size: contain;
+    background-position-y: 250px;
+    background-repeat: no-repeat;    
+}
+
+
+
+/* Projects Styles */
+.carpentry-projects{
+
+}
+.carpentry-projects .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.carpentry-projects .project-header h1{
+    width: 151px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+}
+.carpentry-projects .project-wrapper{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));    
+    width: 100%;
+    grid-column-gap: -30px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.carpentry-projects .project-img{
+    display: flex;
+    justify-content: center;
+}
+.carpentry-projects img{
+    width: 385px;
+    height: 259.17px;
+}
+
+
+/* Carpentry Plan Styles */
+.carpentry-plan{
+    background-color: #000000;
+    padding: 50px;
+    margin-top: 6rem;
+}
+.carpentry-plan .container{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carpentry-plan .plan-left{
+    
+}
+.carpentry-plan .plan-left h1{    
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+}
+.carpentry-plan .plan-right{
+    display: flex;
+    justify-content: flex-end;
+    flex: 2;
+}
+.carpentry-plan .plan-right h1{
+    font-family: var(--primary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #000000;
+}
+.plan-right .plan-card{ 
+    background: white;
+    padding: 40px;        
+    width: 597px;    
+    background: #EBE6D9;    
+    border-radius: 30px;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 8rem;
+    width: 100%;
+    margin-top: 30px;    
+}
+.plan-card select{
+    background: #e0e0e0;
+    padding: 30px 25px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;    
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 30px;    
+}
+.card-range{
+    display: flex;
+    width: 70%;
+}
+.card-range span{
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+.card-range span:nth-child(2){
+    flex: 3;
+    background: #e0e0e0;
+    color: #000000;
+    font-weight: 600;
+}
+.card-range span:nth-child(1){
+    flex: 1;
+    background: #085BDA;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.card-range span:nth-child(3){
+    flex: 1;
+    background: #085BDA;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.plan-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+.plan-btn span{
+    padding: 19px 60px;       
+    width: 100%;
+    color: white;
+    font-weight: 600;
+    background: #085BDA;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* Services Styles */
+.carpentry-services{
+    display: grid;
+    place-items: center;
+    margin-top: 6rem;
+    margin-bottom: 9rem;
+}
+.carpentry-services .container{
+    margin-top: 4rem;
+}
+.carpentry-services .service-header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+    opacity: 0.7;
+    border-bottom: 6px solid #085BDA;
+    width: 330px;
+    height: 53px;
+}
+.carpentry-services .service-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem;    
+    gap: 30px
+}
+.service-item{
+    position: relative;
+    border-radius: 10px;
+    width: 306px;
+    height: 256px;
+}
+.service-item .service-item-header{
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 306px;    
+}
+.service-item .service-item-header.h1-1{
+    background: #C1D6F6;
+    padding: 12px;
+}
+.service-item .service-item-header.h1-2{
+    background: #4684E3;
+    padding: 12px;
+}
+.service-item .service-item-header.h1-3{
+    background: #FDE8B3;
+    padding: 12px;
+}
+.service-item .service-item-header h3{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.service-img img{
+    width: 306px;
+    height: 256px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.service-btn{
+    position: absolute;
+    width: 100%;
+    left: 20px;
+    bottom: -25px;
+}
+.service-btn button{
+    border-radius: 10px;
+    padding: 8px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;   
+    background: #085BDA;
+    border: none;
+    display: flex;
+    justify-content: space-evenly; 
+}
+.service-btn button svg{
+    font-size: 18px;
+}
+.service-btn button.btn-main{
+    background: #598cd8;
+}
+.service-btn button.btn-2{
+    background: #085BDA;
+}
+.service-btn button.btn-3{
+    background: #FDE8B3;
+    color: #E78F00;
+}
+.service-btn button:active{
+    opacity: .9;
+}
+
+
+
+/* Carpentry Page Responsive Styles */
+@media screen and (min-width: 280px) and (max-width: 1080px){
+    /* Carpentry hero Responsive Style */
+    .carpentry-hero{                
+        height: 100vh;
+        padding: 20px;
+    }
+    .carpentry-hero .container{
+        margin-top: 1rem;
+    }
+    .hero-left .hero-section-1 small{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .hero-left .hero-section-3, .hero-section-4{
+        margin-top: 20px;
+    }
+    .hero-left .hero-section-2 h1{
+        font-size: 22px;
+        width: unset;
+        height: unset;
+        line-height: unset;
+        padding-bottom: unset;
+    }
+    .hero-left .hero-section-3 ul{
+        gap: 12px;      
+        margin: 0;  
+    }
+    .hero-left .hero-section-4{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .hero-left .hero-section-4 button{        
+        min-width: 90%;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+
+    /* Features Responsive Styles */
+    .carpentry-features{
+
+    }
+    .carpentry-features .container{
+        
+    }
+    .carpentry-features .feature-item img{
+        width: 60px;
+        height: 60px;
+    }
+    .carpentry-features .feature-item p{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .carpentry-features .container hr{
+        display: none;
+    }
+
+
+    /* Carpentry timeline responsive styles */
+    .carpentry-container{
+        margin-top: 2rem;
+        padding-top: 5rem;
+    }
+    .carpentry-container .container-wrapper{
+        
+    }
+    .carpentry-container .left-side{
+        padding: 0 30px;   
+        flex: 1;     
+    }
+    .carpentry-container .left-side h1{
+        font-size: 35px;
+    }
+    .carpentry-container .container-wrapper{
+        flex-wrap: wrap;
+    }
+    .left-side .carpentry-timeline{
+        margin-top: .5rem;
+    }
+    .timeline-content h3{
+        font-size: 20px;
+    }
+    .timeline-content p{
+        font-size: 15px;
+    }
+    .left-side .carpentry-timeline::after{
+        margin-left: -1px;        
+    }
+    .carpentry-timeline .timeline-right::after {
+       left: -10px;
+    }
+    .carpentry-container .right-side{
+        display: none;
+    }
+
+
+    /* Carpentry Projects */
+    .carpentry-projects{
+
+    }
+    .project-wrapper{
+
+    }
+    .project-wrapper .project-img{
+        display: flex;
+        justify-content: center;
+        padding: 0 30px;
+    }
+    .project-wrapper .project-img img{
+        min-width: 70%;        
+    }
+
+    /* Carpentry Plan Styles */
+    .carpentry-plan{
+
+    }
+    .carpentry-plan .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 0;
+        margin: 0;
+    }
+    .carpentry-plan .plan-left h1{
+        font-size: 30px;        
+    }
+    .carpentry-plan .plan-right{
+        justify-content: center;        
+    }
+    .carpentry-plan .plan-right .plan-card{
+        width: 100%;
+    }
+    .carpentry-plan .plan-right .plan-card h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .carpentry-plan .plan-right .plan-card select{
+        padding: 15px;
+        background-position-y: 18px;
+    }
+    .carpentry-plan .plan-right .plan-card .card-range{
+        width: 100%;
+    }
+    .carpentry-plan .plan-right .plan-card .card-range span{
+        padding: 15px;
+    }
+    .carpentry-plan .plan-right .plan-card .plan-btn{
+        width: 100%;
+        flex-direction: column;
+    }
+    .carpentry-plan .plan-right .plan-card .plan-btn span{
+        width: 100%;
+        text-align: center;        
+    }
+
+
+    /* Carpentry Service responsive styles */
+    .carpentry-services{
+        margin-top: 2rem;
+    }
+    .carpentry-services .service-header{
+        display: flex;
+        justify-content: center;
+    }
+    .carpentry-services .service-header h1{
+        text-align: center;        
+        
+    }
+    .carpentry-services .service-wrapper{
+        flex-wrap: wrap;        
+    }
+    .service-wrapper .service-item{
+        margin-bottom: 50px;
+    }
+
+}
