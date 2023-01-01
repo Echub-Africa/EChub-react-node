@@ -7,7 +7,7 @@
         .workContainer {
             background: #E9E9E9;
             position: relative;
-            ;
+            margin-bottom: 2em;
         }
         
         .workContainer::after {
@@ -15,12 +15,14 @@
             position: absolute;
             width: 600px;
             background-color: #085BDA;
-            top: 60px;
+            top: 40px;
             bottom: 0;
             right: 0%;
-            height: 90%;
+            height: 92%;
             border-radius: 30px;
             background: url('../../assets/electricalImages/cycle.png');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
         .workContainer>h2 {
@@ -46,17 +48,18 @@
             background-color: inherit;
             width: 100%;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 10em;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            column-gap: 15%;
+            ;
         }
         
         .container>div:last-child {
-            width: 100%;
             margin-bottom: 2.5em;
         }
         
         .container>div:last-child>img {
             object-fit: contain;
+            width: 100%;
         }
         
         .up {
@@ -95,6 +98,13 @@
             font-weight: 700;
             font-size: 18px;
             color: white;
-            margin-top: 1em;
-            padding: 19px 20px
+            margin: 1em 0;
+            padding: 1em;
+            width: 241px;
+        }
+        
+        @media (max-width:600px) {
+            .content>button {
+                width: 100%!important;
+            }
         }
