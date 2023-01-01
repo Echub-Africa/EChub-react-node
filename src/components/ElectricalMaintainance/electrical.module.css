@@ -2,14 +2,20 @@
     font-family: var(--primary-font);
 }
 
+.Container>section {
+    padding: 0 2.5em;
+}
+
+
+/* styling for landing section starts */
+
 .Landing {
     background: url('../../assets/electrician.png'), linear-gradient(269.7deg, rgba(8, 91, 218, 0.7) 12.59%, rgba(255, 255, 255, 0.7) 109.94%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    height: 90vh;
+    height: 100vh;
     background-blend-mode: color-dodge;
-    padding: 0 2.5em;
 }
 
 .Landing>div {
@@ -18,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     width: 60%;
+    padding: 2em 0;
 }
 
 .Landing>div>h1,
@@ -47,4 +54,56 @@
     font-size: 18px;
     color: white;
     text-transform: uppercase;
+    margin-top: 1em;
+    padding: 19px 20px;
+    width: 100%;
+}
+
+
+/* styling for landing section ends */
+
+
+/* styling for project section start */
+
+.projects>h2 {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.projects>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1em;
+}
+
+.projects>div>article>img {
+    width: 100%;
+}
+
+
+/* styling for project section ends */
+
+
+/* responsiveness */
+
+@media (max-width:650px) {
+    .Landing {
+        height: max-content;
+    }
+    .Landing>div {
+        width: 100%;
+    }
+    .Landing>div>button {
+        border: none;
+        outline: none;
+        background: #085BDA;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 1em;
+        padding: 1em;
+        width: 100%!important;
+    }
 }
