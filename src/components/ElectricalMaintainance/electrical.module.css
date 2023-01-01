@@ -1,0 +1,50 @@
+.Container {
+    font-family: var(--primary-font);
+}
+
+.Landing {
+    background: url('../../assets/electrician.png'), linear-gradient(269.7deg, rgba(8, 91, 218, 0.7) 12.59%, rgba(255, 255, 255, 0.7) 109.94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 90vh;
+    background-blend-mode: color-dodge;
+    padding: 0 2.5em;
+}
+
+.Landing>div {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.Landing>div>h1,
+.Landing>div>h5 {
+    font-weight: 700;
+}
+
+.Landing>div>h5 {
+    font-size: 18px;
+}
+
+.Landing>div>h1 {
+    font-size: 45px;
+}
+
+.Landing>div>ul {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Landing>div>button {
+    border: none;
+    outline: none;
+    background: #085BDA;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
