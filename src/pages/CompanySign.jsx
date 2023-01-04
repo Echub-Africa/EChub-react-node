@@ -110,7 +110,7 @@ function HandleSubmit(e){
                <label className='mt-4' 
                 style={{'marginLeft': '-37px', 'marginBottom':'30px', 'fontSize': '20px'}}
                 onClick={togglePassword}>
-                  {passwordShown?<AiOutlineEyeInvisible />:<AiOutlineEye /> }
+                   {passwordShown?<AiOutlineEyeInvisible />:<AiOutlineEye /> }
                 </label>
               </div>
               <div className='d-flex'>
