@@ -1,0 +1,463 @@
+.H-ind{
+    font-family: 'Roboto', sans-serif;
+}
+.H-ind .header{
+
+}
+
+.H-ind .header .container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header-left{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.header .header-left .menu{
+    display: flex;
+    gap: 20px;
+}
+.header .header-left .menu .menu-item{
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+}
+.header .header-left .menu .menu-item:hover{
+    color: #085BDA;
+}
+.header .header-right{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;        
+}
+.header .header-right button{
+    background: #085BDA;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 18px 20px;
+    width: 100%; 
+}
+.header .header-right button:active, .header .header-right button:hover{
+    opacity: .7;
+}
+.header .header-right .menu-icon{
+    cursor: pointer;
+}
+
+.step{
+    background: #085BDA;
+}
+.step .container{
+    display: grid;
+    place-items: center;
+    padding: 40px 80px;
+    
+}
+.step .step-header{
+    text-align: center;
+    color: #ffffff;
+    margin-top: 3rem;
+}
+.step .step-header h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+}
+.step .step-header p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.step .step-wrapper{
+    margin-top: 4.8rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+    width: 100%;
+}
+.step .step-wrapper .step-item{
+    line-height: 50px;
+}
+.step .step-wrapper .step-item h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.step .step-wrapper .step-item p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.step .step-footer{
+    text-align: center;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.step .step-footer span{
+    border: none;
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #000B8C;
+    width: 20%;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+.hire{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+.hire .hire-left{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) -14.57%, #2757FF 77.71%), url('../../assets/[Downloader 2.png');
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: -999;
+    width: 110%;
+}
+.hire .hire-left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-bottom: 7em;
+}
+.hire .hire-left-container h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    width: 453px;
+    margin-bottom: 2rem;
+}
+.hire .hire-left-container p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    width: 453px;
+}
+.hire .hire-right{
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    background: #ffffff;
+}
+.hire .hire-form{
+    padding: 20px 60px;
+    margin-bottom: 4rem;
+    margin-top: 3.5rem;
+}
+.hire .hire-form .input-group{
+    display: flex;
+    display: space-between;
+    gap: 30px;
+}
+.hire .hire-form .input-form{
+    display: flex;
+    flex-direction: column;  
+    margin-top: 2rem; 
+    width: 100%; 
+}
+.hire .hire-form .input-form label{
+    color: #000;
+    font-size: 18px;
+}
+.hire .hire-form .input-form input{
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+    color: #000;
+    border: 1px solid black;
+}
+.hire .hire-form .input-form textarea{
+    border-radius: 12px;
+    height: 161px;
+    padding: 12px;
+    border: 1px solid black;
+}
+.hire .form-policy{
+    line-height: 18px;
+    color: #000000;
+    margin-top: 3rem;
+    display: flex;
+    gap: 8px;    
+}
+.hire .form-policy input[type="checkbox"]{
+    padding: 12px;
+    width: 30px;
+    height: 30px;
+}
+.hire .form-policy div{
+    font-style: normal;    
+    font-size: 15px;
+}
+.hire .form-btn{
+    margin-top: 3.5rem;
+}
+.hire .form-btn span{
+    padding: 18px 65px;
+    color: #fff;
+    background: #085BDA;
+    border: none;
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hire .form-btn span:active{
+    opacity: .7;
+}
+
+.quote{
+    display: grid;
+    place-items: center;
+    margin-top: 10rem;
+    margin-bottom: 14rem;
+}
+.quote .container{
+    background: #085BDA;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quote .quote-header{
+    padding: 40px;
+}
+.quote .quote-header h1{
+    width: 402px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+}
+.quote .quote-btn{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    
+}
+.quote button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #000B8C;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+}
+
+.hire-modal-overlay{
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.hire-modal-overlay .pop .close{
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.hire-modal-overlay .pop{
+    background: whitesmoke;
+    padding: 40px;
+    width: 26%;
+    overflow-y: scroll;
+}
+.hire-modal-overlay .hire-tech{
+    margin-top: 6rem;
+}
+.pop h1{
+    font-size: 20px;
+    color: #085BDA;
+}
+.tech-item{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    cursor: pointer;
+}
+.tech-item:hover{
+    color: #085BDA;
+}
+.pop .hire-btn{
+    width: 100%;       
+    position: relative;
+    margin-top: 2rem;
+}
+.pop .hire-btn span{
+    background: #085BDA;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 70px;  
+    cursor: pointer;  
+}
+.pop .team{
+    margin-top: 4rem;
+}
+.pop .about{
+    margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 800px){
+    .hire{
+        margin-top: 1.2rem;
+        position: unset;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hire .hire-left{
+        display: none;
+    }
+    .hire .hire-right{
+        width: 100%;        
+        border-radius: unset;
+    }
+    .hire .hire-form{
+        padding: 20px;
+        display: grid;
+        place-items: center;
+    }
+    .hire .hire-form .input-group, .hire .hire-form .input-form{
+        width: 100%;
+    }
+    .hire .hire-form .input-form{
+        margin-top: 1.8rem;
+    }
+    .hire .hire-form .input-form label{
+        font-size: 16px;
+    }
+    .hire .hire-form .input-group{
+        flex-wrap: wrap;
+        gap: unset;
+        
+    }
+    .hire .form-policy{
+        margin-top: 1.6rem;
+    }
+    .hire .form-policy div{
+        font-size: 12px;
+    }
+    .hire .form-btn{
+        width: 100%;
+        margin-top: 1.8rem;
+    }
+    .hire .form-btn span{
+        width: 100%;
+        font-size: 18px;
+        padding: 15px 40px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1080px){
+    
+    .header .header-left .menu{
+        font-size: 14px;
+        display: none;
+    }
+    .header .header-right .img-container, .header .header-right button{
+        display: none;
+    }
+
+    .step .container{
+        padding: 40px;
+    }
+    .step .step-header{
+        width: 100%;
+    }
+    .step .step-header h1{
+        font-size: 28px;
+        line-height: unset;
+    }
+    .step .step-header p{
+        font-size: 15px;
+    }
+    .step .step-wrapper .step-item h2{
+        font-size: 20px;
+    }
+    .step .step-wrapper .step-item p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .step .step-footer span{
+        font-size: 18px;
+    }
+
+    .quote{
+        margin-top: 2rem;
+    }
+    .quote .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;        
+    }
+    .quote .quote-header{
+        width: 100%;
+    }
+    .quote .quote-header h1{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .quote .quote-btn{
+        width: 100%; 
+        margin-bottom: 2rem;       
+    }
+    .quote .quote-btn button{
+        font-size: 20px;        
+    }
+
+    .hire-modal-overlay .pop{
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 1087px){
+    .hire-modal-overlay .pop{
+        width: 34%;
+    }
+}

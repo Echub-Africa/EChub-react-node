@@ -6,6 +6,7 @@ import './App.css';
 import CompanySign from "./pages/CompanySign.jsx";
 import NormalSign from "./pages/NormalSign.jsx";
 import Carpentry from "./pages/Carpentry/Carpentry.jsx";
+import HireIndividual from "./pages/HireIndividual/HireIndividual.jsx";
 
 
 
