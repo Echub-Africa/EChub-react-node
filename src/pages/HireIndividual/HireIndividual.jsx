@@ -1,6 +1,6 @@
 import React from 'react';
 import './HireIndividual.css';
-import Header from '../../components/HireIndividualComponents/Header';
+import Header from '../../components/Header';
 import StepSection from '../../components/HireIndividualComponents/StepSection';
 import HireForm from '../../components/HireIndividualComponents/HireForm';
 import GetQuote from '../../components/HireIndividualComponents/GetQuote';
