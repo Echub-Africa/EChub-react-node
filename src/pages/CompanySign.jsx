@@ -4,7 +4,7 @@ import sign from '../assets/sign4.png'
 import sign1 from '../assets/sign1.png'
 import sign2 from '../assets/sign2.png'
 import sign3 from '../assets/sign3.png'
-import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
+//import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
 
@@ -110,7 +110,7 @@ function HandleSubmit(e){
                <label className='mt-4' 
                 style={{'marginLeft': '-37px', 'marginBottom':'30px', 'fontSize': '20px'}}
                 onClick={togglePassword}>
-                   {passwordShown?<AiOutlineEyeInvisible />:<AiOutlineEye /> }
+                  {/*  {passwordShown?<AiOutlineEyeInvisible />:<AiOutlineEye /> } */}
                 </label>
               </div>
               <div className='d-flex'>
