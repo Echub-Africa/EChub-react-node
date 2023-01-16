@@ -1,0 +1,42 @@
+
+.error-container{
+    display: grid;
+    place-items: center;
+    color: #085BDA;
+}
+.error-content h1{
+    font-size: 300px;
+    font-weight: 700;
+    padding: unset;
+    margin: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;    
+}
+
+.error-content h2{
+    font-size: 128px;
+    font-weight: 600;    
+    padding: unset;
+    margin: unset;
+}
+.error-content h3{
+    align-self: center;
+    font-size: 32px;
+    font-weight: 600;          
+}
+
+@media screen and (max-width: 600px){
+    .error-content h1{
+        font-Size: 120px;
+        text-align: center;
+    }
+    .error-content h2{
+        font-size: 100px;
+    }
+}
