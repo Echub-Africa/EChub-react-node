@@ -9,6 +9,7 @@ import Carpentry from "./pages/Carpentry/Carpentry.jsx";
 import HireIndividual from "./pages/HireIndividual/HireIndividual.jsx";
 import HireCompany from "./pages/HireCompany/HireCompany.jsx";
 import ErrorPage from "./pages/404/ErrorPage.jsx";
+import AboutTech from "./pages/AboutTechVillage/AboutTech.jsx";
 
 
 
@@ -17,7 +18,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        
+        <Route path="/" element={<AboutTech />} />
       </Routes>
     </Router>
  
