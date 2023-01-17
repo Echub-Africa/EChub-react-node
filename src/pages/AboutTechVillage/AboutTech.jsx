@@ -85,7 +85,7 @@ the cooperate affairs commission with Registration number RC-1694657</p>
                 culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
             </Accordion.Item>  
-            <Accordion.Item className="card" eventKey="1">
+            <Accordion.Item className="card" eventKey="2">
               <Accordion.Header>Do you have barbers and fashion designers?</Accordion.Header>
               <Accordion.Body>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -97,7 +97,7 @@ the cooperate affairs commission with Registration number RC-1694657</p>
                 culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
             </Accordion.Item>  
-            <Accordion.Item className="card" eventKey="1">
+            <Accordion.Item className="card" eventKey="3">
               <Accordion.Header>Is ECHub registered?</Accordion.Header>
               <Accordion.Body>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -109,7 +109,7 @@ the cooperate affairs commission with Registration number RC-1694657</p>
                 culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
             </Accordion.Item>  
-            <Accordion.Item className="card" eventKey="1">
+            <Accordion.Item className="card" eventKey="4">
               <Accordion.Header>Why do I have to pay a call-out fee?</Accordion.Header>
               <Accordion.Body>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -121,7 +121,7 @@ the cooperate affairs commission with Registration number RC-1694657</p>
                 culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
             </Accordion.Item>  
-            <Accordion.Item className="card" eventKey="1">
+            <Accordion.Item className="card" eventKey="5">
               <Accordion.Header>Q. How can I recruit artisans as staff?</Accordion.Header>
               <Accordion.Body>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -133,7 +133,7 @@ the cooperate affairs commission with Registration number RC-1694657</p>
                 culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
             </Accordion.Item>  
-            <Accordion.Item className="card" eventKey="1">
+            <Accordion.Item className="card" eventKey="6">
               <Accordion.Header>I am running a building project, can Tech Village help?</Accordion.Header>
               <Accordion.Body>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -144,8 +144,8 @@ the cooperate affairs commission with Registration number RC-1694657</p>
                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                 culpa qui officia deserunt mollit anim id est laborum.
               </Accordion.Body>
-            </Accordion.Item>  
-            <Accordion.Item className="card" eventKey="1">
+            </Accordion.Item> 
+            <Accordion.Item className="card" eventKey="7">
               <Accordion.Header>Q. I have a skill, how can I join the team?</Accordion.Header>
               <Accordion.Body>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
