@@ -3,9 +3,8 @@ export default function Accordions() {
   return ( 
         <div className=' accordions'>
               <h1 className='text-center mb-5'>Frequently asked questions</h1>
-
-              <div className='row accordionRow'>
-                    <div className='col col-lg-6   col-md-6 col-sm-12 '>
+              <div className='row accordionRow container'>
+                    <div className='col col-lg-6 '>
                           <div class="accordion  top" id="accordionExample" >
                                 <div class="accordion-item ">
                                       <h2 class="accordion-header" id="headingOne">
@@ -56,7 +55,7 @@ export default function Accordions() {
                                 </div>
                           </div>
                     </div>
-                    <div className='col col-lg-6   col-md-6 col-sm-12 '>
+                    <div className='col col-lg-6 '>
                           <div class="accordion top " id="accordionFlushExample">
                                 <div class="accordion-item">
                                       <h2 class="accordion-header" id="flush-headingOne">
