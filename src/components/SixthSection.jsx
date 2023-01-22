@@ -4,9 +4,44 @@ import man from "../assets/elizeu-dias-2EGNqazbAMk-unsplash.jpg"
 export default function SixthSection() {
   return (
     <div className='sixthSection' >
-      <div className='row '>
+      <div className="container">
+        <div className="card">
+          <div className="card-top">
+            <img src={man} alt="picture of a man" />
+            <span>Mr. Jeffery</span>
+            <small>Manager</small>
+            <p>⭐⭐⭐⭐⭐</p>
+          </div>
+          <div className="card-body">
+            <p>Tech Village lets out team identitify and resolve facility management issues faster,and empowerd them to be profuctive. we can now make our tenants feel at home and secure.</p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-top">
+            <img src={man} alt="picture of a man" />
+            <span>Mr. Jeffery</span>
+            <small>Manager</small>
+            <p>⭐⭐⭐⭐⭐</p>
+          </div>
+          <div className="card-body">
+            <p>Tech Village lets out team identitify and resolve facility management issues faster,and empowerd them to be profuctive. we can now make our tenants feel at home and secure.</p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-top">
+            <img src={man} alt="picture of a man" />
+            <span>Mr. Jeffery</span>
+            <small>Manager</small>
+            <p>⭐⭐⭐⭐⭐</p>
+          </div>
+          <div className="card-body">
+            <p>Tech Village lets out team identitify and resolve facility management issues faster,and empowerd them to be profuctive. we can now make our tenants feel at home and secure.</p>
+          </div>
+        </div>
+      </div>
+      {/* <div className='row'>
         <div className='col col-lg-4 col-sm-12 col-md-4 cardRow mb-4'>
-          <div className="card  testimonyCard ">
+          <div className="card  testimonyCard p-3 ">
             <div className="card-body testimony-card" >
               <img className='man' src={man} alt="man" />
               <div className='cardText'>
@@ -58,7 +93,7 @@ export default function SixthSection() {
 
             </div>
 
-          </div>
+          </div> */}
 
         </div>
 

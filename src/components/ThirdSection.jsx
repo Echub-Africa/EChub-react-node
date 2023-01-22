@@ -3,10 +3,9 @@ import React from 'react'
 export default function ThirdSection() {
   return (
         <div className='thirdSection'>
-
-              <div className='row'>
-                    <div className='col col-lg-6 col-md-12 col-sm-12 third'>
-                          <h1 >What do we do ?</h1>
+              <div className='row container mt-4 mb-5'>
+                    <div className='col col-lg-6 third'>
+                          <h1 >What do we do?</h1>
                           <ul>
                                 <li className='bold'>Tech bro's :repair and maintain work tools ,starting from #3,000 </li>
                                 <li className='bold'>Homeowners: keep your properties and appliances in excellent
@@ -20,7 +19,7 @@ export default function ThirdSection() {
                           </ul>
 
                     </div>
-                    <div className='col col-lg-6 col-md-12 col-sm-12 cardDiv mt-4 mb-4'>
+                    <div className='col col-lg-6 cardDiv mt-4 mb-4'>
                           <div className='dualCard'>
                                 <div className='customCard card1'>
                                       <h1 className='text-center card1Header'>Electrical</h1>

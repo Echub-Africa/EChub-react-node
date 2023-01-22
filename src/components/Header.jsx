@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
 import Echub from "../assets/Vector.png"
 import { AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 import userImg from '../assets/Ellipse 52.png';
 import './Header.css';
 //import HireModal from './HireModal';
 
 const Header = ()=>{
     const [isOpen, setIsOpen] = useState(false);
+    const [user, setUser] = useState(false)
 
     return (
         <header className="header shadow">
@@ -24,9 +26,11 @@ const Header = ()=>{
                     </div>
                 </div>
                 <div className="header-right">
-                    <div className="img-container">
+                    {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                    {!user && <Link to="/login" className="auth-link">Log In</Link>}
+                    {user && <div className="img-container">
                         <img src={userImg} alt="" />
-                    </div>
+                    </div>}
                     <button>Join the team</button>
                     <div className="menu-icon" onClick={()=>{ 
                         setIsOpen(true);

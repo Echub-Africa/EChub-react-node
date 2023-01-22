@@ -1,5 +1,10 @@
 .header{
     font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;    
+    z-index: 1200;
 }
 
 .header .container{
@@ -32,6 +37,11 @@
     justify-content: flex-end;
     align-items: center;
     width: 30%;        
+}
+.header .header-right a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
 .header .header-right button{
     background: #085BDA;
@@ -114,7 +124,7 @@
         font-size: 14px;
         display: none;
     }
-    .header .header-right .img-container, .header .header-right button{
+    .header .header-right .img-container, .header .header-right button, .header .header-right .auth-link{
         display: none;
     }
     .hire-modal-overlay .pop{
