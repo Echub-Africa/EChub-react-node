@@ -8,7 +8,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: unset;    
+    margin: unset; 
+    margin-top: 5rem;   
 }
 .hero-section-1 small{
     width: 610px;
@@ -346,25 +347,28 @@
 }
 .plan-btn span{
     padding: 19px 60px;       
-    width: 100%;
+    width: 50%;
     color: white;
     font-weight: 600;
     background: #085BDA;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    text-align: center;
 }
 
 
 /* Services Styles */
 .carpentry-services{
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 6rem;
     margin-bottom: 9rem;
 }
 .carpentry-services .container{
-    margin-top: 4rem;
+    margin-top: 4rem;    
 }
 .carpentry-services .service-header h1{
     font-family: 'Times New Roman', Times, serif;
@@ -379,17 +383,28 @@
     height: 53px;
 }
 .carpentry-services .service-wrapper{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100%; */
     margin-top: 5rem;    
-    gap: 30px
+    /* gap: 30px; */
+}
+.service-wrapper .swiper{
+    overflow-x: scroll !important;
+}
+.service-slider{
+    margin-top: 3rem;
+    width: 100%;
+    height: 50vh;    
+}
+.service-slider .swiper-slide{
+    width: 20rem;
 }
 .service-item{
     position: relative;
     border-radius: 10px;
     width: 306px;
-    height: 256px;
+    height: 256px;    
 }
 .service-item .service-item-header{
     text-align: center;
@@ -554,8 +569,17 @@
     .carpentry-timeline .timeline-right::after {
        left: -10px;
     }
-    .carpentry-container .right-side{
-        display: none;
+    .carpentry-container .right-side{                
+        width: 100%;
+        background-position-y: 100px;        
+    }
+    .carpentry-container .right-side .right-img-1{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .carpentry-container .right-side img{
+        width: 320px;        
     }
 
 
@@ -624,19 +648,23 @@
     .carpentry-services{
         margin-top: 2rem;
     }
+    .carpentry-services .service-wrapper{}
     .carpentry-services .service-header{
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
     }
     .carpentry-services .service-header h1{
         text-align: center;        
         
     }
     .carpentry-services .service-wrapper{
-        flex-wrap: wrap;        
+        /* flex-wrap: wrap; */
     }
     .service-wrapper .service-item{
         margin-bottom: 50px;
+    }
+    .service-slider .swiper-wrapper{
+        gap: 15rem;        
     }
 
 }

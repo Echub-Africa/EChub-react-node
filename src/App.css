@@ -721,8 +721,8 @@ body::-webkit-scrollbar {
    
       
       .footer{
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
             padding-top: 10px;
       }
       .accordions{
@@ -877,6 +877,22 @@ body::-webkit-scrollbar {
       .thirdSection .third li{
             font-size: 16px;
       }
+
+      .subscribeDiv{
+            flex-direction: column;
+            justify-content: center;
+      }
+      .subscribe{
+            width: unset;
+            border-radius: 10px;
+      }
+      .subscribeButton{
+            border-radius: 10px;
+            margin-top: 10px;
+      }
+      .footerDivs{            
+            flex-wrap: wrap;
+      }
 }
 
 
@@ -988,8 +1004,8 @@ body::-webkit-scrollbar {
       .rightFooter{
             padding-top: 40px;
       }
-      .footerDivs{
-            gap: 109px;
+      .footerDivs{            
+            flex-wrap: wrap;
       }
    
   
