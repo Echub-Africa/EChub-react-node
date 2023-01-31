@@ -1,4 +1,4 @@
-.H-ind{
+/* .H-ind{
     font-family: 'Roboto', sans-serif;
 }
 .H-ind .header{
@@ -119,11 +119,11 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
-    color: #000B8C;
+    color: #085BDA;
     width: 20%;
     background: whitesmoke;
     cursor: pointer;
-}
+} */
 
 .hire{
     margin-top: 6rem;
@@ -239,7 +239,7 @@
     opacity: .7;
 }
 
-.quote{
+/* .quote{
     display: grid;
     place-items: center;
     margin-top: 10rem;
@@ -275,11 +275,12 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
-    color: #000B8C;
+    color: #085BDA;
     width: 100%;
     padding: 20px;
     border: none;
     border-radius: 12px;
+    background: whitesmoke;
 }
 
 .hire-modal-overlay{
@@ -341,7 +342,7 @@
 }
 .pop .about{
     margin-top: 3rem;
-}
+} */
 
 
 @media screen and (max-width: 800px){
@@ -361,6 +362,7 @@
         padding: 20px;
         display: grid;
         place-items: center;
+        margin-top: .5rem;
     }
     .hire .hire-form .input-group, .hire .hire-form .input-form{
         width: 100%;
@@ -394,7 +396,7 @@
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 1080px){
+/* @media screen and (min-width: 300px) and (max-width: 1080px){
     
     .header .header-left .menu{
         font-size: 14px;
@@ -429,13 +431,15 @@
     }
 
     .quote{
-        margin-top: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
     }
     .quote .container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0;        
+        background: white;
     }
     .quote .quote-header{
         width: 100%;
@@ -444,13 +448,17 @@
         font-size: 20px;
         text-align: center;
         width: 100%;
+        color: #085BDA;
     }
     .quote .quote-btn{
         width: 100%; 
         margin-bottom: 2rem;       
     }
     .quote .quote-btn button{
-        font-size: 20px;        
+        font-size: 20px;  
+        color: #fff;
+        background: #085BDA;    
+        width: 80%;  
     }
 
     .hire-modal-overlay .pop{
@@ -463,4 +471,4 @@
     .hire-modal-overlay .pop{
         width: 34%;
     }
-}
+} */
