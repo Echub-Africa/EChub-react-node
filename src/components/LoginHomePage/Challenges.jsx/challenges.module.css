@@ -1,0 +1,25 @@
+.challengeCon {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    padding: 3em;
+}
+
+.challengeCon>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5em;
+}
+
+.challengeCon>div>article>ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.challengeCon>div>article:last-child {
+    background: #1B1818;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

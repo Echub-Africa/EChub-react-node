@@ -2,12 +2,16 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 74px;
+    height: 45px;
     text-align: center;
-    padding: 1em 0;
+    padding: .5em 0;
     box-sizing: border-box;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
+}
+
+.servicesCon {
+    padding: 1em 3em;
 }
 
 .servicesCon>figure>button {
@@ -15,17 +19,32 @@
     bottom: 0;
     z-index: 1;
     left: 1em;
-    margin-bottom: 2em;
-    width: 100px;
+    margin-bottom: 1em;
+    width: 150px!important;
     height: 33px;
     border-radius: 10px;
     border: none;
     outline: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.servicesCon>figure>button:hover {
+    background-color: transparent;
 }
 
 .servicesCon>figure:nth-of-type(1)>figcaption,
 .servicesCon>figure:nth-of-type(3)>figcaption {
     background: #FDE8B3;
+}
+
+.servicesCon>figure:nth-of-type(4)>figcaption {
+    background: #C1D6F6;
+}
+
+.servicesCon>figure:nth-of-type(4)>button {
+    background: #085BDA;
+    color: white;
 }
 
 .servicesCon>figure:nth-of-type(1)>button,
@@ -49,18 +68,11 @@
 
 .servicesCon>figure>img {
     width: 100%;
+    height: 256px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
-.underline::before {
-    content: '';
-    position: absolute;
-    bottom: calc(0% + 25px);
-    width: calc(0% + 265px);
-    height: 5px;
-    background: #085BDA;
-}
-
-.underline {
-    position: relative;
-    padding: 1em 0;
+.black {
+    color: black!important;
 }

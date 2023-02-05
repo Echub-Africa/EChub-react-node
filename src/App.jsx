@@ -8,11 +8,13 @@ import Carpentry from "./pages/Carpentry/Carpentry.jsx";
 import HireIndividual from "./pages/HireIndividual/HireIndividual.jsx";
 import HireCompany from "./pages/HireCompany/HireCompany.jsx";
 import ErrorPage from "./pages/404/ErrorPage.jsx";
+import ElectricalMaintenance from "./components/ElectricalMaintainance/ElectricalMaintenance.jsx";
+import LoginHomePage from "./pages/LoginHomePage/LoginHomePage.jsx";
 
 function App() {
   return (
     <>
-      <ElectricalMaintenance />
+      <LoginHomePage/>
       <Router>
         <Routes> </Routes>{" "}
       </Router>{" "}

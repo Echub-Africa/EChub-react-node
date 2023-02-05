@@ -15,10 +15,12 @@ code {
 
 .three-grid_reusable {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
 }
 
-.red {
-    background-color: red;
+.four-grid_reusable {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
 }

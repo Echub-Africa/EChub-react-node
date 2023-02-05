@@ -59,6 +59,20 @@
     width: 100%;
 }
 
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: calc(0% + 25px);
+    width: calc(0% + 265px);
+    height: 5px;
+    background: #085BDA;
+}
+
+.underline {
+    position: relative;
+    padding: 1em 0;
+}
+
 
 /* styling for landing section ends */
 

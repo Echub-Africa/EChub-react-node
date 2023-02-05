@@ -1,5 +1,5 @@
 import React from "react";
-import HowItWorks from "../Reusable/HowItWorks";
+import HowItWorks from "../Reusable/HowItWorks/HowItWorks";
 import styles from "./electrical.module.css";
 import img1 from "../../assets/electricalImages/img1.png";
 import img2 from "../../assets/electricalImages/img2.png";
@@ -8,12 +8,12 @@ import img4 from "../../assets/electricalImages/img4.png";
 import img5 from "../../assets/electricalImages/img5.png";
 import img6 from "../../assets/electricalImages/img6.png";
 import starrate from "../../assets/electricalImages/star_rate.png";
-import Services from "./Services/Services";
 import Footer from "../Footer";
 import { customersList } from "./staticdata";
+import Services from "../Reusable/Services/Services";
 
 const ElectricalMaintenance = () => {
-  const { Container, Landing, projects, customers } = styles;
+  const { Container, Landing, projects, customers,underline } = styles;
   return (
     <>
       <main className={Container}>
@@ -79,7 +79,12 @@ const ElectricalMaintenance = () => {
             </div>
           </div>
         </section>
+        <section>
+        <h2 className={underline}>Our other Services </h2>
         <Services />
+
+        </section>
+        
       </main>
       <Footer />
     </>

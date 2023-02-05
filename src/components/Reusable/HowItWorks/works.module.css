@@ -20,7 +20,7 @@
             right: 0%;
             height: 92%;
             border-radius: 30px;
-            background: url('../../assets/electricalImages/cycle.png');
+            background: url('../../../assets/electricalImages/cycle.png');
             background-repeat: no-repeat;
             background-size: cover;
         }

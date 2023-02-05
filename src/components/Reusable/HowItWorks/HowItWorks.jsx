@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./works.module.css";
-import inspection from '../../assets/electricalImages/inspection.png'
-import proposal from '../../assets/electricalImages/proposal.png'
-import execution from '../../assets/electricalImages/execution.png'
+import execution from '../../../assets/electricalImages/execution.png'
+import proposal from '../../../assets/electricalImages/proposal.png'
+import inspection from '../../../assets/electricalImages/inspection.png'
 
 const HowItWorks = () => {
   const { timeline,container,content,workContainer,up } = styles;
