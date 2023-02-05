@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-import Echub from "../assets/Echub Logo.svg"
+import Echub from "../assets/Vector.png"
 
 
 
@@ -11,7 +11,7 @@ export default function NavBar({user}) {
     
   
     <nav className="navbar navbar-expand-lg sticky-top bg-light  ">
-      <div className="container ">
+      <div className="container">
         <a className="navbar-brand me-2" href="https://mdbgo.com/">
         <div className='brandName'>
         <img
@@ -33,9 +33,6 @@ export default function NavBar({user}) {
         </button>
         <div className="collapse navbar-collapse" id="navbarButtonsExample">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-              <a className="nav-link  brand" href="#">Blue Collar</a>
-            </li>
             <li className="nav-item">
               <a className="nav-link active" href="#">About Us</a>
             </li>
@@ -78,18 +75,31 @@ export default function NavBar({user}) {
           </li>
         </ul>
       </li>
-    </ul>:<div><button type="button" className="btn btn-link px-3 me-2 bold">
-              Sign Up
+    </ul>
+    :
+          <ul className="navbar-nav  mb-2 mb-lg-0">
+            <button type="button" className="btn btn-link px-3 me-2 bold">
+                  Sign Up
             </button>
             <button type="button" className="btn btn-link px-3 me-2 bold">
-              Login
+                  Login
             </button>
-            <button type="button" className="btn btn-primary me-3 bold">
-              Join the Team
-            </button></div>} 
+            <button type="button" style={styles} className="btn-primary me-3 bold">
+                  Join the Team
+            </button>
+          </ul>
+          }
           </div>
         </div>
       </div>
     </nav>
   )
+}
+
+const styles = {
+  borderRadius: "10px",
+  color: "#fff",
+  background: "#085BDA",
+  border: "none",
+  padding: "12px 20px"
 }

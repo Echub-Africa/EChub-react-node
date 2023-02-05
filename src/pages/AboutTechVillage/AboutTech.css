@@ -2,6 +2,7 @@
     display: grid;
     place-items: center;
     background: linear-gradient(to right, #84ADEC, #C1D6F6);
+    margin-top: 5rem;
 }
 .about-container .about-content{    
     text-align: center;

@@ -53,6 +53,7 @@
 
 .step{
     background: #085BDA;
+    margin-top: 5rem;
 }
 .step .container{
     display: grid;
@@ -119,7 +120,7 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
-    color: #000B8C;
+    color: #085BDA;
     width: 20%;
     background: whitesmoke;
     cursor: pointer;
@@ -220,7 +221,7 @@
     font-size: 15px;
 }
 .hire .form-btn{
-    margin-top: 3.5rem;
+    margin-top: 3.5rem;        
 }
 .hire .form-btn span{
     padding: 18px 65px;
@@ -272,7 +273,7 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 34px;
-    color: #000B8C;
+    color: #085BDA;
     width: 100%;
     padding: 20px;
     border: none;
@@ -358,6 +359,7 @@
         padding: 20px;
         display: grid;
         place-items: center;
+        margin-top: .5rem;
     }
     .hire .hire-form .input-group, .hire .hire-form .input-form{
         width: 100%;
@@ -382,12 +384,15 @@
     .hire .form-btn{
         width: 100%;
         margin-top: 1.8rem;
+        display: flex;
+        justify-content: center;
     }
     .hire .form-btn span{
-        width: 100%;
+        width: 60%;
         font-size: 18px;
         padding: 15px 40px;
         cursor: pointer;
+        text-align: center;
     }
 }
 
@@ -426,13 +431,15 @@
     }
 
     .quote{
-        margin-top: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
     }
     .quote .container{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0;        
+        padding: 0;  
+        background: #fff;      
     }
     .quote .quote-header{
         width: 100%;
@@ -441,13 +448,17 @@
         font-size: 20px;
         text-align: center;
         width: 100%;
+        color: #085BDA;
     }
     .quote .quote-btn{
         width: 100%; 
-        margin-bottom: 2rem;       
+        margin-bottom: 2rem;   
     }
     .quote .quote-btn button{
-        font-size: 20px;        
+        font-size: 20px;   
+        color: whitesmoke;
+        background: #085BDA;
+        width: 80%;
     }
 
     .hire-modal-overlay .pop{

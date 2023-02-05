@@ -8,12 +8,13 @@ import FifthSection from '../components/FifthSection'
 import SixthSection from "../components/SixthSection"
 import SeventhSection from "../components/SeventhSection"
 import Accordions from '../components/Accordions'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default function Home() {
   return (
     <div className='Home'>
-      <NavBar />
+      <Header />
       <FirstSection/>
       <SecondSection/>
       <ThirdSection/>
@@ -22,11 +23,7 @@ export default function Home() {
       <SixthSection/>
       <SeventhSection/>
       <Accordions/>
-      <Footer/>
-      
-    
-    
-    
+      <Footer/>    
     </div>
   )
 }

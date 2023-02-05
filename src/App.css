@@ -19,21 +19,83 @@ body::-webkit-scrollbar {
       position: absolute;
 }
 
-.firstSection{
-      /* margin-left: 24px; */
-      /* margin-left: 24px; */
-      padding-left: 36px;
-      padding-right: 36px;
-      
-      background-image: linear-gradient(to right,  #84ADEC,#C1D6F6 );
-          
+.firstSection{      
+      background-image: linear-gradient(to right,  #84ADEC,#C1D6F6 );          
+      display: flex;  
+      margin-top: 5.5em;    
+}
+.firstSection .first-container{
+      width: 80%;
+}
+.firstSection h1{
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 53px;
+      width: 667px;
+      color: #000;
+}
+.firstSection .firstButton{
+      font-size: 15px;
+      background: #085BDA;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      width: 300px;
+      text-align: center;
+}
+.firstSection p{
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+      width: 645px;
+      margin-top: 12px;
+}
+.firstSection img{
+      width: 462px;
+      height: 595px;
 }
 
-.thirdSection{
-      padding-left: 36px;
-      padding-right: 36px;
-      background-color: #e6ebf3;
+
+.secondSection .second-h1{
+      font-size: 40px;
+      font-weight: 700;
+      color: #000;
 }
+.secondSection img{
+      width: 27px;
+      height: 27px;
+}
+.secondSection p{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #000;
+}
+
+.thirdSection{      
+      background-color: #e6ebf3;
+      display: flex;
+      justify-content: center;
+}
+.thirdSection .third h1{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 60px;
+      color: #000000;
+      font-family: 'times new roman';
+}
+.thirdSection .third li{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 35px;
+      color: #000000;
+}
+
 .electrician{
       height: 500px;
       width: auto;
@@ -43,11 +105,7 @@ body::-webkit-scrollbar {
 
 .leftSection{
       display: flex;
-      flex-direction: column;
-      
-      
-      
-      
+      flex-direction: column;      
       justify-content: center;
 }
 .firstFrame{
@@ -55,9 +113,7 @@ body::-webkit-scrollbar {
       position: relative;
       bottom: 1150px;
       left: 70px;
-      border-radius: 5px;
-      
-     
+      border-radius: 5px;     
 }
 .customCard{
       height: 250px;
@@ -152,9 +208,18 @@ body::-webkit-scrollbar {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      padding-left: 36px;
-      padding-right: 36px;
+      display: flex;
+      justify-content: center;
 }
+.fourth h1{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 53px;
+      color: #000000;
+      font-family: 'times new roman';
+}
+
 .card2{
       background-image: url("./assets/carpentry1.jpg");
       border-radius: 15px;
@@ -249,10 +314,6 @@ body::-webkit-scrollbar {
 }
 .secondLeft{
       height: 400px;
-      overflow: hidden;
-
-      
-     
 }
 .why{
       display: flex;
@@ -263,8 +324,7 @@ body::-webkit-scrollbar {
 .secondSection{
       background-color: #ffffff;
       padding-left: 34px;
-      padding-right: 34px;
-      height: 400px;
+      padding-right: 34px;      
       
       /* background-color: red; */
 }
@@ -272,8 +332,8 @@ body::-webkit-scrollbar {
       background-color: #ffffff;
       /* background-color: red; */
       width: 100%;
-      overflow: hidden;
-      /* margin-bottom: 100px; */
+      margin-top: 1.8rem;
+      margin-bottom: 2rem;
       
 }
 .paragraph{
@@ -307,7 +367,7 @@ body::-webkit-scrollbar {
       object-fit: cover;
       clip-path: circle();
       position: relative;
-      bottom: 20px;
+      bottom: 20px;      
 }
 .secondFrame{
       border-radius: 15px;
@@ -347,14 +407,36 @@ body::-webkit-scrollbar {
 .trustHeader{
       color: white;
 }
+
+
 .seventh{
-      padding-top: 120px;
-      padding-left: 36px;
-      padding-right: 36px;
-      background-color: black;
-      padding-bottom: 120px;
-      overflow: hidden;
+      background: whitesmoke;
+      padding-top: 3rem;
+      padding-bottom: 6rem;
+      display: flex;
+      justify-content: center;
 }
+.seventh .wrapper{
+      background-color: black;
+      width: 70%;
+      padding: 8rem;
+}
+.seventh .wrapper h1{
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 53px;
+      text-align: center;
+      font-family: 'times new roman';
+}
+.seventh .seventh-logos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+}
+
+
 .trusted{
       background-color: aliceblue;
       height: 119px;
@@ -375,15 +457,55 @@ body::-webkit-scrollbar {
       display: flex;
       gap: 8px;
 }
-.sixthSection{
-      /* background-color: red; */
+.sixthSection{      
+      background-color: whitesmoke;
+      padding-top: 4rem;      
+      padding-bottom: 3rem;
       width: 100%;
-      padding-left: 36px;
-      padding-right: 36px;
-      /* overflow-x: hidden; */
-/* overflow-x: hidden; */
+      display: flex;
+      justify-content: center;
 }
 
+.sixthSection .container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+}
+.sixthSection .card .card-top{
+      text-align: center;
+      display: grid;
+      place-items: center;
+}
+.sixthSection .card small{
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+}
+.sixthSection .card{
+      color: #000000;
+      margin-bottom: 2.8rem;
+      /* position: relative; */
+}
+.sixthSection .card span{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+}
+.sixthSection .card img{
+      width: 80px;
+      height: 80px;
+      margin-top: -40px;
+      border-radius: 100%;
+      object-fit: cover;
+      z-index: 999;
+}
+.sixthSection .card .card-body{
+      padding: 20px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+}
 
 
 
@@ -427,6 +549,31 @@ body::-webkit-scrollbar {
 
 
 }
+
+
+.accordions{
+      display: grid;
+      place-items: center;
+      margin-bottom: 4rem;
+}
+.accordions h1{
+      font-family: 'Times New Roman', Times, serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 53px;
+
+      color: #000000;
+}
+.accordions .accordion-header button{
+      font-style: normal;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;      
+      color: #000000;
+}
+
+
 .know{
       color: white;
 }
@@ -529,8 +676,34 @@ body::-webkit-scrollbar {
 
 
 
+@media screen and (min-width: 200px) and (max-width: 1024px){
+      .firstSection .first-container{
+            display: grid;
+            grid-template-columns: unset;
+            margin-top: 5rem;
+            justify-content: center;
+            width: 100%;
+            overflow: none;
+      }
+      .firstSection .leftSection{
+            padding: 30px;
+            width: 100%;
+      }
+      .imageDiv{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+      }
+      .firstSection h1{
+            width: 100%;           
+      }
+      .firstSection p{
+            width: 100%;
+      }
+      
 
-@media (min-width: 320px) and (max-width: 480px) {
+
+
       body,html{
             margin: 0;
       
@@ -546,13 +719,10 @@ body::-webkit-scrollbar {
 
       }
    
-      .firstButton{
-            width: 100%;
-            height: 55px;
-      }
+      
       .footer{
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
             padding-top: 10px;
       }
       .accordions{
@@ -648,7 +818,85 @@ body::-webkit-scrollbar {
   
       /* CSS */
       
-    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px){
+      .firstSection h1{
+            font-size: 25px;            
+            width: 90%;
+            line-height: unset;
+      }
+      .firstSection p{
+            font-size: 20px;
+            width: 90%
+      }
+      .firstSection small{
+            font-size: 18px;
+      }
+      .fristSection div{
+            width: 100%;
+            height: auto;
+      }
+      .firstSection img{
+            width: 100%;
+            height: auto;
+      }
+      .firstSection .firstButton{
+            width: 100%;
+      }
+
+      
+      .secondSection .second-h1{
+            font-size: 30px;
+      }
+      .secondSection p{
+            font-size: 16px;
+      }
+      .secondSection div{
+            width: 100%;
+      }
+
+      .seventh{
+            
+      }
+      .seventh .wrapper{
+            width: 100%;
+      }
+      .seventh .wrapper .trustedBy{
+            width: 100%;
+            margin-bottom: 30px;
+      }
+      .seventh .wrapper .trustedBy h1{
+            font-size: 30px;
+            width: 100%;
+      }
+
+      .thirdSection .third h1{
+            font-size: 30px;
+      }
+      .thirdSection .third li{
+            font-size: 16px;
+      }
+
+      .subscribeDiv{
+            flex-direction: column;
+            justify-content: center;
+      }
+      .subscribe{
+            width: unset;
+            border-radius: 10px;
+      }
+      .subscribeButton{
+            border-radius: 10px;
+            margin-top: 10px;
+      }
+      .footerDivs{            
+            flex-wrap: wrap;
+      }
+}
+
+
+
     @media (min-width: 769px) and (max-width: 1024px) {
   
       .electrician{
@@ -696,7 +944,6 @@ body::-webkit-scrollbar {
       }
       .man{
             bottom: 60px;
-
       }
       .sponsors,.fifth{
             display: flex;
@@ -713,10 +960,6 @@ body::-webkit-scrollbar {
       .div1,.div2{
             align-items: center;
             justify-content: center;
-      }
-      .firstSection{
-            padding-bottom: 15px;
-
       }
       
      
@@ -761,8 +1004,8 @@ body::-webkit-scrollbar {
       .rightFooter{
             padding-top: 40px;
       }
-      .footerDivs{
-            gap: 109px;
+      .footerDivs{            
+            flex-wrap: wrap;
       }
    
   
@@ -822,4 +1065,4 @@ body::-webkit-scrollbar {
       
       /* CSS */
       
-    }
+}
