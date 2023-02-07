@@ -76,3 +76,9 @@
 .black {
     color: black!important;
 }
+
+@media (max-width: 500px) {
+    .servicesCon {
+        padding: 1em 1em;
+    }
+}
