@@ -1,7 +1,6 @@
 import React from 'react'
 import { challenges } from './StaticData'
-import chastyles from './challenges.module.css';
-import check from '../../../assets/LoginHomePageImages/check-circle.png'
+import chastyles from './challenges.module.css'
 import play from '../../../assets/LoginHomePageImages/play-circle.png'
 import Lists from '../../Reusable/Lists/Lists';
 
