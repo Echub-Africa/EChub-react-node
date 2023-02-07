@@ -10,7 +10,7 @@ const Lists = ({description}) => {
         gap:".6em",
         padding:".2em 0"
     }
-    }><img src={check}/>{description}</li>
+    }><img src={check} alt='checkmark'/>{description}</li>
   )
 }
 
