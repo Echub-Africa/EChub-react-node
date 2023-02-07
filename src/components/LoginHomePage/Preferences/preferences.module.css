@@ -4,7 +4,7 @@
     padding: 2em 3em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    background: #EBE6D9;
+    background: #ebe6d9;
     align-items: center;
     gap: 2em;
 }
@@ -17,14 +17,15 @@
 }
 
 .container>div>article {
-    background: #DEDEDE;
+    background: #dedede;
     padding: 1em;
+    color: #1B1818;
 }
 
 .container>div>article>img,
 .container>div>article>p,
 .container>div>article>h3 {
-    padding: .2em 0;
+    padding: 0.2em 0;
 }
 
 .container>div>article>h3 {
@@ -37,8 +38,26 @@
     font-size: 12px;
 }
 
+.container>article>h2 {
+    font-weight: 700;
+}
+
 .container>article>ul {
     margin: 0;
     list-style: none;
     padding: 0;
+    font-size: 20px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 2em 1em;
+    }
+    .container>article>h2,
+    .container>div>article>h3 {
+        font-size: 16px;
+    }
+    .container>article>ul {
+        font-size: 13px;
+    }
 }
