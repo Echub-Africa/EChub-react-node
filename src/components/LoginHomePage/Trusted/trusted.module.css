@@ -1,0 +1,42 @@
+.trustedCon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    background: #1C1C1C;
+    height: 556px;
+    color: #FFFFFF;
+    align-items: center;
+    margin: 0 3em;
+    padding: .8em 2em;
+    font-family: var(--tertiary-font);
+    row-gap: 3em;
+}
+
+.trustedCon>div>h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 33px;
+}
+
+.trustedCon>div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    row-gap: 2em;
+    column-gap: 2em;
+}
+
+.trustedCon>div>article>img {
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    .trustedCon {
+        height: max-content;
+        margin: 0 1em;
+        padding: 2em 1em;
+        font-family: var(--tertiary-font);
+    }
+    .trustedCon>div>h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
