@@ -1,0 +1,61 @@
+.faqContainerList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 3em;
+}
+
+.faqContainer {
+    text-align: center;
+    margin: 0 3em;
+}
+
+.faqContainer>h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+    padding: 2.5em 0;
+    font-family: var(--tertiary-font);
+}
+
+.faqContainerList>div>button {
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+    padding: 1.6em 1em;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+.faqContainerList>div:first-child>button {
+    height: max-content;
+    padding: 0 1em;
+}
+
+.faqContainerList>div>button>span {
+    float: right;
+    ;
+}
+
+.faqContainerList>div>p {
+    font-weight: 400;
+}
+
+@media (max-width:500px) {
+    .faqContainer>h2 {
+        font-size: 20px;
+    }
+    .faqContainer {
+        text-align: center;
+        margin: 0 1em;
+    }
+    .faqContainerList {
+        grid-template-columns: 1fr;
+    }
+}
