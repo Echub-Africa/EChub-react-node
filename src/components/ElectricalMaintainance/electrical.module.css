@@ -10,7 +10,7 @@
 /* styling for landing section starts */
 
 .Landing {
-    background: url('../../assets/electrician.png'), linear-gradient(269.7deg, rgba(8, 91, 218, 0.7) 12.59%, rgba(255, 255, 255, 0.7) 109.94%);
+    background: url("../../assets/electrician.png"), linear-gradient( 269.7deg, rgba(8, 91, 218, 0.7) 12.59%, rgba(255, 255, 255, 0.7) 109.94%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -48,7 +48,7 @@
 .Landing>div>button {
     border: none;
     outline: none;
-    background: #085BDA;
+    background: #085bda;
     border-radius: 5px;
     font-weight: 700;
     font-size: 18px;
@@ -60,12 +60,12 @@
 }
 
 .underline::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: calc(0% + 25px);
     width: calc(0% + 265px);
     height: 5px;
-    background: #085BDA;
+    background: #085bda;
 }
 
 .underline {
@@ -98,52 +98,13 @@
     width: 100%;
 }
 
-.customers {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    padding: 2em;
-    text-align: center;
-    position: relative;
-    top: 4em;
-    margin-bottom: 3.5em;
-}
-
-.customers::before {
-    content: '';
-    position: absolute;
-    height: 93px;
-    background-color: #ECECEC;
-    border-radius: 50%;
-    width: 96px;
-    top: -50px;
-    left: 40%;
-    right: 50%;
-}
-
-.customers>article>h2,
-.customers>p {
-    font-size: 16px;
-    padding-top: 1em;
-}
-
-.customers>article>h2 {
-    font-weight: 700;
-}
-
-.customers>article>p {
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
-}
-
 
 /* styling for project section ends */
 
 
 /* responsiveness */
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
     .Landing {
         height: max-content;
     }
@@ -153,7 +114,7 @@
     .Landing>div>button {
         border: none;
         outline: none;
-        background: #085BDA;
+        background: #085bda;
         border-radius: 5px;
         font-weight: 700;
         font-size: 18px;
@@ -161,6 +122,6 @@
         text-transform: uppercase;
         margin-top: 1em;
         padding: 1em;
-        width: 100%!important;
+        width: 100% !important;
     }
 }

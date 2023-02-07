@@ -9,8 +9,9 @@ import img5 from "../../assets/electricalImages/img5.png";
 import img6 from "../../assets/electricalImages/img6.png";
 import starrate from "../../assets/electricalImages/star_rate.png";
 import Footer from "../Footer";
-import { customersList } from "./staticdata";
 import Services from "../Reusable/Services/Services";
+import Customers from "../Reusable/Customers/Customers";
+
 
 const ElectricalMaintenance = () => {
   const { Container, Landing, projects, customers,underline } = styles;
@@ -53,31 +54,8 @@ const ElectricalMaintenance = () => {
               <img src={img6} alt="electrical cables" />
             </article>
           </div>
-          <div>
-            <h3>What Our Customers are Saying</h3>
-            <div className="three-grid_reusable">
-              {customersList.map((customer) => (
-                <div className={customers}>
-                  <article>
-                    <h2>{customer.name}</h2>
-                    <p>Manager </p>
-                  </article>
-                  <article>
-                    <img src={starrate} alt="starrate" />
-                    <img src={starrate} alt="starrate" />
-                    <img src={starrate} alt="starrate" />
-                    <img src={starrate} alt="starrate" />
-                    <img src={starrate} alt="starrate" />
-                  </article>
-                  <p>
-                    Tech Village lets out team identitify and resolve facility
-                    management issues faster,and empowerd them to be profuctive.
-                    we can now make our tenants feel at home and secure.
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <Customers/>
+        
         </section>
         <section>
         <h2 className={underline}>Our other Services </h2>
