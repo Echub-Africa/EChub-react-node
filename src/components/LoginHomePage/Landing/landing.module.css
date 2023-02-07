@@ -3,9 +3,10 @@
     background: rgba(37, 77, 154, 0.6);
     background-blend-mode: screen;
     color: white;
-    padding: 1em 3em;
+    padding: .5em 3em;
     font-size: 16px;
     height: 100vh;
+    font-family: var(--primary-font);
 }
 
 .container>div {
@@ -19,7 +20,8 @@
 
 .container>div>article:first-child>h2 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 51px;
+    padding-bottom: .6em;
 }
 
 .container>div>article:nth-of-type(2)>input {
@@ -32,6 +34,8 @@
     background-repeat: no-repeat;
     padding: 0 1em;
     background-origin: content-box;
+    border: none;
+    margin-bottom: .6em;
 }
 
 .container>div>article:last-child {
@@ -41,6 +45,7 @@
 .flex {
     display: flex;
     gap: 1em;
+    align-items: center;
 }
 
 .flex>button {
@@ -53,7 +58,22 @@
     color: white;
     text-transform: uppercase;
     margin-top: 1em;
-    padding: 19px 20px;
-    height: 61px;
     width: 307px;
+    height: 61px;
+}
+
+.flex>p {
+    font-size: 12px
+}
+
+@media (max-width:500px) {
+    .container {
+        height: max-content;
+        padding: .5em 1.5em;
+    }
+    .container>div {
+        display: grid;
+        grid-template-columns: 100%;
+        height: max-content;
+    }
 }
