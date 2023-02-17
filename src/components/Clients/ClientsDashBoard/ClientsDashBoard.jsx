@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../../Layout/threeGridLayout";
-import ClientsDashBoardOverview from "../../Reusable/ClientDashboardOverView/ClientsDashBoardOverview";
 import styling from "./clientdashboard.module.css";
 import work from "../../../assets/clientImages/work.png";
 import work_history from "../../../assets/clientImages/work_history.png";
@@ -9,24 +8,24 @@ import profile from "../../../assets/clientImages/profile.png";
 import { MdOutlineMilitaryTech, MdOutlineNotifications ,MdForum} from "react-icons/md";
 import {BsQuestionLg} from 'react-icons/bs'
 
-const ClientsDashBoard = () => {
+const ClientsDashBoard = ({settings}) => {
   const {
-    dashboardCon,
+    tableCon,
     dashboardConGrid,
     subgridCon,
     projectStatus,
     secondGrid,
+    billingDisplay
   } = styling;
   return (
-    <Layout>
-      <ClientsDashBoardOverview />
-      <section className={dashboardCon}>
+    <Layout layoutSettings={settings}>
+  
         <div className={dashboardConGrid}>
           <div>
             <input type="search" name="" placeholder="Search..." />
             {/* <span><img src={search} alt="search" /></span> */}
 
-            <div className={subgridCon}>
+            {settings === true?'':<div className={subgridCon}>
               <div>
                 <article>
                   <h4>Ongoing Jobs</h4>
@@ -45,30 +44,30 @@ const ClientsDashBoard = () => {
                   <img src={work} alt="work" />
                 </article>
               </div>
-            </div>
-            <div className={projectStatus}>
+            </div>}
+            {settings == true?'':<div className={projectStatus}>
               <h3>Ongoing Project/Status</h3>
               <p>Nysäling. Sären tepreren bifas. </p>
               <article>
                 <p></p>
               </article>
-            </div>
+            </div>}
           </div>
           <div className={secondGrid}>
             <article>
-              <MdOutlineMilitaryTech size={40} />
-              <MdOutlineNotifications size={40} />
+              {settings===true?'':<MdOutlineMilitaryTech size={40} />}
+              { settings===true?'':<MdOutlineNotifications size={40} />}
               <button>
                 <img src={profile} alt="profile" />
               </button>
             </article>
-            <div>
+            {settings=== true?'':<div>
               <h2>Details of Onging project</h2>
               <p>High Current (Generator)</p>
               <p>Lighting </p>
               <p>Installation</p>
-            </div>
-            <div>
+            </div>}
+            {settings===true?'':<div>
                 <div>
                     <button>
                         <BsQuestionLg/>
@@ -87,10 +86,10 @@ const ClientsDashBoard = () => {
                         <h5>Give feedback</h5>
                     </article>
                 </div>
-            </div>
+            </div>}
           </div>
         </div>
-        <div>
+        {settings === true?"":<div className={tableCon}>
           <article>
             <h4>Invoice</h4>
             <article>
@@ -144,8 +143,11 @@ const ClientsDashBoard = () => {
               </tr>
             </tfoot>
           </table>
-        </div>
-      </section>
+        </div>}
+        {settings === true?<div className={billingDisplay}>
+          <article></article>
+        </div>:''}
+    
     </Layout>
   );
 };

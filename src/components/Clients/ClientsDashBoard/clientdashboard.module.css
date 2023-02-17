@@ -1,15 +1,8 @@
-.dashboardCon {
-    border-radius: 40px 0 0 40px;
-    position: relative;
-    background: #F8F8F8;
-    padding: 1em;
-    font-family: var(--primary-font);
-}
-
 .dashboardConGrid {
     display: grid;
     grid-template-columns: 1.8fr 1fr;
     column-gap: 2em;
+    margin: 0 1em;
 }
 
 .dashboardConGrid>div>input[type='search'] {
@@ -122,8 +115,6 @@
     width: 50%;
 }
 
-.secondGrid {}
-
 .secondGrid>article {
     display: flex;
     gap: 1em;
@@ -177,6 +168,7 @@
     height: 27px;
     background: #EEEEEE;
     border-radius: 50%;
+    outline: none;
 }
 
 .secondGrid>div:nth-of-type(2)>div>article>h5 {
@@ -188,14 +180,15 @@
     font-size: 10px;
 }
 
-.dashboardCon>div:last-child {
+.tableCon {
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-top: 1em;
+    margin: 0 1em;
 }
 
-.dashboardCon>div:last-child>article {
+.tableCon>article {
     display: flex;
     justify-content: space-between;
     padding: 0 1em;
@@ -203,27 +196,27 @@
     height: 50px;
 }
 
-.dashboardCon>div:last-child>article>h4 {
+.tableCon>article>h4 {
     font-weight: 600;
     color: #085BDA;
     font-size: 18px;
 }
 
-.dashboardCon>div:last-child>article>article {
+.tableCon>article>article {
     display: flex;
     align-items: center;
     height: 50px;
     gap: 1em;
 }
 
-.dashboardCon>div:last-child>article>article>p {
+.tableCon>article>article>p {
     font-weight: 500;
     color: #4684E3;
     height: 26px;
     padding: .5em 0;
 }
 
-.dashboardCon>div:last-child>article>article>button {
+.tableCon>article>article>button {
     background: #D9D9D9;
     border-radius: 5px;
     width: 86px;
@@ -232,7 +225,7 @@
     outline: none;
 }
 
-.dashboardCon>div>table {
+.tableCon>table {
     width: 100%;
     font-family: var(--primary-font);
     color: #1B1818;
@@ -240,26 +233,41 @@
     font-weight: 400;
 }
 
-.dashboardCon>div>table>thead {
+.tableCon>table>thead {
     background-color: #F8F8F8;
     ;
 }
 
-.dashboardCon>div>table>thead>th {
+.tableCon>table>thead>th {
     font-weight: 600;
 }
 
-.dashboardCon>div>table>tbody>tr {
+.tableCon>table>tbody>tr {
     border: 2px solid #F8F8F8;
 }
 
-.dashboardCon>div>table>tbody>tr>td:nth-of-type(3) {
+.tableCon>table>tbody>tr>td:nth-of-type(3) {
     font-weight: 700;
 }
 
-.dashboardCon>div>table>tbody>tr>td:nth-of-type(4) {
-    color: yellow;
+.tableCon>table>tbody>tr>td:nth-of-type(4) {
     font-weight: 500;
     color: #4684E3;
     ;
+}
+
+.billingDisplay>article {
+    background: #D9D9D9;
+    ;
+    border-radius: 10px;
+    height: 287px;
+    width: 330px;
+}
+
+.billingDisplay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em 0;
+    padding-right: 1em;
 }
