@@ -1,9 +1,11 @@
 import React from "react";
-import styling from "./threegrid.module.css";
+import "./threegrid.css";
 
-const threeGridLayout = (props) => {
-  const { layout } = styling;
-  return <div className={layout}>{props.children}</div>;
+const Layout = ({children}) => {
+  
+  return (
+  <section className='layout'>{children}</section>
+  )
 };
 
-export default threeGridLayout;
+export default Layout;
