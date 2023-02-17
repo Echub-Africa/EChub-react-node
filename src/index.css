@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto&display=swap');
 :root {
     --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --tertiary-font: 'Playfair Display', serif;
 }
 
 body {
@@ -15,7 +18,7 @@ code {
 
 .three-grid_reusable {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1em;
 }
 
