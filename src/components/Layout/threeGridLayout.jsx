@@ -1,11 +1,15 @@
 import React from "react";
+import ClientsDashBoardOverview from "../Reusable/ClientDashboardOverView/ClientsDashBoardOverview";
 import "./threegrid.css";
 
-const Layout = ({children}) => {
-  
+const Layout = ({ children,layoutSetings }) => {
+  console.log(layoutSetings)
   return (
-  <section className='layout'>{children}</section>
-  )
+    <main className={layoutSetings=== true?'FullLayout':'layout'}>
+      <ClientsDashBoardOverview />
+      <section className="sectionLayout">{children}</section>
+    </main>
+  );
 };
 
 export default Layout;
