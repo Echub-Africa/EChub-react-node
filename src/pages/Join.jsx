@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import './NormalSign.css'
-import sign from '../assets/sign6.png'
+import echub from '../assets/Vector (1).png'
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
+import {MdClose} from 'react-icons/md'
 
 const Join = () => {
     // SETTING PASSWORD VISIBILITY
@@ -50,63 +51,67 @@ function HandleSubmit(e){
 }
   return (
     <div className='d-flex'>
-    <div className='form-img' style={{'maxHeight': '3000px'}}>
-        <img src={sign} />
+    <div className='form-img'>
+        <div className="img-wrap">
+          <img src={echub} alt="" />
+        </div>
     </div>
     <div className='form-input'>
+      <div className="close">
+        <MdClose fontSize={"2rem"} color="#000" style={{float: 'right'}} />
+      </div>
     <ToastContainer />
     <form onSubmit={HandleSubmit}>
-          <div className='text-center'>  
-              <h1>Create an Account </h1> 
-              <h3></h3>
+          <div className='form-header'>  
+              <h1>Join Tech Village</h1>              
           </div>
-        <div className='d-flex justify-content-between'>
-            <div style={{'width': '45%'}}>
+        <div className='d-flex input-flex justify-content-between'>
+            <div className="input-wrap">
             <label htmlFor="bane">First Name</label>
             <input type='text' name = 'name'
              onChange={HandleChange} />
             </div>
-            <div style={{'width': '45%'}}>
+            <div className="input-wrap">
                 <label htmlFor="">Last Name</label>
                 <input type="text" />
             </div>     
         </div>
-        <div className='d-flex justify-content-between'>
-          <div style={{'width': '45%'}}>
+        <div className='d-flex input-flex justify-content-between'>
+          <div className="input-wrap">
             <label htmlFor="">Email</label>
             <input  name = 'email' onChange={HandleChange}/>
           </div>
-          <div style={{'width': '45%'}}>
+          <div className="input-wrap">
             <label htmlFor="">Phone Number</label>
           <input type="number" />
         </div>
         </div>
-        <div className='d-flex justify-content-between'>
-          <div style={{'width': '45%'}}>
+        <div className='d-flex input-flex justify-content-between'>
+          <div className="input-wrap">
             <label htmlFor="">English Proficiency</label>
             <input  name = 'email' onChange={HandleChange}/>
           </div>
-          <div style={{'width': '45%'}}>
+          <div className="input-wrap">
             <label htmlFor="">Years Of Working Experience</label>
             <input type="number"  />
         </div>
         </div>
-        <div className='d-flex justify-content-between'>
-          <div style={{'width': '45%'}}>
+        <div className='d-flex input-flex justify-content-between'>
+          <div className="input-wrap">
             <label htmlFor="">Primary Skill</label>
             <input  name = 'email'  onChange={HandleChange}/>
           </div>
-          <div style={{'width': '45%'}}>
+          <div className="input-wrap">
             <label htmlFor="">Years Of Experience with skills</label>
           <input type="number"  />
         </div>
         </div>
-        <div className='d-flex justify-content-between'>
-                <div style={{'width': '45%'}}>
+        <div className='d-flex input-flex justify-content-between'>
+                <div className="input-wrap">
                     <label htmlFor="">Resume</label>
                     <input type="file" />
                 </div>
-                <div style={{'width': '45%'}}>
+                <div className="input-wrap">
             <label htmlFor="">Country</label>
             <select placeholder= 'country'>
                 <option value=""></option>
@@ -118,7 +123,7 @@ function HandleSubmit(e){
                 </select>
                 </div>
                 </div>
-        <div className='d-flex'>
+        <div className='d-flex agree'>
           <input type="checkbox" style={{'width': '40px', 'marginRight': '20px'}} />
         <p>I understand that TechVillage  will process my information in accordance with 
           their Privacy Policy. I may withdraw my consent through unsubscribe links at

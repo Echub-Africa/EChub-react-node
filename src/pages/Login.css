@@ -1,0 +1,132 @@
+.login-header{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-wrapper{
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+    padding-bottom: 40px;
+}
+.login-wrapper .login-card{
+    padding: 20px;
+    width: 40%;
+    border-radius: 14px;
+}
+.login-card-header{
+    text-align: center;
+}
+.login-card-header h1{
+    font-weight: 900;
+    font-size: 20px;
+    color: #000;
+}
+.login-card-header h3{
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+
+.login-form{
+    margin-top: 20px;
+    padding: 30px;
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 30px;
+}
+.login-input label{
+    font-weight: 600;
+    font-size: 18px;
+}
+.login-input input{
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+.login-input input:focus{
+    outline: none;
+}
+
+.input-password{
+    border: 1px solid gray;
+    width: 100%;
+    display: flex;  
+    align-items: center;  
+    border-radius: 8px;
+}
+.input-password input{
+    width: 100%;
+    border: none;    
+}
+.input-password svg{
+    margin-right: 8px;
+    cursor: pointer;
+}
+.input-password input:focus{
+    outline: none;
+}
+
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.remember{
+    display: flex;
+    gap: 5px;
+}
+.remember span{
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+.forgot-pwd p{
+    color: #085bda;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.login-btn button{
+    padding: 12px 20px;
+    background: #085BDA;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+}
+
+.dha{
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1036px){
+    .login-wrapper .login-card{
+        width: 80%;
+    }
+    .login-header{
+        display: none;
+    }
+
+    .login-wrapper{
+        margin-top: 20px;
+    }
+}

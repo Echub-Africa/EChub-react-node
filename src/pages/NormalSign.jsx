@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './NormalSign.css'
-import sign from '../assets/sign6.png'
+import echub from '../assets/Echub Logo (1).png'
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
 
@@ -50,37 +50,57 @@ function HandleSubmit(e){
 }
   return (
     <div className='d-flex'>
-    <div className='form-img'>
-        <img src={sign} />
+    <div className='form-img sign-img'>
+        <div className="img-wrap">
+          <img src={echub} alt="" />
+        </div>
     </div>
     <div className='form-input'>
     <ToastContainer />
     <form onSubmit={HandleSubmit}>
-          <div className='text-center'>  
+          <div className='text-center mb-5 sign-header'>  
               <h1>Create an Account </h1> 
-              <h3></h3>
+              <h3>Book a technician within minutes</h3>
+          </div>          
+        <div className='d-flex input-flex justify-content-between'>
+          <div className="input-wrap">
+            <label htmlFor="">Company Name</label>
+            <input type='text' name = 'name' onChange={HandleChange} placeholder=''/>
           </div>
-        <div className='d-flex justify-content-between'>
-          <input type='text' style={{'width': '45%'}} name = 'name' onChange={HandleChange} placeholder='Company Name'/>
-          <input type="text" style={{'width': '45%'}}/>
+          <div className="input-wrap">
+            <label htmlFor="">Nothing Here</label>
+            <input type="text" />
+          </div>
         </div>
-        <div className='d-flex justify-content-between'>
-          <input  name = 'email' style={{'width': '45%'}} onChange={HandleChange} placeholder='Company Email'/>
-          <input type="number" style={{'width': '45%'}} placeholder='Phone Number' />
+        <div className='d-flex input-flex justify-content-between'>
+          <div className="input-wrap">
+            <label htmlFor="">Company Email</label>
+            <input  name = 'email' onChange={HandleChange} placeholder=''/>
+          </div>
+          <div className="input-wrap">
+            <label htmlFor="">Phone Number</label>
+            <input type="number" placeholder='' />
+          </div>
         </div>
-        <div className='d-flex justify-content-between'>
-            <input type="text" style={{'width': '45%'}} placeholder='Contact Address' />
-            <select placeholder= 'country' style={{'width': '45%'}}>
-                <option value=""></option>
+        <div className='d-flex input-flex justify-content-between'>
+          <div className="input-wrap">
+            <label htmlFor="">Contact Address</label>
+            <input type="text" placeholder='' />
+          </div>
+          <div className="input-wrap">
+            <label htmlFor="">Country</label>
+            <select placeholder=''>
+                <option>-- Country --</option>
                 <option value="Nigeria">Nigeria</option>
                 <option value="Ghana">Ghana</option>
                 <option value="Australia">Australia</option>
                 <option value="Kenya">Kenya</option>
                 <option value="USA">America</option>
-                    </select>
-                </div>
-        <div className='d-flex'>
-          <input type="checkbox" style={{'width': '40px', 'marginRight': '20px'}} />
+            </select>
+          </div>
+        </div>
+        <div className='d-flex agree'>
+          <input type="checkbox" style={{'width': '40px', 'marginRight': '16px'}} />
         <p>I understand that TechVillage  will process my information in accordance with 
           their Privacy Policy. I may withdraw my consent through unsubscribe links at
           any time.

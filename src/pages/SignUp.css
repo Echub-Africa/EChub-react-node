@@ -11,9 +11,9 @@
     margin-right: 30px;
 }
 .form-img img{
-    width: 100%;
+    /* width: 100%;
     object-fit: cover;
-   min-height: 100vh;
+    min-height: 100vh; */
 }
 .google{
     width: 20%;
