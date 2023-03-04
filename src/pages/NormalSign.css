@@ -7,24 +7,63 @@ body{
     min-height: 100vh !important;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-    max-width: 50%;
+    width: 50%;
     background-color: white;
     position: absolute;
     z-index: 2;
     right: 40px;
+    padding-top: 3rem;
+}
+.input-wrap{
+    width: 45%;
+}
+.sign-header h1{
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000;
+}
+.sign-header h3, .form-header h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
 }
 .form-img{
     position: absolute;
     width: 40%;
     z-index: 1;
-    
+    height: 120vh;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -14.57%, #2757FF 140%), url('../assets/sign6.png');    
+}
+.form-img.sign-img{
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+    height: 80vh;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) -14.57%, #2757FF 140%), url('../assets/sign6.png');    
+}
+.form-img .img-wrap{
+    width: 100%;    
+    padding: 50px 0 0 50px;
+}
+.form-img img{
+    width: 20%;            
 }
 .form-img img{
 background: linear-gradient( 0% #FFFFFF, 100% #2757FF);
 }
-.form-img img{
-height: 100%;
-width: 100%;
+.form-header{
+    margin-bottom: 30px;
+}
+.form-header h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+.close{
+    padding-right: 20px;
+    text-align: right;
+    margin-bottom: 20px;
 }
 button{
     width: 40% !important;
@@ -34,6 +73,36 @@ button{
         display: none;
     }
     .form-input{
+        width: 100%;        
+        right: unset;
+    }
+    .input-wrap{
         width: 100%;
+    }
+    .input-flex{
+        flex-direction: column;        
+    }
+    button{
+        width: 100% !important;
+    }
+    .agree p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .form-header{
+        text-align: center
+    }
+    .form-header h3{
+        font-size: 18px;
+    }
+    .form-header h1{
+        font-size: 30px;
+    }
+    .sign-header h1{
+        font-size: 30px;
+    }
+    .sign-header h3{
+        font-size: 18px;
     }
 }

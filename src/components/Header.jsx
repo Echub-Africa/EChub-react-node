@@ -9,6 +9,7 @@ import './Header.css';
 const Header = ()=>{
     const [isOpen, setIsOpen] = useState(false);
     const [user, setUser] = useState(false)
+    const [isNavOpen, setIsNavOpen] = useState(false)
 
     return (
         <header className="header shadow">
@@ -24,6 +25,19 @@ const Header = ()=>{
                         <div className="menu-item">Blog</div>
                         <div className="menu-item">FAQs</div>
                     </div>
+                    {isNavOpen && <div className="mobile-menu">
+                        <div className="mobile-menu-item">About Us</div>
+                        <div className="mobile-menu-item">Services</div>
+                        <div className="mobile-menu-item">Contact Us</div>
+                        <div className="mobile-menu-item">Blog</div>
+                        <div className="mobile-menu-item">FAQs</div>
+                        {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                        {!user && <Link to="/login" className="auth-link">Log In</Link>}
+                        {user && <div className="img-container">
+                            <img src={userImg} alt="" />
+                        </div>}
+                        <button>Join the team</button>
+                    </div>}
                 </div>
                 <div className="header-right">
                     {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
@@ -37,6 +51,13 @@ const Header = ()=>{
                         console.log("Pop up")
                     }}>
                         <AiOutlineMenu size={35} />                        
+                    </div>
+                    <div className="mobile-menu-icon" onClick={()=>{ 
+                        setIsNavOpen(!isNavOpen);
+                        console.log("Pop up")
+                    }}>
+                        {!isNavOpen && <AiOutlineMenu size={35} />}
+                        {isNavOpen && <span>❌</span>}                 
                     </div>
                 </div>
             </div>

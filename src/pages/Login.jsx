@@ -1,76 +1,60 @@
 import React, { useState } from 'react'
-import './SignUp.css'
-// import chef1 from '../asset/chef1.jfif'
+import './Login.css'
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
-import { ToastContainer, toast } from 'react-toastify';
+import { MdClose } from 'react-icons/md';
 import { Link } from 'react-router-dom'
-import Modal from '../components/Modal';
+import echub from '../assets/Vector.png'
+
 
 const Login = () => {
+  const [isVisible, setIsVisible] = useState(false)
 
-  // MODAL
-  const[modalOpen, setModalOpen] = useState(false)
-  // TOGGLING PASSWORD VISIBILITY
-  const [passwordShown, setPasswordShown] = useState(false);
-  const togglePassword = () => {
-    setPasswordShown(!passwordShown);
-  };
-
-  // FORM VALIDATION
-  const[loginData, setloginData] = useState({
-    email : '',
-    password : ''
-
-})
-  const setLogin = (e) =>{
-    setloginData({
-      
-        ...loginData,
-        [e.target.name] : e.target.value
-    }) 
-}
-const HandleSub = (e) =>{
-    e.preventDefault()
-    let user = JSON.parse(sessionStorage.getItem('user'))
-    
-    if(loginData?.email === user.email && loginData.password === user.password){
-      // toast.success('sucessfully logged in')
-      setModalOpen(true)
-    //   setInterval(()=>{
-    //     window.location = './menu'
-    // },1500)
-    }
-    else{
-      toast.error('wrong email or password')
-    }
-    
-   
-}
   return (
-    <div >
-      <div className='form-input mx-auto'>
-      <ToastContainer />
-      <form onSubmit={HandleSub}>
-          <h1 className='text-center '>Welcome Back To Sushi!</h1>
-          <div>
-            <input name='email' onChange={setLogin} placeholder='Enter your Email' />
+    <div className="login">
+      <div className="login-header">
+        <img src={echub} alt="" />
+        <MdClose fontSize={"2.2rem"} color="#000" />
+      </div>
+      <div className="login-wrapper">
+        <div className="login-card shadow">
+          <div className="login-card-header">
+            <h1>Welcome Back</h1>
+            <h3>Login into your account</h3>
           </div>
-          <div >
-            <input type={passwordShown?"text": "password"} placeholder='Enter your password' 
-            name='password' onChange={setLogin}
-            />
-           <label className='mt-4' 
-            style={{'marginLeft': '-37px', 'marginBottom':'30px', 'fontSize': '20px'}}
-            onClick={togglePassword}>
-              {passwordShown?<AiOutlineEyeInvisible />:<AiOutlineEye /> }
-            </label>
+          <div className="login-form">
+            <div className="login-input">
+              <label htmlFor="">Email address</label>
+              <input type="email" />
+            </div>
+            <div className="login-input">
+              <label htmlFor="">Password</label>
+              <div className="input-password">
+                <input type={isVisible ? "text" : "password"} />
+                {isVisible ? 
+                  (<AiOutlineEyeInvisible onClick={()=> setIsVisible(!isVisible)} fontSize={"2rem"} />) : 
+                  (<AiOutlineEye onClick={()=> setIsVisible(!isVisible)} fontSize={"2rem"} />)
+                }
+              </div>
+            </div>
+            <div className="forgot">
+              <div className="remember">
+                <input type="checkbox" />
+                <span>Remember me</span>
+              </div>
+              <div className="forgot-pwd">
+                <p>Forgot Password?</p>
+              </div>
+            </div>
+            <div className="login-btn">
+              <button>Login</button>
+            </div>
+            <div className="dha">
+              <span>Don't have an account?</span>
+              <Link to="/signup">Sign up</Link>
+            </div>
           </div>
-          <div>
-            <button>LOG IN</button>
-          </div>
-      </form>
-          </div> 
-          {modalOpen && <Modal setOpenModal={setModalOpen} />}
+        </div>
+      </div>
     </div>
   )
 }

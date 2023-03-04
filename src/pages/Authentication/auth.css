@@ -1,0 +1,224 @@
+.auth{
+    display: flex;
+}
+
+.auth-left{
+    background-image: linear-gradient(180deg, rgba(194, 206, 247, 0) -14.57%, #0E2269 140%), url('.../../../../assets/sign.png');
+    background-size: cover;
+    flex: 3;
+    padding: 40px;
+    
+}
+.auth-left.individual{
+    background-image: linear-gradient(180deg, rgba(194, 206, 247, 0) -14.57%, #0E2269 140%), url('.../../../../assets/sign4.png');
+    background-size: cover;
+    flex: 3;
+    padding: 40px;
+    
+}
+
+.auth-right{
+    flex: 4;
+    display: grid;
+    place-items: center;
+}
+.auth-right .auth-header{
+    width: 70%;
+    margin: 1rem 0 1rem;
+}
+.auth-right .auth-close{
+    width: 70%;
+    text-align: right;
+    margin-top: 2rem;
+}
+.auth-right .auth-close span{    
+    font-weight: bold;
+    font-size: 30px;
+}
+.auth-logo{
+    display: none;
+    width: 100%;
+}
+.auth-choice .company-individual:nth-child(1){
+    background: lightskyblue;
+}
+.auth-choice .company-individual:nth-child(2){
+    background: rgb(250, 250, 153);
+}
+.company-individual{
+    border-radius: 12px;
+    padding: 12px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    cursor: pointer;   
+}
+.company-individual h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #121212;
+}
+.auth-right .auth-header h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+}
+.auth-right .auth-header h3{
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+.auth-choice{
+    width: 70%;
+    display: flex;
+    gap: 30px;
+}
+.auth-alternate{
+    width: 70%;
+    display: flex;
+    gap: 12px;
+}
+.auth-choice img{
+    cursor: pointer;
+}
+.auth-right p{    
+    width: 70%;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+}
+.auth-right .create-with{
+    margin-top: 30px;
+}
+.auth-form{
+    width: 70%;
+    margin-top: 20px;
+}
+.auth-form .auth-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+.auth-input label{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+}
+.auth-input input{
+    border: none;
+    border-bottom: 2px solid #bdbdbd;
+    padding: 5px;
+}
+.auth-input input:focus{
+    outline: none;
+}
+
+.auth-input-wrapper{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;    
+}
+.auth-input-wrapper .auth-input{
+    flex: 1;
+    margin-top: 18px;
+}
+.auth-input-wrapper .auth-input input{
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 8px;
+}
+.auth-input-wrapper .auth-input select{
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.auth-agree{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.auth-form button{
+    background: #085BDA;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.account{
+    text-align: center;    
+    margin-bottom: 10px;
+}
+.account span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-right: 5px;    
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 1036px){
+    .auth-right .auth-header{
+        margin: 1.2rem 0 2rem;
+    }
+    .auth-left{
+        display: none;
+    }
+    .auth-close{
+        display: none;
+    }
+    .sign-as{
+        display: none;
+    }
+    .auth-logo{
+        display: flex;
+        padding: 30px;
+        margin-bottom: 2rem;
+    }
+    .auth-choice{
+        justify-content: center;        
+    }
+    .company-individual{
+        flex-direction: row;
+        padding: 12px;  
+        justify-content: center;
+    }
+    .company-individual img{
+        width: 50px;
+    }
+    .company-individual h3{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .auth-right .auth-header{
+        text-align: center;        
+    }
+    .auth-right .auth-header h1{
+        font-size: 25px;
+    }
+    .auth-right .auth-header h3{
+        font-size: 18px;
+    }
+    .auth-btn{
+        width: 100%;
+    }
+    .auth-form button{
+        font-size: 16px;
+        width: 100%;
+        padding: 10px 18px;
+    }
+}
