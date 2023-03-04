@@ -1,0 +1,24 @@
+.Container {
+    background-color: #085BDA;
+}
+
+.Container>header>nav>ul {
+    list-style-type: none;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 3em;
+}
+
+.Container>header>img {
+    padding-top: 1em;
+}
+
+.Container>header>nav>ul>li>a {
+    text-decoration: none;
+}
+
+.Container>header>nav>ul>li {
+    text-decoration: none;
+    padding: .6em 0;
+}

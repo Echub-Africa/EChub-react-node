@@ -1,8 +1,9 @@
+import React from 'react'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import Home from "./pages/Home.jsx"
 
 
 import './App.css';
+import Home from "./pages/Home.jsx"
 import CompanySign from "./pages/CompanySign.jsx";
 import NormalSign from "./pages/NormalSign.jsx";
 import SignUp from './pages/SignUp.jsx'
@@ -19,17 +20,22 @@ import ResetPassword from './pages/ResetPassword.jsx'
 
 
 
-function App() {
+
+
+
+
+
+
+const App = () => {
   return (
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<ResetPassword />} />
+        
       </Routes>
     </Router>
- 
     </>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,273 @@
+.dashboardConGrid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    column-gap: 2em;
+    margin: 0 1em;
+}
+
+.dashboardConGrid>div>input[type='search'] {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 1.5em;
+    margin-bottom: 1em;
+    height: 50px;
+    background: url('../../../assets/clientImages/keyboard_voice.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    position: relative;
+    display: block;
+}
+
+.dashboardConGrid>div>input::before {
+    content: 'hello world';
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+.dashboardConGrid>div>span {
+    display: inline-block;
+    position: sticky;
+    bottom: 3.5em;
+    right: 11.3em;
+}
+
+.subgridCon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+
+.subgridCon>div {
+    height: 130px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    gap: 1em;
+    padding: 2em 1em;
+    justify-content: space-between;
+}
+
+.subgridCon>div>article>p {
+    font-weight: 600;
+    text-align: left;
+}
+
+.subgridCon>div>article>h4 {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.subgridCon>div:nth-of-type(1) {
+    color: white;
+    background-color: #085BDA;
+}
+
+.subgridCon>div:nth-of-type(2) {
+    background-color: white;
+    color: #085BDA;
+}
+
+.projectStatus {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    text-align: left;
+    padding: 1em 1.5em;
+    margin: 1em 0;
+    position: relative;
+}
+
+.projectStatus::before {
+    content: '...';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    color: #3A3A3A;
+}
+
+.projectStatus>article {
+    background: #D9D9D9;
+    border-radius: 10px;
+    height: 48px;
+    width: 100%;
+}
+
+.projectStatus>h3 {
+    color: #085BDA;
+    font-size: 16px;
+}
+
+.projectStatus>article>p {
+    background: #84ADEC;
+    border-radius: 10px 0px 0px 10px;
+    height: 48px;
+    width: 50%;
+}
+
+.secondGrid>article {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+.secondGrid>div:nth-of-type(1) {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: left;
+}
+
+.secondGrid>div:nth-of-type(1)>h2 {
+    color: #085BDA;
+    font-size: 14px;
+    padding-bottom: 4.5em;
+}
+
+.secondGrid>div:nth-of-type(1)>p {
+    font-size: 14px;
+}
+
+.secondGrid>article>button {
+    border: none;
+}
+
+.secondGrid>div:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: .5em;
+    row-gap: .6em;
+}
+
+.secondGrid>div:nth-of-type(2)>div {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    gap: .4em;
+    padding: .6em;
+    align-items: center;
+}
+
+.secondGrid>div:nth-of-type(2)>div>button {
+    border: none;
+    width: 27px;
+    height: 27px;
+    background: #EEEEEE;
+    border-radius: 50%;
+    outline: none;
+}
+
+.secondGrid>div:nth-of-type(2)>div>article>h5 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.secondGrid>div:nth-of-type(2)>div>article>p {
+    font-size: 10px;
+}
+
+.tableCon {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 1em;
+    margin: 0 1em;
+}
+
+.tableCon>article {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+    align-items: center;
+    height: 50px;
+}
+
+.tableCon>article>h4 {
+    font-weight: 600;
+    color: #085BDA;
+    font-size: 18px;
+}
+
+.tableCon>article>article {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 1em;
+}
+
+.tableCon>article>article>p {
+    font-weight: 500;
+    color: #4684E3;
+    height: 26px;
+    padding: .5em 0;
+}
+
+.tableCon>article>article>button {
+    background: #D9D9D9;
+    border-radius: 5px;
+    width: 86px;
+    height: 26px;
+    border: none;
+    outline: none;
+}
+
+.tableCon>table {
+    width: 100%;
+    font-family: var(--primary-font);
+    color: #1B1818;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tableCon>table>thead {
+    background-color: #F8F8F8;
+    ;
+}
+
+.tableCon>table>thead>th {
+    font-weight: 600;
+}
+
+.tableCon>table>tbody>tr {
+    border: 2px solid #F8F8F8;
+}
+
+.tableCon>table>tbody>tr>td:nth-of-type(3) {
+    font-weight: 700;
+}
+
+.tableCon>table>tbody>tr>td:nth-of-type(4) {
+    font-weight: 500;
+    color: #4684E3;
+    ;
+}
+
+.billingDisplay>article {
+    background: #D9D9D9;
+    ;
+    border-radius: 10px;
+    height: 287px;
+    width: 330px;
+}
+
+.billingDisplay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2em 0;
+    padding-right: 1em;
+}

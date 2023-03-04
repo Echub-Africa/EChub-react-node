@@ -1,0 +1,40 @@
+.serviceCon {
+    background: rgba(37, 77, 154, 0.8);
+    mix-blend-mode: multiply;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.serviceCon>h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 67px;
+    font-family: var(--tertiary-font);
+    color: white;
+}
+
+.serviceCon>article>h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    font-family: var(--primary-font);
+    color: white;
+}
+
+.serviceCon>article {
+    padding: 0 2em;
+}
+
+@media (max-width: 500px) {
+    .serviceCon>article {
+        padding: 0 1em;
+    }
+    .serviceCon>h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .serviceCon>article>h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}

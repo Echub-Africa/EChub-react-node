@@ -1,0 +1,110 @@
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            z-index: 1;
+        }
+        
+        .workContainer {
+            background: #E9E9E9;
+            position: relative;
+            margin-bottom: 2em;
+        }
+        
+        .workContainer::after {
+            content: '';
+            position: absolute;
+            width: 600px;
+            background-color: #085BDA;
+            top: 40px;
+            bottom: 0;
+            right: 0%;
+            height: 92%;
+            border-radius: 30px;
+            background: url('../../../assets/electricalImages/cycle.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .workContainer>h2 {
+            padding: 4em 0;
+        }
+        /* The actual timeline (the vertical ruler) */
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #085BDA;
+            top: 0;
+            bottom: 0;
+            left: 0%;
+            height: 80%;
+            border-radius: 30px;
+        }
+        
+        .container {
+            padding: 0 40px;
+            position: relative;
+            background-color: inherit;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            column-gap: 15%;
+            ;
+        }
+        
+        .container>div:last-child {
+            margin-bottom: 2.5em;
+        }
+        
+        .container>div:last-child>img {
+            object-fit: contain;
+            width: 100%;
+        }
+        
+        .up {
+            position: relative;
+            bottom: 3em;
+        }
+        
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: -5px;
+            background-color: #085BDA;
+            top: 0;
+            border-radius: 50%;
+        }
+        
+        .content {
+            position: relative;
+            border-radius: 6px;
+            position: relative;
+            bottom: 8px;
+        }
+        
+        .content>p {
+            font-size: 20px;
+            font-size: 400;
+        }
+        
+        .content>button {
+            border: none;
+            outline: none;
+            background: #085BDA;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 18px;
+            color: white;
+            margin: 1em 0;
+            padding: 1em;
+            width: 241px;
+        }
+        
+        @media (max-width:600px) {
+            .content>button {
+                width: 100%!important;
+            }
+        }
