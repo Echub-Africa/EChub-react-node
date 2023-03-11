@@ -4,12 +4,13 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import userImg from '../assets/Ellipse 52.png';
 import './Header.css';
-//import HireModal from './HireModal';
 
 const Header = ()=>{
     const [isOpen, setIsOpen] = useState(false);
-    const [user, setUser] = useState(false)
-    const [isNavOpen, setIsNavOpen] = useState(false)
+    const [user, setUser] = useState(false);
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    console.log({user})
 
     return (
         <header className="header shadow">
@@ -31,8 +32,8 @@ const Header = ()=>{
                         <div className="mobile-menu-item">Contact Us</div>
                         <div className="mobile-menu-item">Blog</div>
                         <div className="mobile-menu-item">FAQs</div>
-                        {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
-                        {!user && <Link to="/login" className="auth-link">Log In</Link>}
+                        {/*{!user && <Link to="/signup" className="auth-link">Sign Up</Link>}*/}
+                        {/*{!user && <Link to="/login" className="auth-link">Log In</Link>}*/}
                         {user && <div className="img-container">
                             <img src={userImg} alt="" />
                         </div>}
@@ -40,24 +41,24 @@ const Header = ()=>{
                     </div>}
                 </div>
                 <div className="header-right">
-                    {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
-                    {!user && <Link to="/login" className="auth-link">Log In</Link>}
+                    {/*{!user && <Link to="/signup" className="auth-link">Sign Up</Link>}*/}
+                    {/*{!user && <Link to="/login" className="auth-link">Log In</Link>}*/}
                     {user && <div className="img-container">
                         <img src={userImg} alt="" />
                     </div>}
                     <button>Join the team</button>
-                    <div className="menu-icon" onClick={()=>{ 
+                    <div className="menu-icon" onClick={()=>{
                         setIsOpen(true);
                         console.log("Pop up")
                     }}>
-                        <AiOutlineMenu size={35} />                        
+                        <AiOutlineMenu size={35} />
                     </div>
-                    <div className="mobile-menu-icon" onClick={()=>{ 
+                    <div className="mobile-menu-icon" onClick={()=>{
                         setIsNavOpen(!isNavOpen);
                         console.log("Pop up")
                     }}>
                         {!isNavOpen && <AiOutlineMenu size={35} />}
-                        {isNavOpen && <span>❌</span>}                 
+                        {isNavOpen && <span>❌</span>}
                     </div>
                 </div>
             </div>
