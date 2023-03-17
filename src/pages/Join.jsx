@@ -7,10 +7,10 @@ import {MdClose} from 'react-icons/md'
 
 const Join = () => {
     // SETTING PASSWORD VISIBILITY
-  const [passwordShown, setPasswordShown] = useState(false);
-  const togglePassword = () => {
-    setPasswordShown(!passwordShown);
-  };
+  //const [passwordShown, setPasswordShown] = useState(false);
+  // const togglePassword = () => {
+  //   setPasswordShown(!passwordShown);
+  // };
 
   // VALIDATING THE FORM
   const[form, setForm] = useState({

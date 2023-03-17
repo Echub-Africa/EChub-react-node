@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import HowItWorks from "../Reusable/HowItWorks/HowItWorks";
+import HowItWorks from "../../components/Reusable/HowItWorks/HowItWorks";
 import styles from "./electrical.module.css";
 import img1 from "../../assets/electricalImages/img1.png";
 import img2 from "../../assets/electricalImages/img2.png";
@@ -8,9 +9,10 @@ import img4 from "../../assets/electricalImages/img4.png";
 import img5 from "../../assets/electricalImages/img5.png";
 import img6 from "../../assets/electricalImages/img6.png";
 import starrate from "../../assets/electricalImages/star_rate.png";
-import Footer from "../Footer";
-import Services from "../Reusable/Services/Services";
-import Customers from "../Reusable/Customers/Customers";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Services from "../../components/Reusable/Services/Services";
+import Customers from "../../components/Reusable/Customers/Customers";
 
 
 const ElectricalMaintenance = () => {
@@ -18,6 +20,7 @@ const ElectricalMaintenance = () => {
   return (
     <>
       <main className={Container}>
+        <Header />
         <section className={Landing}>
           <div>
             <h5>Switch to Competence</h5>
