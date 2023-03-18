@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import ArrowForward from '@mui/icons-material/ArrowForward'
 
@@ -76,34 +77,6 @@ const Services = () => {
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                    {/* <div className="service-item">
-                        <div className="service-item-header h1-2">
-                            <h3>Electronics & Gadgets</h3>
-                        </div>
-                        <div className="service-img">
-                            <img src={rect2} alt="" />
-                        </div>
-                        <div className="service-btn">
-                            <button className="btn-2">
-                                Explore
-                                <ArrowForward />
-                            </button>
-                        </div>
-                    </div>
-                    <div className="service-item">
-                        <div className="service-item-header h1-3">
-                            <h3>Plumbing</h3>
-                        </div>
-                        <div className="service-img">
-                            <img src={rect3} alt="" />
-                        </div>
-                        <div className="service-btn">
-                            <button className="btn-3">
-                                Explore
-                                <ArrowForward />
-                            </button>
-                        </div>
-                    </div> */}
                 </div>
             </div>
         </div>
