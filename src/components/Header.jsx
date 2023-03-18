@@ -38,13 +38,13 @@ const Header = ()=>{
                         {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
                         {!user && <Link to="/login" className="auth-link">Log In</Link>}
 
-                        <div className="mobile-menu-item">About Us</div>
+                        {/* <div className="mobile-menu-item">About Us</div>
                         <div className="mobile-menu-item">Services</div>
                         <div className="mobile-menu-item">Contact Us</div>
                         <div className="mobile-menu-item">Blog</div>
                         <div className="mobile-menu-item">FAQs</div>
                         {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
-                        {!user && <Link to="/login" className="auth-link">Log In</Link>}
+                        {!user && <Link to="/login" className="auth-link">Log In</Link>} */}
                         {user && <div className="img-container">
                             <img src={userImg} alt="" />
                         </div>}
