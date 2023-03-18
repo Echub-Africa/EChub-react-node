@@ -13,32 +13,32 @@ export default function FifthSection() {
     <div className='fifth'>
       <div className='row sponsors '>
         <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
-        <img src={logo1} className="logo1" alt = "logo1"/>
+        <img src={logo1} className="logo1" alt="logo1"/>
 
         </div>
         <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
-        <img src={logo2} alt = "logo2"/>
-
-
-        </div>
-        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
-        <img  src={logo3} alt = "logo3"/>
+        <img src={logo2} alt="logo2"/>
 
 
         </div>
         <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
-        <img src={logo4} alt = "logo4"/>
+        <img  src={logo3} alt="logo3"/>
 
 
         </div>
         <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
-        <img src={logo5} alt = "logo5"/>
+        <img src={logo4} alt="logo4"/>
+
+
+        </div>
+        <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
+        <img src={logo5} alt="logo5"/>
 
 
         </div>
        
         <div className='col col-lg-2  col-sm-12 col-md-4 sponsorLogo'>
-        <img  className='lastLogo' src={logo7} alt = "logo7"/>
+        <img  className='lastLogo' src={logo7} alt="logo7"/>
 
 
         </div>

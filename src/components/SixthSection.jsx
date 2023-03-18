@@ -7,7 +7,7 @@ export default function SixthSection() {
       <div className="container">
         <div className="card">
           <div className="card-top">
-            <img src={man} alt="picture of a man" />
+            <img src={man} alt="" />
             <span>Mr. Jeffery</span>
             <small>Manager</small>
             <p>⭐⭐⭐⭐⭐</p>
@@ -18,7 +18,7 @@ export default function SixthSection() {
         </div>
         <div className="card">
           <div className="card-top">
-            <img src={man} alt="picture of a man" />
+            <img src={man} alt="" />
             <span>Mr. Jeffery</span>
             <small>Manager</small>
             <p>⭐⭐⭐⭐⭐</p>
@@ -29,7 +29,7 @@ export default function SixthSection() {
         </div>
         <div className="card">
           <div className="card-top">
-            <img src={man} alt="picture of a man" />
+            <img src={man} alt="" />
             <span>Mr. Jeffery</span>
             <small>Manager</small>
             <p>⭐⭐⭐⭐⭐</p>

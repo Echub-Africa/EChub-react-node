@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Services from "../../components/Reusable/Services/Services";
 import Challenges from "../../components/LoginHomePage/Challenges.jsx/Challenges";
