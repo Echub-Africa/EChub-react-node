@@ -39,22 +39,22 @@ const ElectricalMaintenance = () => {
           <h2>Projects</h2>
           <div className="three-grid_reusable">
             <article>
-              <img src={img1} alt="electrical cables" />
+              <img src={img1} alt="" />
             </article>
             <article>
-              <img src={img2} alt="electrical cables" />
+              <img src={img2} alt="" />
             </article>
             <article>
-              <img src={img3} alt="electrical cables" />
+              <img src={img3} alt="" />
             </article>
             <article>
-              <img src={img4} alt="electrical cables" />
+              <img src={img4} alt="" />
             </article>
             <article>
-              <img src={img5} alt="electrical cables" />
+              <img src={img5} alt="" />
             </article>
             <article>
-              <img src={img6} alt="electrical cables" />
+              <img src={img6} alt="" />
             </article>
           </div>
           <Customers/>

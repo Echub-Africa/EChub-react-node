@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { MDBInput } from 'mdb-react-ui-kit';
 import LoginFirstDiv from '../components/LoginPageComponents/LoginFirstDiv';
@@ -8,12 +9,10 @@ import LoginThirdDiv from '../components/LoginPageComponents/LoginThirdDiv.jsx'
 export default function LoggedIn() {
   return (
     <div>
-    <NavBar/>
-    <LoginFirstDiv/>
-    <LoginSecondDiv/>
-    <LoginThirdDiv/>
-
-
+      <NavBar/>
+      <LoginFirstDiv/>
+      <LoginSecondDiv/>
+      <LoginThirdDiv/>
     </div>
   )
 }

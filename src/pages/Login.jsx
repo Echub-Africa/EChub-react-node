@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./Login.css";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import './NormalSign.css'
 import echub from '../assets/Vector (1).png'

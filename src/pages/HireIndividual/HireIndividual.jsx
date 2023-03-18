@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import './HireIndividual.css';
 import Header from '../../components/Header';

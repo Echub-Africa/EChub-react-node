@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { useState } from 'react'
 
@@ -6,7 +7,7 @@ import Echub from "../assets/Vector.png"
 
 
 export default function NavBar({user}) {
-  // const [user,setUser]= useState({name:"frank"})
+  //const [user,setUser]= useState({name:"frank"})
   return (
     
   

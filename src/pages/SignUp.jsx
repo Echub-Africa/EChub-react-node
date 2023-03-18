@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./SignUp.css";
 import sign from "../assets/sign.png";
@@ -61,7 +62,7 @@ const SignUp = () => {
   return (
     <div className="d-flex">
       <div className="form-img">
-        <img src={sign} />
+        <img src={sign} alt="" />
       </div>
       <div className="form-input">
         <ToastContainer />
@@ -69,14 +70,14 @@ const SignUp = () => {
           <h2>Create an Account </h2>
           <h6 className="pt-2">SignUp as:</h6>
           <div className="d-flex sign-img pb-3">
-            <img src={sign2} />
-            <img src={sign1} />
+            <img src={sign2} alt="" />
+            <img src={sign1} alt="" />
           </div>
           <p>Create an account with </p>
           <div className="d-flex justify-content-between google">
-            <img src={sign3} />
-            <img src={sign3} />
-            <img src={sign3} />
+            <img src={sign3} alt="" />
+            <img src={sign3} alt="" />
+            <img src={sign3} alt="" />
           </div>
           <div>
             <input
