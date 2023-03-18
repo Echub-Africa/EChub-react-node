@@ -14,10 +14,6 @@ export default function Footer() {
             <Link to="#"><i class="fab fa-linkedin-in"></i> </Link>
             <Link to="#"><i class="fab fa-twitter"></i> </Link>
             <Link to="#"><i class="fab fa-instagram"></i></Link>
-            <Link to="#"><i className="fab fa-facebook-f"></i></Link>
-            <Link to="#"><i className="fab fa-linkedin-in"></i></Link>
-            <Link to="#"><i className="fab fa-twitter"></i></Link>
-            <Link to="#"><i className="fab fa-instagram"></i></Link>
           </div>
         </div>
         <div className='col col-lg-8 col-md-8 col-sm-12 rightFooter'>
