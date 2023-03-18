@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
 import Echub from "../assets/Vector.png"
 import { AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import userImg from '../assets/Ellipse 52.png';
 import './Header.css';
 
@@ -12,28 +13,38 @@ const Header = ()=>{
 
     console.log({user})
 
+    const navigate = useNavigate()
+
     return (
         <header className="header shadow">
             <div className="container">
                 <div className="header-left">
-                    <div className="logo">
+                    <Link to="/" className="logo">
                         <img src={Echub} alt="" />
-                    </div>
+                    </Link>
                     <div className="menu">
-                        <div className="menu-item">About Us</div>
-                        <div className="menu-item">Services</div>
-                        <div className="menu-item">Contact Us</div>
-                        <div className="menu-item">Blog</div>
-                        <div className="menu-item">FAQs</div>
+                        <Link to="/about" className="menu-item">About Us</Link>
+                        <Link to="" className="menu-item">Services</Link>
+                        <Link to="" className="menu-item">Contact Us</Link>
+                        <Link to="" className="menu-item">Blog</Link>
+                        <Link to="" className="menu-item">FAQs</Link>
                     </div>
                     {isNavOpen && <div className="mobile-menu">
+                        <Link to="/about" className="menu-item">About Us</Link>
+                        <Link to="" className="menu-item">Services</Link>
+                        <Link to="" className="menu-item">Contact Us</Link>
+                        <Link to="" className="menu-item">Blog</Link>
+                        <Link to="" className="menu-item">FAQs</Link>
+                        {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                        {!user && <Link to="/login" className="auth-link">Log In</Link>}
+
                         <div className="mobile-menu-item">About Us</div>
                         <div className="mobile-menu-item">Services</div>
                         <div className="mobile-menu-item">Contact Us</div>
                         <div className="mobile-menu-item">Blog</div>
                         <div className="mobile-menu-item">FAQs</div>
-                        {/*{!user && <Link to="/signup" className="auth-link">Sign Up</Link>}*/}
-                        {/*{!user && <Link to="/login" className="auth-link">Log In</Link>}*/}
+                        {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                        {!user && <Link to="/login" className="auth-link">Log In</Link>}
                         {user && <div className="img-container">
                             <img src={userImg} alt="" />
                         </div>}
@@ -41,12 +52,19 @@ const Header = ()=>{
                     </div>}
                 </div>
                 <div className="header-right">
-                    {/*{!user && <Link to="/signup" className="auth-link">Sign Up</Link>}*/}
-                    {/*{!user && <Link to="/login" className="auth-link">Log In</Link>}*/}
-                    {user && <div className="img-container">
-                        <img src={userImg} alt="" />
-                    </div>}
-                    <button>Join the team</button>
+                    {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                    {!user && <Link to="/login" className="auth-link">Log In</Link>}
+                    {user && 
+                        (<div className="img-container">
+                            <img src={userImg} alt="" />
+                        </div>)
+                    }
+                    <button onClick={()=> navigate("join")}>Join the team</button>
+                    {/* <div className="menu-icon" onClick={()=>{ 
+                        setIsOpen(true);                        
+                    }}>
+                        <button>Join the team</button>
+                    </div> */}
                     <div className="menu-icon" onClick={()=>{
                         setIsOpen(true);
                         console.log("Pop up")
@@ -72,21 +90,21 @@ function HireModal({setIsOpen}) {
         <div className="hire-modal-overlay">
             <div className="pop">
                 <div className="close" onClick={()=> setIsOpen(false)}>❌</div>
-                <div className="modal-icon">
+                <Link to="/" className="modal-icon">
                     <img src={Echub} alt="" />
-                </div>
+                </Link>
                 <div className="hire-tech">
                     <div className="tech-header">
                         <h1>HIRE TECHNICIANS</h1>
                     </div>
                     <div className="tech-wrapper">
-                        <div className="tech-item">For Companies</div>
-                        <div className="tech-item">For Individuals</div>
-                        <div className="tech-item">For Building and Construction Projects</div>
-                    </div>
-                    <div className="hire-btn">
+                        <Link to="/company" className="tech-item">For Companies</Link>
+                        <Link to="/individual" className="tech-item">For Individuals</Link>
+                        <Link to="" className="tech-item">For Building and Construction Projects</Link>
+                    </div><br />
+                    <Link to="/company" className="hire-btn">
                         <span>Hire Now</span>
-                    </div>
+                    </Link>
                 </div>
                 <div className="team">
                     <div className="tech-header">
@@ -94,15 +112,15 @@ function HireModal({setIsOpen}) {
                     </div>
                     <div className="tech-wrapper">
                         <div className="tech-item">For Technicians</div>                        
-                    </div>
-                    <div className="hire-btn">
+                    </div><br />
+                    <Link to="/join" className="hire-btn">
                         <span>Join the Team</span>
-                    </div>
+                    </Link>
                 </div>
                 <div className="about">
-                    <div className="tech-header">
+                    <Link to="/about" className="tech-header">
                         <h1>ABOUT US</h1>
-                    </div>
+                    </Link>
                     <div className="tech-wrapper">
                         <div className="tech-item">Events</div>                        
                     </div>

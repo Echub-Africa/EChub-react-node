@@ -15,9 +15,9 @@ const CompanySignUp = () => {
           <img src={echub} alt="" />
         </div>
         <div className="auth-right">
-          {/*<Link to="/" className="auth-close">*/}
-          {/*  <MdClose fontSize={"2rem"} color="#000" />*/}
-          {/*</Link>*/}
+          <Link to="/" className="auth-close">
+           <MdClose fontSize={"2rem"} color="#000" />
+          </Link>
           <div className="auth-logo">
             <img src={echubLogo} alt="" />
           </div>
@@ -27,14 +27,14 @@ const CompanySignUp = () => {
           </div>
           <p className="sign-as">SignUp as:</p>
           <div className="auth-choice">
-            {/*<Link to="/company" className="company-individual">*/}
-            {/*  <img src={companyImg} alt="" />*/}
-            {/*  <h3>Company</h3>*/}
-            {/*</Link>*/}
-            {/*<Link to="/individual" className="company-individual">*/}
-            {/*  <img src={individualImg} alt="" /> */}
-            {/*  <h3>Individual</h3>*/}
-            {/*</Link>*/}
+            <Link to="/company" className="company-individual">
+             <img src={companyImg} alt="" />
+             <h3>Company</h3>
+            </Link>
+            <Link to="/individual" className="company-individual">
+             <img src={individualImg} alt="" />
+             <h3>Individual</h3>
+            </Link>
           </div>
           <p className="create-with">Create an account with</p>
           <div className="auth-alternate">
@@ -83,7 +83,7 @@ const CompanySignUp = () => {
             </div>
             <div className='account'>
               <span>Already have an account.</span>
-              {/*<Link to='/login'>LOGIN</Link>*/}
+              <Link to='/login'>LOGIN</Link>
             </div>
           </div>
         </div>

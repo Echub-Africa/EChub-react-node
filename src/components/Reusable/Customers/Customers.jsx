@@ -1,5 +1,5 @@
 import React from 'react'
-import { customersList } from '../../ElectricalMaintainance/staticdata'
+import { customersList } from '../../../pages/ElectricalMaintainance/staticdata'
 import starrate from "../../../assets/electricalImages/star_rate.png";
 import styling from './customer.module.css'
 

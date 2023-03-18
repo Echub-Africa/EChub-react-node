@@ -1,15 +1,17 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import './NormalSign.css'
+import './SignUp.css'
 import echub from '../assets/Echub Logo (1).png'
 import { ToastContainer, toast } from 'react-toastify';
 import { Link } from 'react-router-dom'
 
 const NormalSign = () => {
     // SETTING PASSWORD VISIBILITY
-  const [passwordShown, setPasswordShown] = useState(false);
-  const togglePassword = () => {
-    setPasswordShown(!passwordShown);
-  };
+  // const [passwordShown, setPasswordShown] = useState(false);
+  // const togglePassword = () => {
+  //   setPasswordShown(!passwordShown);
+  // };
 
   // VALIDATING THE FORM
   const[form, setForm] = useState({
@@ -68,8 +70,8 @@ function HandleSubmit(e){
             <input type='text' name = 'name' onChange={HandleChange} placeholder=''/>
           </div>
           <div className="input-wrap">
-            <label htmlFor="">Nothing Here</label>
-            <input type="text" />
+            <label htmlFor="">Password</label>
+            <input type="password" />
           </div>
         </div>
         <div className='d-flex input-flex justify-content-between'>

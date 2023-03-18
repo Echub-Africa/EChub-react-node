@@ -4,11 +4,11 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import echub from "../assets/Vector.png";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const router = useHistory();
+  const navigate = useNavigate();
 
   return (
     <div className="login">
@@ -51,7 +51,7 @@ const Login = () => {
               </div>
               <div
                 className="forgot-pwd"
-                onClick={() => router.push("/auth/forgot-password")}
+                onClick={() => navigate("/resetpassword")}
               >
                 <p>Forgot Password?</p>
               </div>
@@ -61,7 +61,7 @@ const Login = () => {
             </div>
             <div className="dha">
               <span>Don't have an account?</span>
-              <Link to="/auth/signup"> Sign up</Link>
+              <Link to="/signup"> Sign up</Link>
             </div>
           </div>
         </div>
