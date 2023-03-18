@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
-import './Login.css'
-import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai';
-import { MdClose } from 'react-icons/md';
-import { Link } from 'react-router-dom'
-import echub from '../assets/Vector.png'
-
+import React, { useState } from "react";
+import "./Login.css";
+import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
+import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
+import echub from "../assets/Vector.png";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="login">
@@ -30,10 +31,17 @@ const Login = () => {
               <label htmlFor="">Password</label>
               <div className="input-password">
                 <input type={isVisible ? "text" : "password"} />
-                {isVisible ? 
-                  (<AiOutlineEyeInvisible onClick={()=> setIsVisible(!isVisible)} fontSize={"2rem"} />) : 
-                  (<AiOutlineEye onClick={()=> setIsVisible(!isVisible)} fontSize={"2rem"} />)
-                }
+                {isVisible ? (
+                  <AiOutlineEyeInvisible
+                    onClick={() => setIsVisible(!isVisible)}
+                    fontSize={"2rem"}
+                  />
+                ) : (
+                  <AiOutlineEye
+                    onClick={() => setIsVisible(!isVisible)}
+                    fontSize={"2rem"}
+                  />
+                )}
               </div>
             </div>
             <div className="forgot">
@@ -41,7 +49,10 @@ const Login = () => {
                 <input type="checkbox" />
                 <span>Remember me</span>
               </div>
-              <div className="forgot-pwd">
+              <div
+                className="forgot-pwd"
+                onClick={() => navigate("/resetpassword")}
+              >
                 <p>Forgot Password?</p>
               </div>
             </div>
@@ -50,13 +61,13 @@ const Login = () => {
             </div>
             <div className="dha">
               <span>Don't have an account?</span>
-              <Link to="/signup">Sign up</Link>
+              <Link to="/signup"> Sign up</Link>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

@@ -5,12 +5,13 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
 import userImg from '../assets/Ellipse 52.png';
 import './Header.css';
-//import HireModal from './HireModal';
 
 const Header = ()=>{
     const [isOpen, setIsOpen] = useState(false);
-    const [user, setUser] = useState(false)
-    const [isNavOpen, setIsNavOpen] = useState(false)
+    const [user, setUser] = useState(false);
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    console.log({user})
 
     const navigate = useNavigate()
 
@@ -36,6 +37,14 @@ const Header = ()=>{
                         <Link to="" className="menu-item">FAQs</Link>
                         {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
                         {!user && <Link to="/login" className="auth-link">Log In</Link>}
+
+                        <div className="mobile-menu-item">About Us</div>
+                        <div className="mobile-menu-item">Services</div>
+                        <div className="mobile-menu-item">Contact Us</div>
+                        <div className="mobile-menu-item">Blog</div>
+                        <div className="mobile-menu-item">FAQs</div>
+                        {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                        {!user && <Link to="/login" className="auth-link">Log In</Link>}
                         {user && <div className="img-container">
                             <img src={userImg} alt="" />
                         </div>}
@@ -45,22 +54,29 @@ const Header = ()=>{
                 <div className="header-right">
                     {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
                     {!user && <Link to="/login" className="auth-link">Log In</Link>}
-                    {user && <div className="img-container">
-                        <img src={userImg} alt="" />
-                    </div>}
+                    {user && 
+                        (<div className="img-container">
+                            <img src={userImg} alt="" />
+                        </div>)
+                    }
                     <button onClick={()=> navigate("join")}>Join the team</button>
-                    <div className="menu-icon" onClick={()=>{ 
+                    {/* <div className="menu-icon" onClick={()=>{ 
                         setIsOpen(true);                        
+                    }}>
+                        <button>Join the team</button>
+                    </div> */}
+                    <div className="menu-icon" onClick={()=>{
+                        setIsOpen(true);
                         console.log("Pop up")
                     }}>
-                        <AiOutlineMenu size={35} />                        
+                        <AiOutlineMenu size={35} />
                     </div>
-                    <div className="mobile-menu-icon" onClick={()=>{ 
+                    <div className="mobile-menu-icon" onClick={()=>{
                         setIsNavOpen(!isNavOpen);
                         console.log("Pop up")
                     }}>
                         {!isNavOpen && <AiOutlineMenu size={35} />}
-                        {isNavOpen && <span>❌</span>}                 
+                        {isNavOpen && <span>❌</span>}
                     </div>
                 </div>
             </div>

@@ -34,7 +34,7 @@
     gap: 20px;
     justify-content: flex-end;
     align-items: center;
-    width: 30%;        
+    width: 30%;
 }
 .header .header-right button{
     background: #085BDA;
@@ -42,7 +42,7 @@
     border-radius: 12px;
     color: white;
     padding: 18px 20px;
-    width: 100%; 
+    width: 100%;
 }
 .header .header-right button:active, .header .header-right button:hover{
     opacity: .7;
@@ -58,7 +58,7 @@
     display: grid;
     place-items: center;
     padding: 40px 80px;
-    
+
 }
 .step .step-header{
     text-align: center;
@@ -149,7 +149,7 @@
     margin-bottom: 7em;
 }
 .hire .hire-left-container h1{
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -158,7 +158,7 @@
     margin-bottom: 2rem;
 }
 .hire .hire-left-container p{
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -177,14 +177,14 @@
 }
 .hire .hire-form .input-group{
     display: flex;
-    display: space-between;
+    justify-content: space-between;
     gap: 30px;
 }
 .hire .hire-form .input-form{
     display: flex;
-    flex-direction: column;  
-    margin-top: 2rem; 
-    width: 100%; 
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
 }
 .hire .hire-form .input-form label{
     color: #000;
@@ -268,7 +268,6 @@
     width: 30%;
     display: flex;
     justify-content: center;
-    
 }
 .quote button{
     font-style: normal;
@@ -393,6 +392,9 @@
         font-size: 18px;
         padding: 15px 40px;
         cursor: pointer;
+    }
+    .quote .quote-btn button {
+       margin: 0 20px;
     }
 }
 

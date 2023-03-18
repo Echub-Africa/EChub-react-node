@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import { Route, Routes} from "react-router-dom"
 
 
 import './App.css';
 import Home from "./pages/Home.jsx"
 import NormalSign from "./pages/NormalSign.jsx";
-import Login from './pages/Login.jsx'
+import Login from "./pages/Login.jsx";
 import Carpentry from "./pages/Carpentry/Carpentry.jsx";
 import ElectricalMaintenance from './pages/ElectricalMaintainance/ElectricalMaintenance'
 import HireIndividual from "./pages/HireIndividual/HireIndividual.jsx";
@@ -19,12 +19,9 @@ import CompanySignUp from './pages/Authentication/CompanySignUp'
 import ResetPassword from './pages/ResetPassword.jsx'
 
 
-
-
 const App = () => {
   return (
     <>
-    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<NormalSign />} />
@@ -39,9 +36,8 @@ const App = () => {
         <Route path="/hire-individual" element={<HireIndividual />} />
         <Route path="/about" element={<AboutTech />} />
       </Routes>
-    </Router>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

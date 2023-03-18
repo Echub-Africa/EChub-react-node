@@ -16,7 +16,7 @@ const CompanySignUp = () => {
         </div>
         <div className="auth-right">
           <Link to="/" className="auth-close">
-            <MdClose fontSize={"2rem"} color="#000" />
+           <MdClose fontSize={"2rem"} color="#000" />
           </Link>
           <div className="auth-logo">
             <img src={echubLogo} alt="" />
@@ -28,12 +28,12 @@ const CompanySignUp = () => {
           <p className="sign-as">SignUp as:</p>
           <div className="auth-choice">
             <Link to="/company" className="company-individual">
-              <img src={companyImg} alt="" />
-              <h3>Company</h3>
+             <img src={companyImg} alt="" />
+             <h3>Company</h3>
             </Link>
             <Link to="/individual" className="company-individual">
-              <img src={individualImg} alt="" /> 
-              <h3>Individual</h3>
+             <img src={individualImg} alt="" />
+             <h3>Individual</h3>
             </Link>
           </div>
           <p className="create-with">Create an account with</p>
