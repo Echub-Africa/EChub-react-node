@@ -1,1068 +1,1022 @@
-
 body::-webkit-scrollbar {
-      display: none;
-    }
+    display: none;
+}
+
+
 /* html,body{
       overflow-x: hidden;
 } */
 
+.active,
+.bold {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.terry {
+    color: red;
+}
+
+.check {
+    position: absolute;
+}
+
+.firstSection {
+    background-image: linear-gradient(to right, #84ADEC, #C1D6F6);
+    display: flex;
+    margin-top: 5.5em;
+}
+
+.firstSection .first-container {
+    width: 100%;
+    padding: 0 3em;
+    gap: 5em;
+}
+
+.firstSection h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    width: 667px;
+    color: #000;
+}
+
+.firstSection .firstButton {
+    font-size: 15px;
+    background: #085BDA;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+}
+
+.firstSection p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    width: 645px;
+    margin-top: 12px;
+}
+
+.firstSection img {
+    width: 462px;
+    height: 595px;
+}
+
+.secondSection .second-h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    font-family: var(--primary-font);
+}
+
+.secondSection img {
+    width: 27px;
+    height: 27px;
+}
+
+.secondSection p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+}
+
+.thirdSection {
+    background-color: #e6ebf3;
+    display: flex;
+    justify-content: center;
+    padding: 0 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 1em;
+}
+
+.thirdSection .third h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    color: #000000;
+    font-family: var(--tertiary-font);
+}
+
+.thirdSection .third li {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.electrician {
+    height: 500px;
+    width: auto;
+    float: right;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customCard {
+    height: 250px;
+    width: 250px;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    box-shadow: 20px 25px 10px -4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* border: 3px solid; */
+    /* border-top: 2px solid #FDE8B3; */
+}
+
+.card1 {
+    background-image: url("./assets/electrical.png");
+    border-radius: 15px;
+}
+
+.card1Header {
+    color: black;
+    background-color: #FDE8B3;
+    padding-top: 5px;
+    /* border-top: 2px solid #FDE8B3; */
+    /* margin-bottom: 0; */
+    height: 17%;
+    border: 3px solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 25px;
+}
+
+.card2Header {
+    background-color: #C1D6F6;
+    color: black;
+    height: 17%;
+    border: 3px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 25px;
+    padding-top: 4px;
+}
+
+.card3Header {
+    background-color: #085bda;
+    color: black;
+    font-size: 25px;
+    height: 17%;
+    padding-top: 2px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 3px solid black;
+}
+
+.card1Button {
+    width: 40%;
+    background-color: #085bda;
+    color: #ffffff;
+    padding: 6px 6px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.card2Button {
+    width: 40%;
+    background-color: #FDE8B3;
+    padding: 6px 6px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.fourth {
+    background-image: url("./assets//why\ blue\ collar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.fourth h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+    font-family: var(--tertiary-font);
+}
+
+.card2 {
+    background-image: url("./assets/carpentry1.jpg");
+    border-radius: 15px;
+    outline: none;
+    /* border-top:3px solid #085bda; */
+}
+
+.card3 {
+    background-image: url("./assets/plumbing.jpg");
+    border-radius: 15px;
+}
+
+.card4 {
+    background-image: url("./assets/electronics.png");
+    object-fit: cover;
+    border-radius: 15px;
+    /* border-radius: 20px; */
+}
+
+.cardExplore {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-body {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+}
+
+.cardDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.dualCard {
+    display: flex;
+    gap: 8px;
+}
+
+.exclude {
+    position: relative;
+    /* transform: rotate(3.142rad); */
+    transform: rotate(10deg);
+    /* top: 0px; */
+    left: 280px;
+    bottom: 100px;
+}
+
+.secondFirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstButton {
+    width: 250px;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondSection {
+    padding: 0 3em;
+    height: auto;
+    margin-top: 5em;
+    background-image: url('./assets/Exclude.png');
+    background-position-x: 1100px;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center center;
+    column-gap: 2em;
+}
+
+.secondSection>div:nth-of-type(2)>iframe {
+    width: 100%;
+    height: 311px;
+    object-fit: contain;
+}
+
+.secondSection>div:nth-of-type(2) {
+    width: 80%;
+}
+
+.fifth {
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.paragraph {
+    display: flex;
+    gap: 10px;
+}
+
+.para {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.lastLogo {
+    width: 100px;
+    height: 96px;
+    object-fit: contain;
+    /* background-color: red; */
+    background-color: transparent;
+    position: relative;
+    /* bottom: 35px; */
+}
+
+.man {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    clip-path: circle();
+    position: relative;
+    bottom: 20px;
+}
 
-.active,.bold{
-      font-weight: bold;
-      font-size: 17px;
-}
-.terry{
-      color: red;
-}
-
-.check{
-      position: absolute;
-}
-
-.firstSection{      
-      background-image: linear-gradient(to right,  #84ADEC,#C1D6F6 );          
-      display: flex;  
-      margin-top: 5.5em;    
-}
-.firstSection .first-container{
-      width: 80%;
-}
-.firstSection h1{
-      font-weight: 700;
-      font-size: 45px;
-      line-height: 53px;
-      width: 667px;
-      color: #000;
-}
-.firstSection .firstButton{
-      font-size: 15px;
-      background: #085BDA;
-      border-radius: 5px;
-      border: none;
-      color: #fff;
-      text-transform: uppercase;
-      width: 300px;
-      text-align: center;
-}
-.firstSection p{
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 23px;
-      color: #000000;
-      width: 645px;
-      margin-top: 12px;
-}
-.firstSection img{
-      width: 462px;
-      height: 595px;
-}
-
-
-.secondSection .second-h1{
-      font-size: 40px;
-      font-weight: 700;
-      color: #000;
-}
-.secondSection img{
-      width: 27px;
-      height: 27px;
-}
-.secondSection p{
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 21px;
-      color: #000;
-}
-
-.thirdSection{      
-      background-color: #e6ebf3;
-      display: flex;
-      justify-content: center;
-}
-.thirdSection .third h1{
-      font-style: normal;
-      font-weight: 700;
-      font-size: 45px;
-      line-height: 60px;
-      color: #000000;
-      font-family: 'times new roman';
-}
-.thirdSection .third li{
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 35px;
-      color: #000000;
-}
-
-.electrician{
-      height: 500px;
-      width: auto;
-      
-      float: right;
-}
-
-.leftSection{
-      display: flex;
-      flex-direction: column;      
-      justify-content: center;
-}
-.firstFrame{
-      /* border: 5px solid #085bda ; */
-      position: relative;
-      bottom: 1150px;
-      left: 70px;
-      border-radius: 5px;     
-}
-.customCard{
-      height: 250px;
-      width: 250px;
-      /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-      box-shadow: 20px 25px 10px -4px rgba(0,0,0,0.1);
-      transition: 0.3s;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      /* border: 3px solid; */
-      /* border-top: 2px solid #FDE8B3; */
-
-}
-
-.card1{
-      background-image: url("./assets/electrical.png");
-      
-      border-radius: 15px;
-
-}
-.card1Header{
-      color: black;
-      background-color: #FDE8B3;
-      padding-top: 5px;
-      /* border-top: 2px solid #FDE8B3; */
-    
-      
-      /* margin-bottom: 0; */
-      
-      
-      height: 17%;
-      border: 3px solid ;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      font-size: 25px;
-}
-.card2Header{
-      background-color: #C1D6F6;
-      color: black;
-      height: 17%;
-      border: 3px solid black;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      font-size: 25px;
-      padding-top: 4px;
-
-
-}
-.card3Header{
-      background-color: #085bda;
-      color: black;
-      font-size: 25px;
-      height: 17%;
-      padding-top: 2px;
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      border: 3px solid black;
+.secondFrame {
+    border-radius: 15px;
+}
+
+.testimonyCard {
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+}
+
+.cardText,
+.card-text {
+    position: relative;
+    bottom: 30px;
+}
+
+.jeffrey {
+    margin-bottom: 0px;
+}
+
+.testimony-card {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    margin: 0;
+}
+
+.trustHeader {
+    color: white;
+}
+
+.seventh {
+    background: whitesmoke;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.seventh .wrapper {
+    background-color: black;
+    width: 70%;
+    padding: 8rem;
+}
+
+.seventh .wrapper h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    font-family: 'times new roman';
+}
+
+.seventh .seventh-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.trusted {
+    background-color: aliceblue;
+    height: 119px;
+    width: 119px;
+    clip-path: circle();
+    object-fit: contain;
+    /* object-fit: cover; */
+}
 
+.trustedBy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.div1,
+.div2 {
+    display: flex;
+    gap: 8px;
+}
 
+.sixthSection {
+    background-color: whitesmoke;
+    padding-top: 4rem;
+    width: 100%;
+    padding: 3em;
 }
-.card1Button{
-      width: 40%;
-      background-color: #085bda;
-      
-      color: #ffffff;
-      padding: 6px 6px;
-      border-radius: 5px;
-      outline: none;
-      border: none;
-      position: relative;
-      top: 150px;
-      left: 50px;
+
+.sixthSection .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
-.card2Button{
-      width: 40%;
-      background-color: #FDE8B3;
-      padding: 6px 6px;
-      border-radius: 5px;
-      outline: none;
-      border: none;
-      position: relative;
-      top: 150px;
-      left: 50px;
-      
+
+.sixthSection .card .card-top {
+    text-align: center;
+    display: grid;
+    place-items: center;
 }
-.fourth{
-      background-image: url("./assets//why\ blue\ collar.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-}
-.fourth h1{
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 53px;
-      color: #000000;
-      font-family: 'times new roman';
-}
-
-.card2{
-      background-image: url("./assets/carpentry1.jpg");
-      border-radius: 15px;
-      outline: none;
-      /* border-top:3px solid #085bda; */
-
-
-}
-.card3{
-      background-image: url("./assets/plumbing.jpg");
-      border-radius: 15px;
-      
-
-
-
-
-}
-.card4{
-      background-image: url("./assets/electronics.png");
-      object-fit: cover;
-      border-radius: 15px;
-
-      /* border-radius: 20px; */
-
-}
-.cardExplore{
-
-
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-      border-top-left-radius: 18px;
-      border-top-right-radius: 18px;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-
-
-      
-
-}
-
-.card-body{
-      
-      padding-top: 0;
-      padding-left: 0;
-      padding-right: 0;
-      
-}
-
-
-
-.third{
-      display: flex;
-      flex-direction: column;
-      /* align-items: center; */
-      justify-content: center;
-
-}
-.cardDiv{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-}
-.dualCard{
-      display: flex;
-      gap: 8px;
-}
-.exclude{
-      position: relative;
-      /* transform: rotate(3.142rad); */
-      transform: rotate(10deg);
-      /* top: 0px; */
-      left: 280px;
-      bottom: 100px;
-}
-
-.secondFirst{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-}
-.firstButton{
-      width: 250px;
-      font-size: 17px;
-      font-weight: bold;
-      padding-left: 5px;
-      padding-right: 5px;
-}
-.secondLeft{
-      height: 400px;
-}
-.why{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-}
-.secondSection{
-      background-color: #ffffff;
-      padding-left: 34px;
-      padding-right: 34px;      
-      
-      /* background-color: red; */
-}
-.fifth{
-      background-color: #ffffff;
-      /* background-color: red; */
-      width: 100%;
-      margin-top: 1.8rem;
-      margin-bottom: 2rem;
-      
-}
-.paragraph{
-      display: flex;
-      /* align-items: center; */
-      gap: 4px;
-      
-}
-.para{
-      margin-bottom: 0;
-      font-weight: bold;
-      /* font-size: 20px; */
-}
-
 
+.sixthSection .card small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
 
-.lastLogo{
-      width: 100px;
-      height: 96px;
-      object-fit: contain;
-      /* background-color: red; */
-      background-color: transparent;
-      position: relative;
-      /* bottom: 35px; */
+.sixthSection .card {
+    color: #000000;
+    margin-bottom: 2.8rem;
+}
 
-      
-}
-.man{
-      height: 90px;
-      width: 90px;
-      object-fit: cover;
-      clip-path: circle();
-      position: relative;
-      bottom: 20px;      
-}
-.secondFrame{
-      border-radius: 15px;
-}
-.testimonyCard{
-      width: 300px;
-      height: 200px;
-      padding: 15px;
-  
-    
-    
-
-
-     
-}
-
-
-.cardText,.card-text{
-      position: relative;
-      bottom: 30px;
-}
-.jeffrey{
-      margin-bottom: 0px;
-}
-.testimony-card{
-      width: 100%;
-      height: 100%;
-      padding: 0px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-}
-.card-text{
-      margin: 0;
-}
-.trustHeader{
-      color: white;
-}
-
-
-.seventh{
-      background: whitesmoke;
-      padding-top: 3rem;
-      padding-bottom: 6rem;
-      display: flex;
-      justify-content: center;
-}
-.seventh .wrapper{
-      background-color: black;
-      width: 70%;
-      padding: 8rem;
-}
-.seventh .wrapper h1{
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 53px;
-      text-align: center;
-      font-family: 'times new roman';
-}
-.seventh .seventh-logos{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-}
-
-
-.trusted{
-      background-color: aliceblue;
-      height: 119px;
-      width: 119px;
-      clip-path: circle();
-      object-fit: contain;
-
-      /* object-fit: cover; */
-
-}
-
-.trustedBy{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-}
-.div1,.div2{
-      display: flex;
-      gap: 8px;
-}
-.sixthSection{      
-      background-color: whitesmoke;
-      padding-top: 4rem;      
-      padding-bottom: 3rem;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-}
-
-.sixthSection .container{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-}
-.sixthSection .card .card-top{
-      text-align: center;
-      display: grid;
-      place-items: center;
-}
-.sixthSection .card small{
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 15px;
-}
-.sixthSection .card{
-      color: #000000;
-      margin-bottom: 2.8rem;
-      /* position: relative; */
-}
-.sixthSection .card span{
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
-}
-.sixthSection .card img{
-      width: 80px;
-      height: 80px;
-      margin-top: -40px;
-      border-radius: 100%;
-      object-fit: cover;
-      z-index: 999;
+.sixthSection .card span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
-.sixthSection .card .card-body{
-      padding: 20px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-}
-
-
-
-.items{
-      /* display: flex; */
-      /* flex-direction: column; */
-      /* align-items: center; */
-      /* justify-content: center; */
-}
-.footerIcons{
-      display: flex;
-      gap: 15px;
-}
-.footer{
-      background-color: black;
-}
-.fa-instagram,.fa-twitter,.fa-facebook-f,.fa-linkedin-in{
-      color: white;
-      /* background-color: white; */
-}
-.subscribe{
-      width: 500px;
-      height: 50px;
-      outline: none;
-      /* border: 3px solid #085bda; */
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-      border-right: none;
-      border-top: none;
-      border-bottom: none;
-      padding-bottom: 0px;
-      padding-top: 0;
+
+.sixthSection .card img {
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    border-radius: 100%;
+    object-fit: cover;
+    z-index: 999;
 }
-.subscribeButton{
-      height: 50px;
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-      width: 150px;
-      padding-bottom: 10px;
 
+.sixthSection .card .card-body {
+    padding: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
 
+.items {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
 
+.footerIcons {
+    display: flex;
+    gap: 15px;
 }
 
+.footer {
+    background-color: black;
+}
 
-.accordions{
-      display: grid;
-      place-items: center;
-      margin-bottom: 4rem;
+.fa-instagram,
+.fa-twitter,
+.fa-facebook-f,
+.fa-linkedin-in {
+    color: white;
+    /* background-color: white; */
 }
-.accordions h1{
-      font-family: 'Times New Roman', Times, serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 53px;
 
-      color: #000000;
+.subscribe {
+    width: 500px;
+    height: 50px;
+    outline: none;
+    /* border: 3px solid #085bda; */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-top: 0;
 }
-.accordions .accordion-header button{
-      font-style: normal;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 19px;      
-      color: #000000;
+
+.subscribeButton {
+    height: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 150px;
+    padding-bottom: 10px;
 }
 
+.accordions {
+    display: grid;
+    place-items: center;
+    margin-bottom: 4rem;
+}
 
-.know{
-      color: white;
+.accordions h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
 }
-.subscribe:focus{
-      border: 3px solid #085bda;;
-      /* outline:3px solid #FDE8B3; */
+
+.accordions .accordion-header button {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #000000;
 }
-.subscribeDiv{
-      display: flex;
-      align-items: center;
-      /* justify-content: center; */
+
+.know {
+    color: white;
 }
-.footerBrand{
-      color: #ffffff;
-      background-color: #085bda;
-      width: 60%;
-      padding-top: 9px;
-      padding-bottom: 15px;
-      padding-left: 16px;
-      padding-right: 5px;
-      margin-bottom: 50px;
 
+.subscribe:focus {
+    border: 3px solid #085bda;
+    ;
+    /* outline:3px solid #FDE8B3; */
 }
 
-.footer{
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      padding-left: 30px;
-      padding-right: 36px;
-      /* align-items: center; */
-      justify-content: center;
-      padding-bottom: 15px;
+.subscribeDiv {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 }
-.leftFooter{
-      display: flex;
-      flex-direction: column;
-      /* height: 100%; */
-      /* padding-left: 30px; */
-      /* align-items: center; */
-      /* justify-content: center; */
+
+.footerBrand {
+    color: #ffffff;
+    background-color: #085bda;
+    width: 60%;
+    padding-top: 9px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 5px;
+    margin-bottom: 50px;
 }
-.footerRow{
-      display: flex;
-      /* flex-direction: column; */
-      /* align-items: center; */
-      justify-content: center;
+
+.footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 36px;
+    /* align-items: center; */
+    justify-content: center;
+    padding-bottom: 15px;
 }
-.footerDivs{
-      display: flex;
-      gap: 30px;
 
+.leftFooter {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    /* padding-left: 30px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
 
+.footerRow {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+}
 
+.footerDivs {
+    display: flex;
+    gap: 30px;
 }
-.footerP{
-      margin-bottom: 0;
-      color: #ffffff;
 
+.footerP {
+    margin-bottom: 0;
+    color: #ffffff;
 }
-.footerHeader{
-      color: #ffffff;
+
+.footerHeader {
+    color: #ffffff;
 }
-.white{
-      color: #ffffff;
-      font-size: 23px;
-      font-weight: bold;
+
+.white {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
 }
+
 .change:before {
-      font-size: 28px;
-      color: #FDE8B3;
-      content: "Plumbers";
-      animation: animate infinite 4s;
-
- }
-  @keyframes animate {
-  
-      0% {
-          content: "Plumbers";
-      }
-
-      50% {
-          content: "Electricians";
-      }
-
-      75% {
-          content: "Carpenters";
-      }
-  }
-  .brand{
-      color: #085bda;
-      font-weight: bold;
-      font-size: 17.5px;
-      
+    font-size: 28px;
+    color: #FDE8B3;
+    content: "Plumbers";
+    animation: animate infinite 4s;
 }
+
+@keyframes animate {
+    0% {
+        content: "Plumbers";
+    }
+    50% {
+        content: "Electricians";
+    }
+    75% {
+        content: "Carpenters";
+    }
+}
+
+.brand {
+    color: #085bda;
+    font-weight: bold;
+    font-size: 17.5px;
+}
+
 
 /* .testimonyCard{
       margin-top: 100px;
 } */
 
-
-
-@media screen and (min-width: 200px) and (max-width: 1024px){
-      .firstSection .first-container{
-            display: grid;
-            grid-template-columns: unset;
-            margin-top: 5rem;
-            justify-content: center;
-            width: 100%;
-            overflow: none;
-      }
-      .firstSection .leftSection{
-            padding: 30px;
-            width: 100%;
-      }
-      .imageDiv{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-      }
-      .firstSection h1{
-            width: 100%;           
-      }
-      .firstSection p{
-            width: 100%;
-      }
-      
-
-
-
-      body,html{
-            margin: 0;
-      
-      }
-      .change{
-            font-size: 0px;
-            font-weight: 500px;
-            /* height: 1px; */
-            /* background-color: red; */
-      }
-      .cardExplore{
-      border-top-right-radius: 18px;
-
-      }
-   
-      
-      .footer{
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 10px;
-      }
-      .accordions{
-            height: auto;
-            
-      }
-      .accordionRow{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-      }
-      .top{
-            margin-bottom: 15px;
-      }
-    
-      .trustHeader{
-            margin-bottom: 20px;
-      }
-      .seventh{
-            padding-left: 0;
-            padding-right: 0;
-            padding-top: 18px;
-            padding-bottom: 20px;
-      }
-      .div1,.div2{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      }
-      .cardRow{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      }
-      .secondFrame{
-            height: 300px;
-            width: 300px;
-      }
-      .bold{
-            font-size: 20px;
-      }
-      .secondRow{
-            display: flex;
-            flex-direction: column;
-      }
-      .firstFrame{
-            left: 10px;
-      }
-      .secondRow{
-            height: 750px;
-            overflow: hidden;
-      }
-      .imageDiv{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-      }
-      .secondSection{
-            height: auto;
-      }
-      .dualCard{
-            display: flex;
-            flex-direction: column;
-      }
-      .sponsors,.fifth{
-          gap: 12px;
-          margin: auto;
-          align-items: center;
-          justify-content: center;
-      }
-      .sponsorLogo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      }
-      .accordions{
-            padding-top: 70px;
-            /* display: flex; */
-            /* align-items: center; */
-            /* justify-content: center; */
-            /* padding-top: 36px; */
-            padding-bottom: 24px;
-            
-            height: auto;
-            padding-left: 36px;
-            padding-right: 36px;
-      }
-    
-    
-     
-     
-      
-  
-      /* CSS */
-      
+@media screen and (min-width: 200px) and (max-width: 1024px) {
+    .firstSection .first-container {
+        display: grid;
+        grid-template-columns: unset;
+        margin-top: 5rem;
+        justify-content: center;
+        width: 100%;
+        overflow: none;
+    }
+    .firstSection .leftSection {
+        padding: 30px;
+        width: 100%;
+    }
+    .imageDiv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .firstSection h1 {
+        width: 100%;
+    }
+    .firstSection p {
+        width: 100%;
+    }
+    body,
+    html {
+        margin: 0;
+    }
+    .change {
+        font-size: 0px;
+        font-weight: 500px;
+        /* height: 1px; */
+        /* background-color: red; */
+    }
+    .cardExplore {
+        border-top-right-radius: 18px;
+    }
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+    .accordions {
+        height: auto;
+    }
+    .accordionRow {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .top {
+        margin-bottom: 15px;
+    }
+    .trustHeader {
+        margin-bottom: 20px;
+    }
+    .seventh {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 18px;
+        padding-bottom: 20px;
+    }
+    .div1,
+    .div2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .secondFrame {
+        height: 300px;
+        width: 300px;
+    }
+    .bold {
+        font-size: 20px;
+    }
+    .secondRow {
+        display: flex;
+        overflow: hidden;
+    }
+    .imageDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .dualCard {
+        display: flex;
+        flex-direction: column;
+    }
+    .sponsors,
+    .fifth {
+        gap: 12px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .sponsorLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .accordions {
+        padding-top: 70px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding-top: 36px; */
+        padding-bottom: 24px;
+        height: auto;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    /* CSS */
 }
 
-@media screen and (min-width: 200px) and (max-width: 500px){
-      .firstSection h1{
-            font-size: 25px;            
-            width: 90%;
-            line-height: unset;
-      }
-      .firstSection p{
-            font-size: 20px;
-            width: 90%
-      }
-      .firstSection small{
-            font-size: 18px;
-      }
-      .fristSection div{
-            width: 100%;
-            height: auto;
-      }
-      .firstSection img{
-            width: 100%;
-            height: auto;
-      }
-      .firstSection .firstButton{
-            width: 100%;
-      }
+@media screen and (min-width: 200px) and (max-width: 500px) {
+    .firstSection h1 {
+        font-size: 25px;
+        width: 90%;
+        line-height: unset;
+    }
+    .firstSection p {
+        font-size: 20px;
+        width: 90%
+    }
+    .firstSection small {
+        font-size: 18px;
+    }
+    .fristSection div {
+        width: 100%;
+        height: auto;
+    }
+    .firstSection img {
+        width: 100%;
+        height: auto;
+    }
+    .firstSection .firstButton {
+        width: 100%;
+    }
+    .secondSection .second-h1 {
+        font-size: 30px;
+    }
+    .secondSection p {
+        font-size: 16px;
+    }
+    .seventh {}
+    .seventh .wrapper {
+        width: 100%;
+    }
+    .seventh .wrapper .trustedBy {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .seventh .wrapper .trustedBy h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .thirdSection .third h1 {
+        font-size: 30px;
+    }
+    .thirdSection .third li {
+        font-size: 16px;
+    }
+    .subscribeDiv {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .subscribe {
+        width: unset;
+        border-radius: 10px;
+    }
+    .subscribeButton {
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .footerDivs {
+        flex-wrap: wrap;
+    }
+}
 
-      
-      .secondSection .second-h1{
-            font-size: 30px;
-      }
-      .secondSection p{
-            font-size: 16px;
-      }
-      .secondSection div{
-            width: 100%;
-      }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .electrician {
+        width: 400px;
+    }
+    .leftFooter {
+        padding-top: 80px;
+        /* height: 100%; */
+        border-right: 3px solid #ffffff;
+    }
+    .rightFooter {}
+    .footerRow {
+        height: 100%;
+    }
+    .footerBrand {
+        color: #ffffff;
+        background-color: #085bda;
+        width: 85%;
+        padding-top: 9px;
+        padding-bottom: 15px;
+        /* padding-left: 16px; */
+        /* padding-right: 5px; */
+        margin-bottom: 20px;
+    }
+    .accordions {
+        height: auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .top {
+        margin-bottom: 35px;
+    }
+    .testimonyCard {
+        height: auto;
+        width: auto;
+    }
+    .man {
+        bottom: 60px;
+    }
+    .sponsors,
+    .fifth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* gap: 3px */
+    }
+    .sponsorLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div1,
+    .div2 {
+        align-items: center;
+        justify-content: center;
+    }
+}
 
-      .seventh{
-            
-      }
-      .seventh .wrapper{
-            width: 100%;
-      }
-      .seventh .wrapper .trustedBy{
-            width: 100%;
-            margin-bottom: 30px;
-      }
-      .seventh .wrapper .trustedBy h1{
-            font-size: 30px;
-            width: 100%;
-      }
-
-      .thirdSection .third h1{
-            font-size: 30px;
-      }
-      .thirdSection .third li{
-            font-size: 16px;
-      }
-
-      .subscribeDiv{
-            flex-direction: column;
-            justify-content: center;
-      }
-      .subscribe{
-            width: unset;
-            border-radius: 10px;
-      }
-      .subscribeButton{
-            border-radius: 10px;
-            margin-top: 10px;
-      }
-      .footerDivs{            
-            flex-wrap: wrap;
-      }
+@media (min-width: 1281px) {
+    .sponsors,
+    .fifth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .cardRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top {
+        margin-bottom: 45px;
+    }
+    .accordions {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding-top: 36px; */
+        height: auto;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .leftFooter {
+        padding-top: 80px;
+        border-right: 3px solid #ffffff;
+        /* height: 100%; */
+    }
+    .footerRow {
+        height: 100%;
+    }
+    .rightFooter {
+        padding-top: 40px;
+    }
+    .footerDivs {
+        flex-wrap: wrap;
+    }
+    /* CSS */
 }
 
 
-
-    @media (min-width: 769px) and (max-width: 1024px) {
-  
-      .electrician{
-            width: 400px;
-            
-      }
-      .leftFooter{
-            padding-top: 80px;
-            /* height: 100%; */
-            border-right: 3px solid #ffffff;
-
-      }
-      .rightFooter{
-
-
-      }
-      .footerRow{
-
-            height: 100%;
-      }
-      
-      .footerBrand{
-            color: #ffffff;
-            background-color: #085bda;
-            width: 85%;
-            padding-top: 9px;
-            padding-bottom: 15px;
-            /* padding-left: 16px; */
-            /* padding-right: 5px; */
-            margin-bottom: 20px;
-      
-      }
-      .accordions{
-            height: auto;
-            padding-top: 35px;
-            padding-bottom: 35px;
-      }
-      .top{
-            margin-bottom: 35px;
-      }
-      
-      .testimonyCard{
-            height: auto;
-            width: auto;
-      }
-      .man{
-            bottom: 60px;
-      }
-      .sponsors,.fifth{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            /* gap: 3px */
-      }
-      .sponsorLogo{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      }
-      .div1,.div2{
-            align-items: center;
-            justify-content: center;
-      }
-      
-     
-      
-    }
-    @media (min-width: 1281px) {
-      .sponsors,.fifth{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-      }
-      .cardRow{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      }
-      .top{
-            margin-bottom: 45px;
-      }
-      .accordions{
-            padding-top: 70px;
-            padding-bottom: 70px;
-            /* display: flex; */
-            /* align-items: center; */
-            /* justify-content: center; */
-            /* padding-top: 36px; */
-            
-            height: auto;
-            padding-left: 36px;
-            padding-right: 36px;
-      }
-      .leftFooter{
-            padding-top: 80px;
-            border-right: 3px solid #ffffff;
-            /* height: 100%; */
-      }
-      .footerRow{
-
-            height: 100%;
-      }
-      .rightFooter{
-            padding-top: 40px;
-      }
-      .footerDivs{            
-            flex-wrap: wrap;
-      }
-   
-  
-      /* CSS */
-      
-    }
-    
-    /* 
+/* 
       ##Device = Laptops, Desktops
       ##Screen = B/w 1025px to 1280px
     */
-    
-    @media (min-width: 1025px) and (max-width: 1280px) {
-      .sponsors,.fifth{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-      }
-      .cardRow{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-      }
-      .top{
-            margin-bottom: 45px;
-      }
-      .accordions{
-            padding-top: 70px;
-            padding-bottom: 70px;
-            /* display: flex; */
-            /* align-items: center; */
-            /* justify-content: center; */
-            /* padding-top: 36px; */
-            
-            height: auto;
-            padding-left: 36px;
-            padding-right: 36px;
-      }
-      .leftFooter{
-            padding-top: 80px;
-            border-right: 3px solid #ffffff;
-            /* height: 100%; */
-      }
-      .footerRow{
 
-            height: 100%;
-      }
-      .rightFooter{
-            padding-top: 40px;
-      }
-      .footerDivs{
-            gap: 109px;
-      }
-   
-      
-      
-      /* CSS */
-      
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .sponsors,
+    .fifth {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .cardRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top {
+        margin-bottom: 45px;
+    }
+    .accordions {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* padding-top: 36px; */
+        height: auto;
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .leftFooter {
+        padding-top: 80px;
+        border-right: 3px solid #ffffff;
+        /* height: 100%; */
+    }
+    .footerRow {
+        height: 100%;
+    }
+    .rightFooter {
+        padding-top: 40px;
+    }
+    .footerDivs {
+        gap: 109px;
+    }
+    /* CSS */
 }
