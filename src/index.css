@@ -17,13 +17,21 @@ code {
 }
 
 .three-grid_reusable {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .four-grid_reusable {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.double-grid_reusable {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.four-grid_reusable,
+.three-grid_reusable,
+.double-grid_reusable {
+    display: grid;
     gap: 1em;
+    width: 100%;
 }
