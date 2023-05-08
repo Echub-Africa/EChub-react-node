@@ -1,0 +1,83 @@
+.service-container{
+    margin-top: 3rem;
+    display: grid;
+    place-items: center;
+    height: 70vh;
+}
+
+.service-wrapper .service-header h4{
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 20px;
+}
+.service-container .service-wrapper{
+    width: 60%;
+}
+
+.service-wrapper .service{
+    padding: 20px;
+    border-radius: 5px;    
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.service-wrapper .service:hover{
+    background: rgb(230, 224, 224);
+}
+
+.active-service{
+    background: #72a8fa;
+    padding: 20px;
+    border-radius: 5px;    
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.service-container .step-count{
+    width:60%;
+}
+
+.service-wrapper #service-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-price{
+    background: #085BDA;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.service-container .step-count{
+    padding: 0 20px;
+    color: #085bda;
+    font-weight: 600;
+    text-align: right;
+}
+.service-container .service-action-btn{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.service-action-btn span{
+    padding: 10px 30px;    
+    cursor: pointer;
+    border-radius: 5px;
+}
+.service-action-btn .next{
+    color: #fff;
+    background: #085BDA;
+}
+.service-action-btn .back{
+    color: #fff;
+    background: gray;
+}

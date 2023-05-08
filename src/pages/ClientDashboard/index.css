@@ -1,0 +1,9 @@
+.main-layout{
+    background: #f2f2f2;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 40px;
+    position: relative;
+    z-index: 200;
+    margin-left: 18.4rem;
+}
