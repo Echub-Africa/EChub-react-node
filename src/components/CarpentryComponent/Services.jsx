@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+/*  eslint-disable no-unused-vars 
 import React from 'react';
 import ArrowForward from '@mui/icons-material/ArrowForward'
 
@@ -82,5 +82,4 @@ const Services = () => {
         </div>
     )
 }
-
-export default Services;
+ */
