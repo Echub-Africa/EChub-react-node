@@ -8,7 +8,7 @@ import Features from '../../components/CarpentryComponent/Features';
 import CarpentrySection from '../../components/CarpentryComponent/Carpentry';
 import Projects from '../../components/CarpentryComponent/Projects';
 import Plan from '../../components/CarpentryComponent/Plan';
-import Services from '../../components/CarpentryComponent/Services';
+//import Services from '../../components/CarpentryComponent/Services';
 import SixthSection from '../../components/HomeSections/SixthSection'
 
 const Carpentry = () => {
@@ -21,7 +21,7 @@ const Carpentry = () => {
         <Projects />
         <Plan />
         <SixthSection />
-        <Services />
+        {/* <Services /> */}
         <Footer />
     </div>
   )
