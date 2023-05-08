@@ -1,16 +1,16 @@
-/*  eslint-disable no-unused-vars 
+//  eslint-disable no-unused-vars 
 import React from 'react';
 import ArrowForward from '@mui/icons-material/ArrowForward'
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+//import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 
 import rect1 from '../../assets/Rectangle 12.png';
 import rect2 from '../../assets/Rectangle 9.png';
@@ -82,4 +82,5 @@ const Services = () => {
         </div>
     )
 }
- */
+
+export default Services;
