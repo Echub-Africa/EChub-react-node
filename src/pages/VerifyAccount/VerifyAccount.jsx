@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {useEffect, useState} from 'react'
 import './VerifyAccount.css'
 import { MdClose } from "react-icons/md";
@@ -12,7 +13,7 @@ const VerifyAccount = () => {
     const [validURL, setValidURL] = useState(false)
      let params = useParams()
 
-     const  verifyAccountHandler = async ()=> {
+     async function verifyAccountHandler(){
          
         setPending(true)
 
@@ -30,6 +31,7 @@ const VerifyAccount = () => {
 
     useEffect(()=>{
         verifyAccountHandler()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [params])
 
     
