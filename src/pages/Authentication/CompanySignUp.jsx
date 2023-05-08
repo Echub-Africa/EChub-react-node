@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import './auth.css'
 import companyImg from '../../assets/Group 168.png'
 import individualImg from '../../assets/Group 169.png'
@@ -8,6 +8,7 @@ import googleImg from '../../assets/sign3.png'
 import echubLogo from '../../assets/Vector.png'
 import {MdClose} from 'react-icons/md'
 import echub from '../../assets/Echub Logo.png'
+
 
 const CompanySignUp = () => {
   return (
@@ -28,14 +29,14 @@ const CompanySignUp = () => {
           </div>
           <p className="sign-as">SignUp as:</p>
           <div className="auth-choice">
-            <Link to="/company" className="company-individual">
+            <NavLink to="/company" className={(props) => { return `${props.isActive ? "active" : "inactive"} company-individual` }}>
              <img src={companyImg} alt="" />
              <h3>Company</h3>
-            </Link>
-            <Link to="/individual" className="company-individual">
+            </NavLink>
+            <NavLink to="/individual" className={(props) => { return `${props.isActive ? "active" : "inactive"} company-individual` }}>
              <img src={individualImg} alt="" />
              <h3>Individual</h3>
-            </Link>
+            </NavLink>
           </div>
           <p className="create-with">Create an account with</p>
           <div className="auth-alternate">

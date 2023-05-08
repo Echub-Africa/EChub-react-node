@@ -3,17 +3,25 @@ import React, {useState} from 'react';
 import Echub from "../assets/Vector.png"
 import { AiOutlineMenu } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import userImg from '../assets/Ellipse 52.png';
 import './Header.css';
 
 const Header = ()=>{
-    const [isOpen, setIsOpen] = useState(false);
-    const [user, setUser] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);    
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const [isDropdown, setIsDropdown] = useState(false);
 
-    console.log({user})
+    const {userInfo: user} = useSelector((state)=> state.user)
+    
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+
+    const userLoginHandler = () => {
+        localStorage.removeItem('userInfo');
+        setIsDropdown(false);
+        navigate('/login');
+    }
 
     return (
         <header className="header shadow">
@@ -23,19 +31,19 @@ const Header = ()=>{
                         <img src={Echub} alt="" />
                     </Link>
                     <div className="menu">
-                        <Link to="/about" className="menu-item">About Us</Link>
+                        <Link to="/about" className="menu-item">About</Link>
                         <Link to="" className="menu-item">Services</Link>
-                        <Link to="" className="menu-item">Contact Us</Link>
+                        <Link to="" className="menu-item">Contact</Link>
                         <Link to="" className="menu-item">Blog</Link>
                         <Link to="" className="menu-item">FAQs</Link>
                     </div>
                     {isNavOpen && <div className="mobile-menu">
-                        <Link to="/about" className="menu-item">About Us</Link>
+                        <Link to="/about" className="menu-item">About</Link>
                         <Link to="" className="menu-item">Services</Link>
-                        <Link to="" className="menu-item">Contact Us</Link>
+                        <Link to="" className="menu-item">Contact</Link>
                         <Link to="" className="menu-item">Blog</Link>
                         <Link to="" className="menu-item">FAQs</Link>
-                        {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                        {!user && <Link to="/individual" className="auth-link">Sign Up</Link>}
                         {!user && <Link to="/login" className="auth-link">Log In</Link>}
 
                         {/* <div className="mobile-menu-item">About Us</div>
@@ -46,17 +54,25 @@ const Header = ()=>{
                         {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
                         {!user && <Link to="/login" className="auth-link">Log In</Link>} */}
                         {user && <div className="img-container">
-                            <img src={userImg} alt="" />
+                            <img src={userImg} alt="" onClick={()=> setIsDropdown(!isDropdown)} />
+                            {isDropdown && <div className="header-dropdown">
+                                <span><Link to="/setting">Profile</Link></span>
+                                <span onClick={userLoginHandler}>Logout</span>
+                            </div>}
                         </div>}
                         <button>Join the team</button>
                     </div>}
                 </div>
                 <div className="header-right">
-                    {!user && <Link to="/signup" className="auth-link">Sign Up</Link>}
+                    {!user && <Link to="/individual" className="auth-link">Sign Up</Link>}
                     {!user && <Link to="/login" className="auth-link">Log In</Link>}
                     {user && 
                         (<div className="img-container">
-                            <img src={userImg} alt="" />
+                            <img src={userImg} alt="" onClick={()=> setIsDropdown(!isDropdown)} />
+                            {isDropdown && <div className="header-dropdown">
+                                <span><Link to="/setting">Profile</Link></span>
+                                <span onClick={userLoginHandler}>Logout</span>
+                            </div>}
                         </div>)
                     }
                     <button onClick={()=> navigate("join")}>Join the team</button>

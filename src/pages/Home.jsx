@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useSelector } from 'react-redux';
+
 import NavBar from '../components/NavBar'
 import FirstSection from '../components/FirstSection'
 import SecondSection from '../components/SecondSection'
@@ -13,6 +15,11 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default function Home() {
+  const { userInfo } = useSelector((state) => state.user);
+
+  useEffect(()=>{
+    if(!userInfo) return;
+  }, [userInfo])
   return (
     <div className='Home'>
       <Header />
