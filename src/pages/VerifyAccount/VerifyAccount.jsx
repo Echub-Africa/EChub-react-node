@@ -12,27 +12,26 @@ import { publicRequest } from '../../helpers/requestMethod';
 const VerifyAccount = () => {
     const [pending, setPending] = useState(false)
     const [validURL, setValidURL] = useState(false)
-     let params = useParams()
+    let params = useParams()
 
-     async function verifyAccountHandler(){
-         
-        setPending(true)
-
-        try{
-            const {data} = await publicRequest.get(`/users/${params.userId}/verifyaccount/${params.token}`)
-            setPending(false)
-            setValidURL(true)
-        }catch(error){
-            setPending(false)            
-            console.log(error.response?.data);
-            setValidURL(false)
-        }
-    }
-
-
+     
     useEffect(()=>{
+        const verifyAccountHandler = async ()=>{
+            
+            setPending(true)
+
+            try{
+                const {data} = await publicRequest.get(`/users/${params.userId}/verifyaccount/${params.token}`)
+                setPending(false)
+                setValidURL(true)
+            }catch(error){
+                setPending(false)            
+                console.log(error.response?.data);
+                setValidURL(false)
+            }
+        }
+        
         verifyAccountHandler()
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [params])
 
     
@@ -61,7 +60,15 @@ const VerifyAccount = () => {
             ) : 
             (
                 <div className="verify-error">
-                    <h1>Invalid Verification Link</h1>
+                    {!pending ? 
+                        (
+                            <h1>Invalid Verification Link</h1>
+                        ) : (
+                            <div className="verify-loader">
+                                <h1>LOADING...</h1>
+                            </div>
+                        )
+                    }
                 </div>
             )
         }      

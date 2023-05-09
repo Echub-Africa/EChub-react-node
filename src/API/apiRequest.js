@@ -16,7 +16,7 @@ export const register = async (info, dispatch) => {
         dispatch(authStart())
 
         const {data} = await publicRequest.post(`/users/`, info)
-        dispatch(authStart())
+        dispatch(authSuccess())
         util.Alert("success", data)
     } catch (error) {
         let err = error.response?.data;
