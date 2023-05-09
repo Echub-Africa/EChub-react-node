@@ -55,6 +55,7 @@ const VerifyAccount = () => {
                     <div className="verify-container">
                         <img src={verifyImg} alt="" />
                         <p>Account Verified Successfully</p>
+                        <Link to="/login" className="go-to-login">Login</Link>
                     </div>
                 )
             ) : 
@@ -62,7 +63,9 @@ const VerifyAccount = () => {
                 <div className="verify-error">
                     {!pending ? 
                         (
-                            <h1>Invalid Verification Link</h1>
+                            <div className="invalid">
+                                  <h1>Invalid Verification Link</h1>
+                            </div>
                         ) : (
                             <div className="verify-loader">
                                 <h1>LOADING...</h1>
