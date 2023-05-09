@@ -7,6 +7,7 @@ import axios from 'axios';
 import echub from "../../assets/Vector.png";
 import { Link } from 'react-router-dom';
 import verifyImg from "../../assets/starlink_3r0a.svg"
+import { publicRequest } from '../../helpers/requestMethod';
 
 const VerifyAccount = () => {
     const [pending, setPending] = useState(false)
@@ -18,7 +19,7 @@ const VerifyAccount = () => {
         setPending(true)
 
         try{
-            const {data} = await axios.get(`http://localhost:5000/api/users/${params.userId}/verifyaccount/${params.token}`)
+            const {data} = await publicRequest.get(`/users/${params.userId}/verifyaccount/${params.token}`)
             setPending(false)
             setValidURL(true)
         }catch(error){
