@@ -225,7 +225,7 @@ function MapWithMarker({project}) {
     map.fitBounds(bounds, { padding: 50 });
 
     return () => map.remove();
-  }, []);
+  }, [project.lat, project.long]);
 
   return (
     <div className="">        
