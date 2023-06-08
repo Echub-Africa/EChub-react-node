@@ -227,8 +227,10 @@
 .hire .hire-form .input-form textarea {
     border-radius: 12px;
     height: 161px;
-    padding: 12px;
-    border: 1px solid black;
+    padding: 12px;    
+}
+.hire .hire-form .input-form textarea:focus{
+    outline: none;
 }
 
 .hire .form-policy {
@@ -243,6 +245,72 @@
     padding: 12px;
     width: 30px;
     height: 30px;
+}
+
+.mapbox-modal{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: rgba(88, 88, 88, 0.8);
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.hire .get-address{
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.hire .avail-notice{
+    color: #085BDA;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.map-close{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.project-msg{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.project-msg .project-upload{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 5px;
+}
+.project-msg .uploaded{
+    color: #fff;
+    background-color: #085BDA;
+    transition: ease-in-out .3s background-color;
+}
+.project-msg label{
+    padding: 8px;
+    border-radius: 5px;
+    background: #f2f2f2;
+    color: #000;
+    font-weight: 600;
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 8px;
+}
+
+.mapboxgl-map{
+    width: 100%;
+    height: 4400px;
 }
 
 .hire .form-policy div {
@@ -263,6 +331,10 @@
     font-weight: normal;
     font-size: 20px;
     cursor: pointer;
+}
+.hire .form-btn .project-btn{
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .hire .form-btn span:active {

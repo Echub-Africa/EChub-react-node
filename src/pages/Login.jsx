@@ -21,8 +21,12 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(()=>{
-    if(userInfo){
-      navigate('/dashboard')
+    if(userInfo?.data.user.role === "admin"){
+      navigate('/admin/dashboard')
+    }else if(userInfo?.data.user.role === "individual" || userInfo?.data.user.role === "company"){
+      navigate("/dashboard")
+    } else {
+      navigate("/login")
     }
   },[userInfo, navigate])
 
@@ -87,7 +91,7 @@ const Login = () => {
               </div>
             </div>
             <div className="login-btn">
-              <button onClick={loginUserHandler}>{pending ? "wait a minute..." :"Login"}</button>
+              <button onClick={loginUserHandler} disabled={pending}>{pending ? "wait a minute..." :"Login"}</button>
             </div>
             <div className="dha">
               <span>Don't have an account?</span>

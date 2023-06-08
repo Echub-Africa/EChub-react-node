@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import {
     MdMoreHoriz
 } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import './Dashboard.css'
 import caseimg from '../../../../assets/work_history.png';
 import caseimg2 from '../../../../assets/work.png'
@@ -11,16 +11,20 @@ import helpImg from '../../../../assets/Group 96.png'
 import feedbackImg from '../../../../assets/Group 95.png'
 
 const Dashboard = () => {
-
-    let {userInfo} = useSelector(state => state.user)
   return (
       <div className="dashboard">
         <div className="dashboard-wrapper">
             <div className="dashboard-analytic">
-                <div className="dashboard-stats">
-                    <Link to={userInfo.data.user.role === "individual" ? "/hire-individual" : "/hire-company" } className="stat new">
-                        <p>+</p>
-                    </Link>
+                <div className="dashboard-stats">                    
+                    <div className="stat">
+                        <div className="stat-header">
+                            <span>Ongoing Jobs</span>
+                            <span>1</span>
+                        </div>
+                        <div className="stat-icon">
+                            <img src={caseimg} alt="" />
+                        </div>
+                    </div>
                     <div className="stat">
                         <div className="stat-header">
                             <span>Ongoing Jobs</span>

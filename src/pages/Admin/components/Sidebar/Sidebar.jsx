@@ -16,7 +16,7 @@ import {
     BsGridFill,
     BsGrid
 } from 'react-icons/bs'
-import {AiOutlineInbox} from 'react-icons/ai'
+import {AiOutlineUser, AiOutlineInbox} from 'react-icons/ai'
 
 import { NavLink, Link } from 'react-router-dom';
 
@@ -36,7 +36,11 @@ const Sidebar = () => {
                 <BsGridFill size={"1.5rem"} />
                 <span>Dashboard</span>
             </NavLink>
-            <NavLink to="user-projects" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
+            <NavLink to="users" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
+                <AiOutlineUser size={"1.5rem"} />
+                <span>Users</span>
+            </NavLink>
+            <NavLink to="projects" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
                 <AiOutlineInbox size={"1.5rem"} />
                 <span>Projects</span>
             </NavLink>
@@ -47,10 +51,6 @@ const Sidebar = () => {
             <NavLink to="setting" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
                 <IoSettingsSharp size={"1.5rem"} />
                 <span>Settings</span>
-            </NavLink>
-            <NavLink to="billing" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
-                <IoMdWallet size={"1.5rem"} />
-                <span>Billing</span>
             </NavLink>
         </div>
     </div>

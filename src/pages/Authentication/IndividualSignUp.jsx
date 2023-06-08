@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -10,13 +11,15 @@ import echub from '../../assets/Echub Logo.png';
 import echubLogo from '../../assets/Vector.png';
 import { MdClose } from 'react-icons/md';
 import { register } from "../../API/apiRequest.js";
+import Loader from '../../components/Loader';
 
 const IndividualSignUp = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
   const [password, setPassword] = useState("")
-  const [TC, setTC] = useState(false)
+  const [isAdmin, setIsAdmin] = useState("")  
+  const [isChecked, setIsChecked] = useState(false);
 
   
 
@@ -29,9 +32,21 @@ const IndividualSignUp = () => {
       fullname: name,
       email,
       phone,
-      password
+      password,
+      isAdmin: "individual"
     }
-    return register(info, dispatch)
+    register(info, dispatch)
+
+    handleClearInput()
+  }
+
+  function handleClearInput(){
+    return setTimeout(() => {
+      setName("");
+      setEmail("");
+      setPhone("");
+      setPassword("");
+    }, 5000)
   }
   return (
     <div className="auth">
@@ -84,11 +99,13 @@ const IndividualSignUp = () => {
               <input type="password" value={password} onChange={(e)=> setPassword(e.target.value)} />
             </div>
             <div className="auth-agree">
-              <input type="checkbox" value={TC} onChange={(e)=> setTC(e.target.value)} />
-              <span>I understand that TechVillage  will process my information in accordance with their Privacy Policy. I may withdraw my consent through unsubscribe links at any time.</span>
+              <input type="checkbox" onChange={()=> setIsChecked((checked)=> !checked)} />
+              <div>I understand that TechVillage  will process my information in accordance with their <strong>Privacy Policy</strong>. I may withdraw my consent through unsubscribe links at any time.</div>
             </div>
             <div className="auth-btn">
-              <button onClick={newUserHandler}>{pending ? "wait a minute..." : "SIGN UP"}</button>
+              <button onClick={()=> isChecked && newUserHandler()} className={isChecked === true ? "" : "auth-button"}>
+                {pending ? <Loader loaderStyle={{width: "20px", height: "20px", marginLeft: ".5rem", marginRight: ".5rem"}} /> : "SIGN UP"}
+              </button>
             </div>
             <div className='account'>
               <span>Already have an account.</span>

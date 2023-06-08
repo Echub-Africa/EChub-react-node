@@ -1,0 +1,39 @@
+.user{
+    margin-top: 4rem;
+}
+
+.new-user span{
+    padding: 12px 15px;
+    border-radius: 8px;    
+    border: none;
+    color: #fff;
+    background: #085BDA;
+    cursor: pointer;
+}
+
+.user-table{
+    margin-top: 2rem;
+}
+.user-table .users{
+    padding: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #fff;
+    height: 40vh;
+}
+.user-table button{    
+    border: none;
+    border-radius: 5px;    
+    color: #fff;
+    cursor: pointer;
+}
+.user-table .edit{
+    background: #085BDA;
+}
+.user-table .del{
+    background: red;
+}
+.user-table .view{
+    cursor: pointer;
+}

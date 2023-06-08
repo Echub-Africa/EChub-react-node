@@ -1,0 +1,6 @@
+.notification{
+    height: 75vh;
+    overflow-y: scroll;
+    display: grid;
+    place-items: center;
+}
