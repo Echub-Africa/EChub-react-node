@@ -1,0 +1,166 @@
+
+.setting .setting-bg img{
+    width: 100%;
+}
+.setting-profile{
+    display: flex;
+    gap: 20px;
+}
+.setting-profile{
+    position: relative;
+    top: -93px;
+}
+.setting-profile .setting-profile-lt{
+    background: #fff;
+    border-radius: 5px;
+    flex: 2;
+    display: grid;
+    place-items: center;
+}
+
+.setting-profile .user-pic{
+    position: relative;
+}
+.setting-profile .user-pic label{
+    position: absolute;    
+    bottom: -3px;
+    right: 12px;    
+    display: grid;
+    place-items: center;
+    cursor: pointer;    
+}
+.setting-profile .user-pic .pic-icon{    
+    color: #085BDA;
+    background: #fff;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.setting-profile-lt .setting-details{
+    width: 100%;
+}
+.setting-profile-lt .setting-info{
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 8px;
+    font-weight: bold;  
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+.setting-profile .setting-profile-rt{
+    flex: 4;
+    background: #fff;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.setting-profile-rt .setting-input-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;          
+}
+.setting-profile-rt .setting-input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;    
+    width: 100%;
+}
+.setting-input-group label{
+    color: #000;
+}
+.setting-input-group input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid grey;
+    background: whitesmoke;
+    border-radius: 3px;
+}
+.setting-profile-rt hr{
+    width: 100%;
+    margin-top: 2rem;
+}
+.setting-profile-rt .setting-btn{
+    width: 80%;
+    margin-top: 20px;
+}
+.setting-btn span{
+    padding: 15px 28px;
+    border-radius: 3px;
+    color: #fff;
+    background: #085BDA;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+/* Project Modal */
+.modal-wrapper{
+    background: #fff;
+    height: 100vh;
+    overflow-y: scroll;    
+    padding: 20px 30px;
+    width: 50vh;
+}
+
+.modal-wrapper h3{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.modal-wrapper .modal-close{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.modal-wrapper .form-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.modal-wrapper .form-wrapper input{
+    padding: 9px;
+    font-size: 12px;
+    border-radius: 8px;
+    margin: unset;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.form-role select{
+    background: white;
+    margin: unset;
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: 12px;
+    color: gray;
+}
+
+.modal-wrapper .form-wrapper span{
+    background: #085BDA;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal-wrapper .form-wrapper .upload-wrapper{
+    border: 3px dashed gray;
+    border-radius: 12px;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    color: gray;
+    font-weight: 600;
+    height: 20vh;
+    cursor: pointer;
+}

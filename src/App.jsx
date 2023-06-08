@@ -8,6 +8,7 @@ import './App.css';
 import Home from "./pages/Home.jsx"
 import NormalSign from "./pages/NormalSign.jsx";
 import Login from "./pages/Login.jsx";
+import LoginHomePage from "./pages/LoginHomePage/LoginHomePage.jsx";
 import Carpentry from "./pages/Carpentry/Carpentry.jsx";
 import ElectricalMaintenance from './pages/ElectricalMaintainance/ElectricalMaintenance'
 import HireIndividual from "./pages/HireIndividual/HireIndividual.jsx";
@@ -25,9 +26,19 @@ import ResetPassword from './pages/ResetPassword.jsx'
 import Index from './pages/ClientDashboard/index';
 import Dashboard from './pages/ClientDashboard/layouts/Dashboard/Dashboard';
 import Service from './pages/ClientDashboard/layouts/Service/Service';
+import UserProject from './pages/ClientDashboard/layouts/Projects/Projects';
 import Setting from './pages/ClientDashboard/layouts/Setting/Setting';
 import Notification from './pages/ClientDashboard/layouts/Notification/Notification';
 import Billing from './pages/ClientDashboard/layouts/Billing/Billing';
+import UpdateProject from './pages/ClientDashboard/layouts/UpdateProject/UpdateProject';
+
+
+//Admin Dashboard
+import Admin from './pages/Admin/index';
+import AdminDashboard from './pages/Admin/layouts/Dashboard/Dashboard';
+import AdminNotification from './pages/Admin/layouts/Notification/Notification';
+import AdminUsers from './pages/Admin/layouts/Users/Users';
+import AdminProjects from './pages/Admin/layouts/Projects/Projects';
 
 const App = () => {
   return (
@@ -41,7 +52,7 @@ const App = () => {
         <Route path="/company" element={<CompanySignUp />} />
         <Route path="/individual" element={<IndividualSignUp />} />
         <Route path="/join" element={<Join />} />
-        {/* <Route path="/carpentry" element={<Carpentry />} /> */}
+        <Route path="/carpentry" element={<Carpentry />} />
         <Route path="/electrical-maintenance" element={<ElectricalMaintenance />} />
         <Route path="/hire-company" element={<HireCompany />} />
         <Route path="/hire-individual" element={<HireIndividual />} />
@@ -50,6 +61,11 @@ const App = () => {
           <Route path="dashboard" element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }/>
+          <Route path="user-projects" element={
+            <ProtectedRoute>
+              <UserProject />
             </ProtectedRoute>
           }/>
           <Route path="service" element={
@@ -72,6 +88,17 @@ const App = () => {
               <Billing />
             </ProtectedRoute>
           }/>
+          <Route path="update-project/:projectId" element={
+            <ProtectedRoute>
+              <UpdateProject />
+            </ProtectedRoute>
+          }/>
+        </Route>
+        <Route path="/admin" element={<Admin />}>
+          <Route path="dashboard" element={<AdminDashboard />} />          
+          <Route path="notification" element={<AdminNotification />} />
+          <Route path="users" element={<AdminUsers />} />
+          <Route path="projects" element={<AdminProjects />} />
         </Route>
       </Routes>
     </>

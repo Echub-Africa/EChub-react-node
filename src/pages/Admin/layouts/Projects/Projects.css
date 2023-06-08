@@ -1,0 +1,182 @@
+.admin-projects{
+    margin-top: 5rem;
+}
+
+
+.admin-projects-wrapper .project-table{
+    background: #fff;    
+}
+.project-table .project-status{
+    display: flex;
+    gap: 10px;        
+}
+.project-table .project-status p{
+    height: 50%;
+}
+.admin-projects-wrapper .project-table select{    
+    border-radius:5px;
+    border: 1px solid gray;
+    background: #fff;
+}
+.admin-projects-wrapper .project-table h5{
+    color: gray;
+    text-align: center;
+    margin: 3rem;    
+    font-family: monospace;
+}
+.admin-projects-wrapper .project-table button{    
+    border: none;
+    border-radius: 5px;    
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 18px;
+}
+.project-table .edit{
+    background: #085BDA;
+    border: none;
+    border-radius: 5px;    
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 18px;
+}
+.project-table .del{
+    background: red;
+}
+.project-table .view{
+    cursor: pointer;
+}
+
+.confirm-del{
+    position: fixed;
+    z-index: 100;
+    background: rgba(1, 11, 19, .3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    isolation: isolate;
+    place-items: center;
+}
+.confirm-wrapper{
+    width: 30%;
+    border-radius: 12px;    
+    background: #fff;
+    padding: 20px 0;
+}
+.confirm-header{
+    border-bottom: 1px #f2f2f2 solid;
+    padding: 10px 20px;
+}
+.confirm-header h3{    
+    color: #000;
+    font-weight: 550;
+    font-size: 22px;
+}
+.confirm-option{
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.confirm-option span:nth-child(2){
+    color: #000;
+    background: #f2f2f2;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.confirm-option span:nth-child(1){
+    color: #fff;
+    background: #085BDA;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+
+.v-project{
+    position: fixed;
+    z-index: 100;
+    background: rgba(1, 11, 19, .3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    isolation: isolate;
+    place-items: center;
+}
+.v-project .v-wrapper{
+    width: 60%;
+    height: 90vh;
+    overflow-y: scroll;
+    background: #fff;
+    border-radius: 10px;
+    padding: 50px 20px;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+}
+.v-media{
+    width: 90%;
+    display: grid;
+    place-items: center;    
+}
+.v-media img{
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+}
+.v-media video{    
+    width: 100%;
+    height: 60vh;
+}
+.v-title h3{
+    font-weight: bold;
+    font-size: 25px;
+}
+.v-details, .v-title{
+    width: 90%;
+}
+.v-desc p{
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #f2f2f2;
+}
+.v-location{
+    width: 90%;
+}
+.v-action{
+    width: 90%;
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 20px;
+}
+.v-action span{
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background: #085BDA;
+    color: #fff;
+}
+
+.update-modal{
+    position: fixed;
+    z-index: 100;
+    background: rgba(1, 11, 19, .3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    isolation: isolate;
+    place-items: center;
+}
+.update-modal .update-wrapper{
+    width: 50%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+}

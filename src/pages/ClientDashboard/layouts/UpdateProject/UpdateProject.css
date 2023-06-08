@@ -1,0 +1,69 @@
+.update-container{
+    margin-top: 5rem;
+}
+
+.update-header{
+    margin-top: 20px;
+}
+.update-header h3{
+    font-weight: 600;
+    color: #000;
+    font-size: 30px;
+}
+.update-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.update-form .update-input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.update-form .update-input label{
+    font-weight: bold;
+}
+.update-form .update-input select{
+    padding: 10px 5px;
+    background: #fff;
+    border: 1px gray solid;
+    border-radius: 10px;
+}
+.update-form .update-input textarea{
+    border-radius: 10px;
+    padding: 10px 5px;
+    border: 1px solid gray;
+}
+.update-input .update-msg{
+    border: 1px solid #f2f2f2;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.update-form .update-media label{
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+.update-form .update-btn{
+    display: flex;
+    gap: 20px;
+}
+.update-form .update-btn span{
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.update-form .update-btn span:nth-child(1){
+    background: #085BDA;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+.update-form .update-btn span:nth-child(2){
+    background: #fff;
+    color: #000;
+}
