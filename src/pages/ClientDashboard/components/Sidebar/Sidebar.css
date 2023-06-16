@@ -40,3 +40,10 @@ a{
     color: white;
     border-right: 5px solid #f2f2f2;
 }
+
+
+@media screen and (min-width: 300px) and (max-width: 1080px){
+    .layout .sidebar{
+        display: none;
+    }
+}

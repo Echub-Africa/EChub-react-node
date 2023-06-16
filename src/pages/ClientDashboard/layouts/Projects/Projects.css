@@ -93,11 +93,14 @@
     bottom: 0;
     left: 0;
     display: grid;
-    isolation: isolate;
+    /* isolation: isolate; */
     place-items: center;
 }
+.react-confirm-alert{
+    width: 100%;
+}
 .v-project .v-wrapper{
-    width: 60%;
+    /* width: 60%; */
     height: 90vh;
     overflow-y: scroll;
     background: #fff;
@@ -145,4 +148,11 @@
     border-radius: 5px;
     background: #085BDA;
     color: #fff;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1080px){    
+    .v-project .v-wrapper{
+        width: 100%;
+    }
 }

@@ -45,7 +45,7 @@ const Projects = () => {
         {
             field: 'title',
             headerName: 'Service',
-            width: 200,
+            width: 220,
             editable: true,
             renderCell: params =>{
                 return (
@@ -58,7 +58,7 @@ const Projects = () => {
         {
             field: 'update',
             headerName: 'Update',                        
-            width: 200,
+            width: 220,
             renderCell: (params)=>{
                 return(                  
                     <Link className="edit" to={`/update-project/${params.row._id}`}>Update</Link>                  
@@ -102,12 +102,10 @@ const Projects = () => {
                         getRowId={row => row._id}
                         columns={columns}
                         pageSize={5}
-                        rowsPerPageOptions={[5]}                            
-                        disableSelectionOnClick={true}
-                        experimentalFeatures={{ newEditingApi: true }}
+                        rowsPerPageOptions={[2]}                        
                     /> 
                 ) : (
-                    <p>No Available Data yet</p>
+                    <span className="not-avail">No Available Data yet</span>
                 )}               
             </div>
         </div>

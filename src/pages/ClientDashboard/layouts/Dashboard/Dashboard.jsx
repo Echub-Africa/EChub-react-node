@@ -1,22 +1,39 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+import React, {useEffect} from 'react'
 import {
     MdMoreHoriz
 } from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import './Dashboard.css'
 import caseimg from '../../../../assets/work_history.png';
 import caseimg2 from '../../../../assets/work.png'
 import helpImg from '../../../../assets/Group 96.png'
 import feedbackImg from '../../../../assets/Group 95.png'
+import { 
+    getpendingProjects, 
+    getOngoingProjects, 
+    getCompletedProjects
+} from '../../../../API/apiRequest';
 
 const Dashboard = () => {
 
     let {userInfo} = useSelector(state => state.user)
+
+    const {pendingLists, ongoingLists, completedLists} = useSelector(state=> state.project)
+
+    let dispatch = useDispatch();
+
+    useEffect(()=>{
+        getpendingProjects(dispatch)
+        getOngoingProjects(dispatch)
+        getCompletedProjects(dispatch)
+    },[dispatch])
   return (
       <div className="dashboard">
         <div className="dashboard-wrapper">
             <div className="dashboard-analytic">
+            <h3 className="wlc">Hello, {userInfo.data.user.fullname}</h3>
                 <div className="dashboard-stats">
                     <Link to={userInfo.data.user.role === "individual" ? "/hire-individual" : "/hire-company" } className="stat new">
                         <p>+</p>
@@ -24,19 +41,19 @@ const Dashboard = () => {
                     <div className="stat">
                         <div className="stat-header">
                             <span>Ongoing Jobs</span>
-                            <span>1</span>
+                              <span>{ongoingLists.length}</span>
                         </div>
                         <div className="stat-icon">
-                            <img src={caseimg} alt="" />
+                            <img src={caseimg2} alt="" />
                         </div>
                     </div>
                     <div className="stat">
                         <div className="stat-header">
                             <span>Project Completed</span>
-                            <span>4</span>
+                              <span>{ completedLists.length}</span>
                         </div>
                         <div className="stat-icon">
-                            <img src={caseimg2} alt="" />
+                            <img src={caseimg} alt="" />
                         </div>
                     </div>
                 </div>
@@ -59,9 +76,9 @@ const Dashboard = () => {
                 <div className="dashboard-details">
                     <div className="detail-header">Details of Ongoing projects</div>
                     <div className="detail-service">
-                          <div className="service">High Current  (Generator)</div>
-                          <div className="service">Lighting</div>
-                          <div className="service">Installation</div>
+                        <div className="service">High Current  (Generator)</div>
+                        <div className="service">Lighting</div>
+                        <div className="service">Installation</div>
                     </div>
                 </div>
                 <div className="faq">

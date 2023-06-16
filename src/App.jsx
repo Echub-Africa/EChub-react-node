@@ -44,7 +44,7 @@ const App = () => {
   return (
     <>
       <Routes>        
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<LoginHomePage />} />
         <Route path="/signup" element={<NormalSign />} />
         <Route path="/login" element={<Login />} />
         <Route path="/user/:userId/verifyaccount/:token" element={<VerifyAccount />} />

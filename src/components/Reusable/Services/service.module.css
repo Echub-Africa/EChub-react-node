@@ -12,6 +12,8 @@
 
 .servicesCon {
     padding: 1em 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .servicesCon>figure>button {
@@ -36,10 +38,14 @@
 .servicesCon>figure:nth-of-type(1)>figcaption,
 .servicesCon>figure:nth-of-type(3)>figcaption {
     background: #FDE8B3;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .servicesCon>figure:nth-of-type(4)>figcaption {
     background: #C1D6F6;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .servicesCon>figure:nth-of-type(4)>button {
@@ -55,6 +61,8 @@
 
 .servicesCon>figure:nth-of-type(2)>figcaption {
     background: #4684E3;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 .servicesCon>figure:nth-of-type(2)>button {

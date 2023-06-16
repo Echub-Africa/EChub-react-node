@@ -7,3 +7,11 @@
     z-index: 200;
     margin-left: 18.4rem;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 1080px){
+    .layout .main-layout{
+        margin-left: unset;
+        border-radius: unset;
+        padding: 15px;
+    }
+}

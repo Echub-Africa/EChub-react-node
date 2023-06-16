@@ -10,6 +10,10 @@
     width: 45%;   
 }
 
+.header-left .sidebar-icon{
+    display: none;
+}
+
 .input-wrapper{
     background: #fff;
     border-radius: 10px;
@@ -26,6 +30,7 @@
 .input-wrapper input:focus{
     outline: none;
 }
+
 
 .header-right{    
     display: flex;
@@ -63,4 +68,114 @@
 }
 .header-right .header-right-icon:nth-child(3) .dashboard-dropdown span:hover{
     background: whitesmoke;    
+}
+
+.mob-sidebar{
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 700;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 5px solid #085BDA;
+}
+.mob-sidebar .mob-header{
+    width: 100%;
+    padding: 30px;
+    display:  flex;
+    justify-content: flex-end;
+}
+.mob-sidebar .mob-header svg{
+    cursor: pointer;
+}
+.mob-sidebar .mob-menu{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    cursor: pointer;
+}
+.mob-sidebar .mob-menu .active{
+    color: #085BDA;
+    font-weight: 600;
+}
+.mob-sidebar .mob-menu .inactive{
+    color: #000;
+    font-weight: 600;
+}
+.mob-sidebar .mob-menu .mob-menu-item:hover{
+    color: #085BDA;
+    font-weight: 600;
+}
+.mob-sidebar .mob-menu .mob-menu-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.mob-sidebar .mob-menu span{
+    font-size: 16px;
+
+}
+.mob-sidebar .mob-logout{
+    display: flex;
+    justify-content: center;
+}
+.mob-sidebar .mob-logout span{
+    padding: 10px 25px;
+    background: #085BDA;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.slide-right {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(1px);
+            transform: translateX(1px);
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 1080px){
+    .header-container{
+        margin-top: 5px;
+        padding: 10px 0px;
+    }
+    .header-left .sidebar-icon{
+        display: flex;
+        cursor: pointer;
+    }
+    .header-left .input-wrapper{
+        display: none;        
+    }
+
+    .mob-sidebar{
+        display: flex;
+    }
 }

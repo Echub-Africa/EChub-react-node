@@ -3,6 +3,7 @@ import {
     authSuccess,
     getUser,
     updateUser,
+    logoutUser,
     authError
 } from '../redux/features/userSlice'
 import {
@@ -17,7 +18,7 @@ import {
     deleteProject,
     getProjectError
 } from '../redux/features/projectSlice';
-import {Navigate} from 'react-router-dom';
+// import {Navigate} from 'react-router-dom';
 import {Util} from '../helpers/util';
 import { publicRequest, uploadRequest, userRequest } from '../helpers/requestMethod';
 
@@ -49,13 +50,19 @@ export const login = async (info, dispatch) => {
         const { data } = await publicRequest.post(`/users/login`, info)
         dispatch(authSuccess(data))
         localStorage.setItem('userInfo', JSON.stringify(data));
-        util.Alert("success", data.message)
-        return <Navigate to="/dashboard" />
+        util.Alert("success", data.message)        
     } catch (error) {
         let err = error.response?.data;
         dispatch(authError(err))
         util.Alert("error", err)
     }
+}
+
+
+/* LOGOUT USER */
+export const logoutHandler = (dispatch)=>{
+    localStorage.removeItem("userInfo");
+    dispatch(logoutUser());
 }
 
 

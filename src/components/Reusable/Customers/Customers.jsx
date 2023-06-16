@@ -5,13 +5,13 @@ import styling from './customer.module.css'
 
 
 const Customers = () => {
-    const{customers,customerCon}= styling
+    const{customers,customerCon, customerWrapper}= styling
   return (
 
     <section className={customerCon
     } >
         <h3>What Our Customers are Saying</h3>
-        <div className="three-grid_reusable">
+        <div className={customerWrapper}>
         
     {customersList.map((customer) => (
       <div className={customers}>

@@ -9,6 +9,7 @@ import {useNavigate} from 'react-router-dom'
 import { publicRequest } from '../../helpers/requestMethod';
 import {Util} from '../../helpers/util';
 import {createNewProject} from '../../API/apiRequest'
+import Loader from '../Loader'
 
 
 let util = new Util()
@@ -30,6 +31,8 @@ const HireForm = () =>{
     const navigate = useNavigate()
 
     const userInfo = JSON.parse(localStorage.getItem("userInfo"))
+
+    const {error, pending} = useSelector(state=> state.project)
 
     const dispatch = useDispatch()
 
@@ -55,7 +58,14 @@ const HireForm = () =>{
         }
 
         createNewProject(data, dispatch)
-        navigate("/user-projects")
+        console.log(pending, error);
+        
+        if(error === null){
+            navigate("/user-projects")
+        }else{
+            return;
+        }
+
         
     }
     return (
@@ -118,7 +128,9 @@ const HireForm = () =>{
                         <div>I understand that TechVillage  will process my information in accordance with their <strong>Privacy Policy</strong>. I may withdraw my consent through unsubscribe links at any time.</div>
                     </div>
                     <div className="form-btn">
-                        <span disabled={true} className={isChecked === true ? "" : "project-btn"} onClick={()=> isChecked && createProjectHandler()}>Fix now</span>
+                        <span disabled={true} className={isChecked === true ? "" : "project-btn"} onClick={() => isChecked && createProjectHandler()}>
+                            {pending ? <Loader loaderStyle={{height: "20px", width: "20px"}} /> : "Fix now"}
+                        </span>
                     </div>
                 </div>
             </div>

@@ -18,17 +18,24 @@ const userSlice = createSlice({
         },
         authSuccess: (state, action) => {
             state.pending = false
+            state.userUpdated = false;
             state.error = null
             state.userInfo = action ? action.payload : null
         },
         getUser: (state, action) => {
-            state.pending = false;            
+            state.pending = false;    
+            state.userUpdated = false;        
             state.error = null;
             state.userLists = action ? action.payload : null;            
         },
         updateUser: (state, action)=>{
             state.userUpdated = false;
             state.userInfo = action ? action.payload : null;
+        },
+        logoutUser:(state)=>{
+            state.pending = false;
+            state.userUpdated = false;
+            state.userInfo = null;
         },
         authError: (state, action)=>{
             state.pending = false
@@ -39,6 +46,6 @@ const userSlice = createSlice({
 })
 
 
-export const {authStart, authSuccess, updateUser, getUser, authError} = userSlice.actions
+export const {authStart, authSuccess, updateUser, getUser, logoutUser, authError} = userSlice.actions
 
 export default userSlice.reducer;

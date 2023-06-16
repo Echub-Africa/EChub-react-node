@@ -3,9 +3,10 @@ import React, {useState} from 'react';
 import Echub from "../assets/Vector.png"
 import { AiOutlineMenu } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import userImg from '../assets/Ellipse 52.png';
 import './Header.css';
+import {logoutHandler} from '../API/apiRequest';
 
 const Header = ()=>{
     const [isOpen, setIsOpen] = useState(false);    
@@ -17,8 +18,10 @@ const Header = ()=>{
 
     const navigate = useNavigate();
 
+    const dispatch = useDispatch();
+
     const userLoginHandler = () => {
-        localStorage.removeItem('userInfo');
+        logoutHandler(dispatch);
         setIsDropdown(false);
         navigate('/login');
     }

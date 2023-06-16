@@ -464,6 +464,8 @@ body::-webkit-scrollbar {
     padding-top: 4rem;
     width: 100%;
     padding: 3em;
+    display: grid;
+    place-items: center;
 }
 
 .sixthSection .container {

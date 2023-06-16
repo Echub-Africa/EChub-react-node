@@ -4,7 +4,16 @@
 
 
 .admin-projects-wrapper .project-table{
-    background: #fff;    
+    background: #fff;        
+    border-radius: 3px;
+}
+.admin-projects-wrapper .project-table h5{
+    text-align: center;
+    margin: 5rem;
+}
+.admin-projects-wrapper .project-table .not-avail{
+    text-align: center;
+    margin: 5rem;
 }
 .project-table .project-status{
     display: flex;

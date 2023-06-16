@@ -24,25 +24,30 @@ const projectSlice = createSlice({
         },
         getUserProjects: (state, action)=>{
             state.pending = false;
+            state.projectUpdated = false;
             state.projectLists = action ? action.payload : null;
         },
         getPendingSuccess:  (state, action) => {
             state.pending = false;
+            state.projectUpdated = false;
             state.pendingLists = action ? action.payload : null
             state.error = null
         },
         getOngoingSuccess: (state, action)=>{
             state.pending = false;
+            state.projectUpdated = false;
             state.ongoingLists = action ? action.payload : null
             state.error = null
         },
         getCompletedSuccess: (state, action)=>{
             state.pending = false;
+            state.projectUpdated = false;
             state.completedLists = action ? action.payload : null
             state.error = null
         },
         createProject: (state, action)=>{
             state.pending = false;
+            state.projectUpdated = false;
             state.error = null;
         },
         updateProjectSuccess: (state)=>{
@@ -51,10 +56,12 @@ const projectSlice = createSlice({
         },
         updateProjectStatus: (state) => {
           state.statusChange = false;
+          state.projectUpdated = false;
           state.error = null;
         },
         deleteProject: (state, action)=>{
             state.projectIsDeleted = false
+            state.projectUpdated = false;
             state.error = null;
         },
         getProjectError: (state, action)=>{
