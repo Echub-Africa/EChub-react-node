@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {useEffect, useState} from 'react';
 import {MdClose} from 'react-icons/md';
 import {useDispatch, useSelector} from 'react-redux';
