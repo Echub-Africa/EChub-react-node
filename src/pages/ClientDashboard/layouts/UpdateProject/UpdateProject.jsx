@@ -63,7 +63,7 @@ const UpdateProject = () => {
         }
 
         updateProjectHandler(data, params?.projectId, dispatch)
-        console.log(error, projectUpdated)
+        //console.log(error, projectUpdated)
         if (projectUpdated === false && error === null) {
             navigate("/user-projects")
         } else {

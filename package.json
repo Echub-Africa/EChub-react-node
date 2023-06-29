@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "allowedHosts": "all",
   "proxy": "https://echub-bluecollar-api.onrender.com/api",
   "dependencies": {
     "@emotion/react": "^11.11.0",

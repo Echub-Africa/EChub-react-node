@@ -16,7 +16,7 @@ import {
     BsGridFill,
     BsGrid
 } from 'react-icons/bs'
-import {AiOutlineUser, AiOutlineInbox} from 'react-icons/ai'
+import {AiOutlineUser, AiOutlineInbox, AiTwotoneTags} from 'react-icons/ai'
 
 import { NavLink, Link } from 'react-router-dom';
 
@@ -39,6 +39,10 @@ const Sidebar = () => {
             <NavLink to="users" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
                 <AiOutlineUser size={"1.5rem"} />
                 <span>Users</span>
+            </NavLink>
+            <NavLink to="services" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
+                <AiTwotoneTags size={"1.5rem"} />
+                <span>Services</span>
             </NavLink>
             <NavLink to="projects" className={(props) => { return `${props.isActive ? "active" : "inactive"} sidebar-menu-item` }}>
                 <AiOutlineInbox size={"1.5rem"} />

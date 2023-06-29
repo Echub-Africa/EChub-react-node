@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 
 import { login } from '../API/apiRequest';
+import Loader from '../components/Loader';
 
 const Login = () => {
   const [email, setEmail] = useState("")
@@ -87,11 +88,11 @@ const Login = () => {
                 className="forgot-pwd"
                 onClick={() => navigate("/resetpassword")}
               >
-                <p>Forgot Password?</p>
+                Forgot Password?
               </div>
             </div>
             <div className="login-btn">
-              <button onClick={loginUserHandler} disabled={pending}>{pending ? "wait a minute..." :"Login"}</button>
+              <button onClick={loginUserHandler} disabled={pending}>{pending ? <Loader loaderStyle={{width: '30px', height: '30px'}} /> :"Login"}</button>
             </div>
             <div className="dha">
               <span>Don't have an account?</span>

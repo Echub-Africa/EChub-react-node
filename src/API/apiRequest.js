@@ -1,10 +1,21 @@
+/* eslint-disable no-unused-vars */
 import {
     authStart,
     authSuccess,
     getUser,
     updateUser,
+    logoutUser,
     authError
-} from '../redux/features/userSlice'
+} from '../redux/features/userSlice';
+import {
+    serviceStart,
+    serviceSuccess,
+    serviceDeleted,
+    createStart,
+    deleteStart,
+    serviceFailed,
+    createService
+} from '../redux/features/serviceSlice'
 import {
     getProjectStart,
     getUserProjects,
@@ -17,7 +28,7 @@ import {
     deleteProject,
     getProjectError
 } from '../redux/features/projectSlice';
-import {Navigate} from 'react-router-dom';
+// import {Navigate} from 'react-router-dom';
 import {Util} from '../helpers/util';
 import { publicRequest, uploadRequest, userRequest } from '../helpers/requestMethod';
 
@@ -49,13 +60,19 @@ export const login = async (info, dispatch) => {
         const { data } = await publicRequest.post(`/users/login`, info)
         dispatch(authSuccess(data))
         localStorage.setItem('userInfo', JSON.stringify(data));
-        util.Alert("success", data.message)
-        return <Navigate to="/dashboard" />
+        util.Alert("success", data.message)        
     } catch (error) {
         let err = error.response?.data;
         dispatch(authError(err))
         util.Alert("error", err)
     }
+}
+
+
+/* LOGOUT USER */
+export const logoutHandler = (dispatch)=>{
+    localStorage.removeItem("userInfo");
+    dispatch(logoutUser());
 }
 
 
@@ -205,6 +222,39 @@ export const projectStatusChange = async(info, dispatch, projectId)=> {
     }catch(error){
         let err = error.response?.data;
         dispatch(getProjectError(err))
+        util.Alert("error", err)
+    }
+}
+
+
+
+/* CREATE NEW SERVICE */
+export const newService = async (info, dispatch)=>{
+    try{
+        dispatch(createStart())
+
+        const {data} = await publicRequest.post('/service/new', info)
+        dispatch(createService())
+        util.Alert("success", data)
+    }catch(error){
+        let err = error.response?.data;
+        dispatch(serviceFailed(err))
+        util.Alert("error", err)
+    }
+}
+
+
+/* DELETE SERVICE BY ID */
+export const deleteServiceById = async (id, dispatch)=>{
+    try{
+        dispatch(deleteStart())
+
+        const {data} = await publicRequest.delete(`/service/${id}`)
+        dispatch(serviceDeleted())
+        util.Alert("success", data)
+    }catch(error){
+        let err = error.response?.data;
+        dispatch(serviceFailed(err))
         util.Alert("error", err)
     }
 }

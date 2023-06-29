@@ -32,6 +32,7 @@ const Setting = () => {
     let data = {
       ...userData
     }
+    // console.log(userData)
 
     updateUserHandler(data, userInfo?.data.user._id, dispatch)
   }
@@ -47,8 +48,10 @@ const Setting = () => {
           phone: data.phone,
           country: data?.country,
           state: data?.state,
-          role: data.isAdmin
+          role: data.isAdmin,
+          file: data?.profile
         })
+        // console.log(data)
       }catch(error){
         return;
       }
@@ -67,7 +70,7 @@ const Setting = () => {
         <div className="setting-profile-lt">
           <div className="setting-profile-pic">
             <div className="user-pic">
-              <img src={profilePic} alt="" />
+              {userData.file ? <img src={`${process.env.REACT_APP_FILE}${userData.file}`} alt="" /> : <img src={profilePic} alt="" />}
               <label htmlFor="upload"><BiCamera fontSize={"2.5rem"} className="pic-icon" /></label>
               <input type="file" onChange={(e)=> setUserData({...userData, file: e.target.files[0]})} id="upload" style={{display: "none"}} />
             </div>

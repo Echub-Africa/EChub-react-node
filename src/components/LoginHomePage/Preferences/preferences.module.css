@@ -7,11 +7,12 @@
     background: #ebe6d9;
     align-items: center;
     gap: 2em;
+    padding: 4rem;
 }
 
 .container>div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
     grid-template-rows: auto auto;
 }
@@ -35,11 +36,12 @@
 
 .container>div>article>p {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .container>article>h2 {
     font-weight: 700;
+    color: #000;
 }
 
 .container>article>ul {
@@ -47,6 +49,8 @@
     list-style: none;
     padding: 0;
     font-size: 20px;
+    line-height: 30px;
+    color: #000;
 }
 
 @media (max-width: 500px) {
@@ -56,6 +60,9 @@
     .container>article>h2,
     .container>div>article>h3 {
         font-size: 16px;
+    }
+    .container>article>h2{
+        text-align: center;
     }
     .container>article>ul {
         font-size: 13px;

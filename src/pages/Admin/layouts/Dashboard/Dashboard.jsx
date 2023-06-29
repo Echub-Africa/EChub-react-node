@@ -1,16 +1,32 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, {useEffect} from 'react'
 import {
     MdMoreHoriz
 } from 'react-icons/md';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Dashboard.css'
 import caseimg from '../../../../assets/work_history.png';
 import caseimg2 from '../../../../assets/work.png'
 import helpImg from '../../../../assets/Group 96.png'
 import feedbackImg from '../../../../assets/Group 95.png'
+import { 
+    getpendingProjects, 
+    getOngoingProjects, 
+    getCompletedProjects
+} from '../../../../API/apiRequest';
 
 const Dashboard = () => {
+
+    const {pendingLists, ongoingLists, completedLists} = useSelector(state=> state.project)
+
+    let dispatch = useDispatch();
+
+    useEffect(()=>{
+        getpendingProjects(dispatch)
+        getOngoingProjects(dispatch)
+        getCompletedProjects(dispatch)
+    },[dispatch])
   return (
       <div className="dashboard">
         <div className="dashboard-wrapper">
@@ -18,8 +34,8 @@ const Dashboard = () => {
                 <div className="dashboard-stats">                    
                     <div className="stat">
                         <div className="stat-header">
-                            <span>Ongoing Jobs</span>
-                            <span>1</span>
+                            <span>Pending Jobs</span>
+                            <span>{pendingLists.length}</span>
                         </div>
                         <div className="stat-icon">
                             <img src={caseimg} alt="" />
@@ -28,7 +44,7 @@ const Dashboard = () => {
                     <div className="stat">
                         <div className="stat-header">
                             <span>Ongoing Jobs</span>
-                            <span>1</span>
+                              <span>{ongoingLists.length}</span>
                         </div>
                         <div className="stat-icon">
                             <img src={caseimg} alt="" />
@@ -37,7 +53,7 @@ const Dashboard = () => {
                     <div className="stat">
                         <div className="stat-header">
                             <span>Project Completed</span>
-                            <span>4</span>
+                            <span>{completedLists.length}</span>
                         </div>
                         <div className="stat-icon">
                             <img src={caseimg2} alt="" />

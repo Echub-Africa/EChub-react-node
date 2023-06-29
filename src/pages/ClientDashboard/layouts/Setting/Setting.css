@@ -17,6 +17,12 @@
     display: grid;
     place-items: center;
 }
+.setting-profile .user-pic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
 
 .setting-profile .user-pic{
     position: relative;
@@ -163,4 +169,25 @@
     font-weight: 600;
     height: 20vh;
     cursor: pointer;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1080px){
+    .setting .setting-bg img{
+        height: 30vh;
+        object-fit: cover;
+    }
+    .setting-profile{
+        flex-direction: column;
+        top: -5px;
+    }
+    .setting-profile-pic{
+        margin-top: -70px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .setting-input-wrapper{
+        flex-direction: column;
+    }
 }

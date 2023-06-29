@@ -9,6 +9,7 @@ import {useNavigate} from 'react-router-dom';
 import { publicRequest } from '../../helpers/requestMethod';
 import {Util} from '../../helpers/util';
 import {createNewProject} from '../../API/apiRequest'
+// import Loader from '../Loader'
 
 
 let util = new Util()
@@ -34,6 +35,8 @@ const HireForm = () =>{
 
     const dispatch = useDispatch()
 
+    const {error, pending} = useSelector(state=> state.project)
+
     useEffect(()=>{
         const fetchServices = async ()=>{
             try{
@@ -56,7 +59,11 @@ const HireForm = () =>{
         }
 
         createNewProject(data, dispatch)
-        navigate("/user-projects")
+        if(pending === false && error === null){
+            navigate("/user-projects")
+        }else{
+            return;
+        }
     }
     return (
         <div className="hire">
@@ -138,7 +145,9 @@ const HireForm = () =>{
                         <div>I understand that TechVillage  will process my information in accordance with their <strong>Privacy Policy</strong>. I may withdraw my consent through unsubscribe links at any time.</div>
                     </div>
                     <div className="form-btn">
-                        <span className={isChecked === true ? "" : "project-btn"} onClick={()=> isChecked && createProjectHandler()}>Fix now</span>
+                        <span className={isChecked === true ? "" : "project-btn"} onClick={() => isChecked && createProjectHandler()}>
+                            {pending ? "Loading..." : "Fix now"}
+                        </span>
                     </div>
                 </div>
             </div>
@@ -159,7 +168,7 @@ function MapWithMarker({setShowMap, setSelectedAddress}) {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v11',
-      center: [-3.406448, 6.465422], // Default coordinates (Replace with your desired default location)
+      center: [3.406448, 6.465422], // Default coordinates (Replace with your desired default location)
       zoom: 10,
     });
 

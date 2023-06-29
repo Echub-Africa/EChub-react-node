@@ -1,5 +1,5 @@
 .dashboard{
-    margin-top: 8rem;
+    margin-top: 6.5rem;
 }
 
 .dashboard-wrapper{
@@ -9,6 +9,13 @@
 
 .dashboard-analytic{
     flex: 4;
+}
+
+.dashboard-wrapper .wlc{
+    color: #000;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 2rem;
 }
 
 .dashboard .dashboard-stats{
@@ -179,4 +186,21 @@
     padding: 50px;
     background: #fff;
     border-radius: 20px;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1080px){
+    .dashboard-wrapper{
+        flex-direction: column;
+    }
+    .dashboard-analytic .dashboard-stats{
+        flex-direction: column;
+    }
+    .dashboard-wrapper .wlc{        
+        font-size: 25px;        
+    }
+
+    .dashboard-service .faq{
+        flex-direction: column;
+    }
 }

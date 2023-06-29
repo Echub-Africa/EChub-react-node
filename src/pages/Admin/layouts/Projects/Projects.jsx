@@ -140,7 +140,7 @@ const Projects = () => {
             width: 200,
             renderCell: (params)=>{
                 return(                  
-                    <button className="edit" onClick={updateProjectModal(params.row)}>Update</button>                  
+                    <button className="edit" onClick={()=> updateProjectModal(params.row)}>Update</button>                  
                 )
             }
         },

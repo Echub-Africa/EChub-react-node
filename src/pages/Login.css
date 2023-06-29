@@ -89,7 +89,7 @@
     color: #000;
     cursor: pointer;
 }
-.forgot-pwd p{
+.forgot-pwd{
     color: #085bda;
     font-weight: 600;
     font-size: 14px;
@@ -126,8 +126,14 @@
     .login-header{
         display: none;
     }
-
     .login-wrapper{
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .forgot{
+        flex-direction: column;
+        align-content: center;        
     }
 }

@@ -10,9 +10,15 @@
     max-width: 463px;
     font-family: var(--secondary-font);
 }
+.customerWrapper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 .customerCon {
-    padding: 1em 2em;
+    padding: 1em 1em;
     text-align: center;
     margin-bottom: 4em;
 }
@@ -53,7 +59,7 @@
     font-size: 16px;
 }
 
-@media (max-width:500px) {
+@media screen and (min-width: 300px) and (max-width: 1080px) {
     .customerCon {
         padding: 1em 1em;
         text-align: center;

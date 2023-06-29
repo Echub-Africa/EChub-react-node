@@ -4,12 +4,12 @@ import play from '../../../assets/LoginHomePageImages/play-circle.png'
 import chat from '../../../assets/LoginHomePageImages/chat.png'
 
 const Landing = () => {
-    const {container,flex} = styles
+    const {container, flex, playWrapper} = styles
   return (
     <section className={container}>
         <div>
             <article>
-                <h2>The work is on us the focus is on you</h2>
+                <h2>The work is on us The focus is you</h2>
             </article>
             <article>
                 <input type="search" name="" id="" placeholder='Search For Artisans' />
@@ -17,8 +17,10 @@ const Landing = () => {
             <article>
                 <article className={flex}>
                     <button>I want a technician now &nbsp; &nbsp;<i class="fas fa-angle-right"></i> </button>
-                    <img src={play} alt="" />
-                    <p>See the new offer for homeowners</p>
+                    <div className={playWrapper}>
+                        <img src={play} alt="" />
+                        <span>See the new offer for homeowners</span>
+                    </div>
                 </article>
             </article>
             <article>

@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 import Services from "../../components/Reusable/Services/Services";
 import Challenges from "../../components/LoginHomePage/Challenges.jsx/Challenges";
 import Landing from "../../components/LoginHomePage/Landing/Landing";
@@ -8,7 +11,7 @@ import styling from "./loginhomepage.module.css";
 import Companies from "../../components/LoginHomePage/Companies/Companies";
 import Customers from "../../components/Reusable/Customers/Customers";
 import Trusted from "../../components/LoginHomePage/Trusted/Trusted";
-import FAQ from "../../components/LoginHomePage/FAQ/FAQ";
+import Accordions from '../../components/Accordions'
 
 
 
@@ -18,6 +21,7 @@ const LoginHomePage = () => {
   const { serviceCon } = styling;
   return (
     <main>
+      <Header />
       <Landing />
       <Challenges />
       <Preferences />
@@ -35,7 +39,8 @@ const LoginHomePage = () => {
       <Companies />
       <Customers />
       <Trusted />
-      <FAQ />
+      <Accordions />
+      <Footer />
     </main>
   );
 };

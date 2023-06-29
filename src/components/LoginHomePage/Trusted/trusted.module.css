@@ -13,13 +13,13 @@
 
 .trustedCon>div>h2 {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 33px;
 }
 
 .trustedCon>div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     row-gap: 2em;
     column-gap: 2em;
 }
@@ -28,12 +28,15 @@
     width: 100%;
 }
 
-@media (max-width:500px) {
+@media screen and (min-width: 300px) and (max-width: 1080px){
     .trustedCon {
         height: max-content;
         margin: 0 1em;
         padding: 2em 1em;
         font-family: var(--tertiary-font);
+    }
+    .trustedCon>div {        
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));        
     }
     .trustedCon>div>h2 {
         font-size: 20px;
