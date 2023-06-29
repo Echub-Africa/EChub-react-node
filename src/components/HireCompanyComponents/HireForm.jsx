@@ -9,7 +9,7 @@ import {useNavigate} from 'react-router-dom';
 import { publicRequest } from '../../helpers/requestMethod';
 import {Util} from '../../helpers/util';
 import {createNewProject} from '../../API/apiRequest'
-import Loader from '../Loader'
+// import Loader from '../Loader'
 
 
 let util = new Util()
@@ -146,7 +146,7 @@ const HireForm = () =>{
                     </div>
                     <div className="form-btn">
                         <span className={isChecked === true ? "" : "project-btn"} onClick={() => isChecked && createProjectHandler()}>
-                            {pending ? <Loader loaderStyle={{height: "20px", width: "20px"}} /> : "Fix now"}
+                            {pending ? "Loading..." : "Fix now"}
                         </span>
                     </div>
                 </div>
@@ -168,7 +168,7 @@ function MapWithMarker({setShowMap, setSelectedAddress}) {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v11',
-      center: [-3.406448, 6.465422], // Default coordinates (Replace with your desired default location)
+      center: [3.406448, 6.465422], // Default coordinates (Replace with your desired default location)
       zoom: 10,
     });
 

@@ -17,6 +17,12 @@
     display: grid;
     place-items: center;
 }
+.setting-profile .user-pic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
 
 .setting-profile .user-pic{
     position: relative;

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
     authStart,
     authSuccess,
@@ -5,7 +6,16 @@ import {
     updateUser,
     logoutUser,
     authError
-} from '../redux/features/userSlice'
+} from '../redux/features/userSlice';
+import {
+    serviceStart,
+    serviceSuccess,
+    serviceDeleted,
+    createStart,
+    deleteStart,
+    serviceFailed,
+    createService
+} from '../redux/features/serviceSlice'
 import {
     getProjectStart,
     getUserProjects,
@@ -212,6 +222,39 @@ export const projectStatusChange = async(info, dispatch, projectId)=> {
     }catch(error){
         let err = error.response?.data;
         dispatch(getProjectError(err))
+        util.Alert("error", err)
+    }
+}
+
+
+
+/* CREATE NEW SERVICE */
+export const newService = async (info, dispatch)=>{
+    try{
+        dispatch(createStart())
+
+        const {data} = await publicRequest.post('/service/new', info)
+        dispatch(createService())
+        util.Alert("success", data)
+    }catch(error){
+        let err = error.response?.data;
+        dispatch(serviceFailed(err))
+        util.Alert("error", err)
+    }
+}
+
+
+/* DELETE SERVICE BY ID */
+export const deleteServiceById = async (id, dispatch)=>{
+    try{
+        dispatch(deleteStart())
+
+        const {data} = await publicRequest.delete(`/service/${id}`)
+        dispatch(serviceDeleted())
+        util.Alert("success", data)
+    }catch(error){
+        let err = error.response?.data;
+        dispatch(serviceFailed(err))
         util.Alert("error", err)
     }
 }

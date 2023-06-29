@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react'
 import { Link, useNavigate, NavLink } from 'react-router-dom';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {MdKeyboardVoice, MdOutlineMilitaryTech, MdClose} from 'react-icons/md'
 import {IoNotificationsOutline } from 'react-icons/io5';
 import { GrSearch } from 'react-icons/gr';
@@ -21,7 +21,7 @@ import {
     BsGridFill,
     BsGrid
 } from 'react-icons/bs'
-import {AiOutlineInbox} from 'react-icons/ai'
+import {AiOutlineInbox, AiTwotoneTags} from 'react-icons/ai'
 
 import './Header.css'
 import profile from "../../../../assets/profile.png";
@@ -32,6 +32,8 @@ const Header = () => {
     const [isDropdown, setIsDropdown] = useState(false);
     const [isSidebar, setIsSidebar] = useState(false);
     const navigate = useNavigate();
+
+    const {userInfo} = useSelector((state)=> state.user)
 
     const dispatch = useDispatch();
 
@@ -66,9 +68,9 @@ const Header = () => {
             <div className="header-right-icon">
                 <img onClick={()=> setIsDropdown(!isDropdown)} src={profile} alt="" />
                 { isDropdown && <div className="dashboard-dropdown">
-                    <span>
+                    {!userInfo.data.user.role === "admin" && <span>
                         <Link to="setting">Profile</Link>
-                    </span>
+                    </span>}
                     <span onClick={userLogoutHandler}>Logout</span>
                 </div>}
             </div>
@@ -95,6 +97,10 @@ function MobSidebar({setIsSidebar, userLogoutHandler}){
                 <NavLink onClick={()=> setIsSidebar(false)} to="users" className={(props) => { return `${props.isActive ? "active" : "inactive"} mob-menu-item` }}>
                     <AiOutlineUser size={"1.5rem"} />
                     <span>Users</span>
+                </NavLink>
+                <NavLink onClick={()=> setIsSidebar(false)} to="services" className={(props) => { return `${props.isActive ? "active" : "inactive"} mob-menu-item` }}>
+                    <AiTwotoneTags size={"1.5rem"} />
+                    <span>Services</span>
                 </NavLink>
                 <NavLink onClick={()=> setIsSidebar(false)} to="projects" className={(props) => { return `${props.isActive ? "active" : "inactive"} mob-menu-item` }}>
                     <AiOutlineInbox size={"1.5rem"} />

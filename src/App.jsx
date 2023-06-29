@@ -39,6 +39,7 @@ import AdminDashboard from './pages/Admin/layouts/Dashboard/Dashboard';
 import AdminNotification from './pages/Admin/layouts/Notification/Notification';
 import AdminUsers from './pages/Admin/layouts/Users/Users';
 import AdminProjects from './pages/Admin/layouts/Projects/Projects';
+import AdminService from './pages/Admin/layouts/Service/Service'
 
 const App = () => {
   return (
@@ -98,6 +99,7 @@ const App = () => {
           <Route path="dashboard" element={<AdminDashboard />} />          
           <Route path="notification" element={<AdminNotification />} />
           <Route path="users" element={<AdminUsers />} />
+          <Route path="services" element={<AdminService />} />
           <Route path="projects" element={<AdminProjects />} />
         </Route>
       </Routes>

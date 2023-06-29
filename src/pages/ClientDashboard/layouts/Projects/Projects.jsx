@@ -10,6 +10,7 @@ import mapboxgl from 'mapbox-gl';
 
 import profilebg from "../../../../assets/profilebg.png";
 import Loader from "../../../../components/Loader";
+import noData from '../../../../assets/No_data.png';
 
 import { 
     getUserProjectsByUserId,
@@ -105,7 +106,10 @@ const Projects = () => {
                         rowsPerPageOptions={[2]}                        
                     /> 
                 ) : (
-                    <span className="not-avail">No Available Data yet</span>
+                    <span className="not-avail">
+                        <img src={noData} alt="" />
+                        <p>No Available Data yet</p>
+                    </span>
                 )}               
             </div>
         </div>

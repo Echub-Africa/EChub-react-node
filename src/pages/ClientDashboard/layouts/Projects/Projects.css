@@ -25,6 +25,15 @@
     cursor: pointer;
     padding: 10px 18px;
 }
+.admin-projects-wrapper .project-table .not-avail{
+    text-align: center;
+    margin: 5rem;
+    display: grid;
+    place-items: center;
+}
+.admin-projects-wrapper .project-table .not-avail img{
+    width: 100px;
+}
 .project-table .edit{
     background: #085BDA;
 }

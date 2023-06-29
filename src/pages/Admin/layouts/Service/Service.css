@@ -1,0 +1,81 @@
+.admin-service{
+    margin-top: 2rem;
+}
+.admin-service h3{
+    color: #000;
+    margin-bottom: 20px;
+}
+.admin-service-container{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-form{
+    flex: 4;
+}
+.service-form-wrapper{
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+.service-form .service-input{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.service-form input{
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.service-form-btn{
+    margin-top: 10px;
+}
+.service-form-btn button{
+    background: #085BDA;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+}
+
+.service-table{
+    flex: 3;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+.service-table .service-list{
+    display: flex;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-table .service-list{
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.service-table .service-list svg{
+    color: red;
+    cursor: pointer;
+}
+.service-table .service-list:hover{
+    background: #f2f2f2;
+}
+.service-table .no-data{
+    display: grid;
+    place-items: center;
+    height: 15vh;
+    text-align: center;
+}
+.service-table img{
+    width: 100px;
+}
+
+.error-refresh{
+    display: grid;
+    place-items: center;
+    height: 15vh;
+}
