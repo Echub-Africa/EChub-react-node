@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {
     MdMoreHoriz
 } from 'react-icons/md';
@@ -15,20 +15,47 @@ import {
     getOngoingProjects, 
     getCompletedProjects
 } from '../../../../API/apiRequest';
+import { publicRequest } from '../../../../helpers/requestMethod';
 
 const Dashboard = () => {
 
     let {userInfo} = useSelector(state => state.user)
+    const [ongoingList, setOngoingList] = useState([])
+    const [completedList, setCompletedList] = useState([])
 
     const {pendingLists, ongoingLists, completedLists} = useSelector(state=> state.project)
 
     let dispatch = useDispatch();
 
     useEffect(()=>{
+        // GET User Ongoing Projects
+        async function getUserOngoingProjects(){
+            try {
+                const {data} = await publicRequest.get(`/project/user-ongoing-projects/${userInfo?.data.user._id}`)
+                setOngoingList(data)
+            } catch (error) {
+                console.log(error.response?.data)
+            }
+        }
+
+
+        // GET User Completed Projects
+        async function getUserCompletedProjects(){
+            try {
+                const {data} = await publicRequest.get(`/project/user-completed-projects/${userInfo?.data.user._id}`)
+                setCompletedList(data)
+            } catch (error) {
+                console.log(error.response?.data)
+            }
+        }
+
+
+        getUserOngoingProjects()
+        getUserCompletedProjects()
         getpendingProjects(dispatch)
         getOngoingProjects(dispatch)
         getCompletedProjects(dispatch)
-    },[dispatch])
+    },[dispatch, userInfo.data.user._id])
   return (
       <div className="dashboard">
         <div className="dashboard-wrapper">
@@ -41,7 +68,7 @@ const Dashboard = () => {
                     <div className="stat">
                         <div className="stat-header">
                             <span>Ongoing Jobs</span>
-                              <span>{ongoingLists.length}</span>
+                              <span>{ongoingList.length}</span>
                         </div>
                         <div className="stat-icon">
                             <img src={caseimg2} alt="" />
@@ -50,7 +77,7 @@ const Dashboard = () => {
                     <div className="stat">
                         <div className="stat-header">
                             <span>Project Completed</span>
-                              <span>{ completedLists.length}</span>
+                              <span>{ completedList.length}</span>
                         </div>
                         <div className="stat-icon">
                             <img src={caseimg} alt="" />

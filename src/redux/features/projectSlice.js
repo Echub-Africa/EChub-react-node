@@ -8,6 +8,7 @@ const projectSlice = createSlice({
         pendingLists: [],
         ongoingLists: [],
         completedLists: [],
+        projectCreated: false,
         projectUpdated: false,
         pending: false,
         statusChange: false,
@@ -17,6 +18,7 @@ const projectSlice = createSlice({
     reducers: {
         getProjectStart: (state)=>{
             state.statusChange = true
+            state.projectCreated = true
             state.projectIsDeleted = true
             state.projectUpdated = true;
             state.pending = true;
@@ -47,7 +49,7 @@ const projectSlice = createSlice({
         },
         createProject: (state, action)=>{
             state.pending = false;
-            state.projectUpdated = false;
+            state.projectCreated = false;
             state.error = null;
         },
         updateProjectSuccess: (state)=>{
@@ -67,6 +69,7 @@ const projectSlice = createSlice({
         getProjectError: (state, action)=>{
             state.pending = false;
             state.projectUpdated = false;
+            state.projectCreated = false;
             state.projectIsDeleted = false;
             state.statusChange = false;
             state.error = action ? action.payload : null;

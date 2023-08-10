@@ -54,7 +54,7 @@ const UpdateProject = () => {
         getSingleProject()
         getAllServices()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[params, updatedData])
+    },[params])
 
 
     function updateUserProject(){

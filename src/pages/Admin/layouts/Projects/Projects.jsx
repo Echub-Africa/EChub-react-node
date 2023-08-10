@@ -86,8 +86,10 @@ const Projects = () => {
     }, [dispatch, projectIsDeleted, statusChange])
 
 
-    function handleStatusChange(status, projectId){
+    function handleStatusChange(email, fullname, status, projectId){
         let data = {
+            email,
+            fullname,
             status
         }
         projectStatusChange(data, dispatch, projectId)
@@ -123,7 +125,7 @@ const Projects = () => {
                     <div className="project-status">
                         <p>{params.row.status === 0 ? "pending" : params.row.status === 1 ? "ongoing" : "completed"}</p>
                         
-                        <select onChange={(e)=> handleStatusChange(e.target.value, params.row._id)}>
+                        <select onChange={(e)=> handleStatusChange(params.row.user.email, params.row.user.fullname, e.target.value, params.row._id)}>
                             <option value="">-- update status --</option>
                             <option value="0">pending</option>
                             <option value="1">ongoing</option>
