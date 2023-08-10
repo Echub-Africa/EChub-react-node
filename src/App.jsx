@@ -40,6 +40,7 @@ import AdminNotification from './pages/Admin/layouts/Notification/Notification';
 import AdminUsers from './pages/Admin/layouts/Users/Users';
 import AdminProjects from './pages/Admin/layouts/Projects/Projects';
 import AdminService from './pages/Admin/layouts/Service/Service'
+import NewPasswordReset from './pages/NewPasswordReset';
 
 const App = () => {
   return (
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/user/:userId/verifyaccount/:token" element={<VerifyAccount />} />
         <Route path="/resetpassword" element={<ResetPassword />} />
+        <Route path="/password-reset/:id/:token" element={<NewPasswordReset />} />
         <Route path="/company" element={<CompanySignUp />} />
         <Route path="/individual" element={<IndividualSignUp />} />
         <Route path="/join" element={<Join />} />

@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, {useEffect, useRef, useState} from 'react';
 import {Drawer, Box, Tabs, Tab, Typography, Modal} from '@mui/material';
+
 import { DataGrid } from '@mui/x-data-grid';
 import { MdVisibility, MdClose } from 'react-icons/md';
 import {useDispatch, useSelector} from 'react-redux'
@@ -23,21 +24,105 @@ import './Projects.css'
 
 
 
+function TabPanel(props) {
+    const { children, value, index, ...other } = props;
+  
+    return (
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`simple-tabpanel-${index}`}
+        aria-labelledby={`simple-tab-${index}`}
+        {...other}
+      >
+        {value === index && (
+          <Box sx={{ p: 3 }}>
+            <Typography>{children}</Typography>
+          </Box>
+        )}
+      </div>
+    );
+  }
+  
+  
+  function a11yProps(index) {
+    return {
+      id: `simple-tab-${index}`,
+      'aria-controls': `simple-tabpanel-${index}`,
+    };
+  }
+
 
 const Projects = () => {
     const [services, setServices] = useState([])
-    const {projectLists, pending, error, projectIsDeleted} = useSelector((state)=> state.project)
+    const [value, setValue] = React.useState(0);
+    const [pendingList, setPendingList] = useState([])
+    const [ongoingList, setOngoingList] = useState([])
+    const [completedList, setCompletedList] = useState([])
+    const {projectLists, pending, error, projectCreated, projectIsDeleted} = useSelector((state)=> state.project)
 
     // const navigate = useNavigate()
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 400,
+        bgcolor: 'background.paper',
+        border: '2px solid #000',
+        boxShadow: 24,
+        p: 4,
+    };
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
 
     const dispatch = useDispatch();
 
     const userInfo = JSON.parse(localStorage.getItem("userInfo"))
 
+    
+
 
     useEffect(()=>{        
+        /* Fetch Users Pending, Ongoing, and Completed Projects by UserId */
+        // GET User Pending Projects
+        async function getUserPendingProjects(){
+            try {
+                const {data} = await publicRequest.get(`/project/user-pending-projects/${userInfo?.data.user._id}`)
+                setPendingList(data)
+            } catch (error) {
+                console.log(error.response?.data)
+            }
+        }
+
+
+        // GET User Ongoing Projects
+        async function getUserOngoingProjects(){
+            try {
+                const {data} = await publicRequest.get(`/project/user-ongoing-projects/${userInfo?.data.user._id}`)
+                setOngoingList(data)
+            } catch (error) {
+                console.log(error.response?.data)
+            }
+        }
+
+
+        // GET User Completed Projects
+        async function getUserCompletedProjects(){
+            try {
+                const {data} = await publicRequest.get(`/project/user-completed-projects/${userInfo?.data.user._id}`)
+                setCompletedList(data)
+            } catch (error) {
+                console.log(error.response?.data)
+            }
+        }
         getUserProjectsByUserId(userInfo?.data.user._id, dispatch)
-    },[dispatch, userInfo?.data.user._id, projectIsDeleted])
+        getUserPendingProjects()
+        getUserOngoingProjects()
+        getUserCompletedProjects()
+    },[dispatch, userInfo?.data.user._id, projectIsDeleted, projectCreated])
 
 
 
@@ -98,13 +183,52 @@ const Projects = () => {
                 {pending ? (
                     <Loader loaderStyle={{width: "30px", height: "30px", margin: "3rem"}} />
                 ) : projectLists.length > 0 ? (
-                    <DataGrid
-                        rows={projectLists}
-                        getRowId={row => row._id}
-                        columns={columns}
-                        pageSize={5}
-                        rowsPerPageOptions={[2]}                        
-                    /> 
+                    <>
+                        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                            <Tabs sx={{
+                                    '& .MuiTabs-flexContainer': {
+                                    flexWrap: 'wrap',
+                                    },
+                                }} value={value} onChange={handleChange} aria-label="basic tabs example">
+                                <Tab style={{color: '#000', fontWeight: 'bold'}} label="Pending Projects" {...a11yProps(0)} />
+                                <Tab style={{color: '#000', fontWeight: 'bold'}} label="Ongoing Projects" {...a11yProps(1)} />
+                                <Tab style={{color: '#000', fontWeight: 'bold'}} label="Completed Projects" {...a11yProps(2)} />                        
+                            </Tabs>
+                        </Box>
+                        <TabPanel value={value} index={0}>
+                            <Box sx={{width: '100%' }}>
+                                <DataGrid
+                                    rows={pendingList}
+                                    getRowId={row => row._id}
+                                    columns={columns}
+                                    pageSize={5}
+                                    rowsPerPageOptions={[2]}                        
+                                    /> 
+                            </Box>;
+                        </TabPanel>
+                        <TabPanel value={value} index={1}>
+                            <Box sx={{width: '100%' }}>
+                                <DataGrid
+                                    rows={ongoingList}
+                                    getRowId={row => row._id}
+                                    columns={columns}
+                                    pageSize={5}
+                                    rowsPerPageOptions={[2]}                        
+                                    /> 
+                            </Box>
+                        </TabPanel>
+                        <TabPanel value={value} index={2}>
+                            <Box sx={{width: '100%' }}>
+                                <DataGrid
+                                    rows={completedList}
+                                    getRowId={row => row._id}
+                                    columns={columns}
+                                    pageSize={5}
+                                    rowsPerPageOptions={[2]}                        
+                                    /> 
+                            </Box>
+                        </TabPanel>
+                    </>
                 ) : (
                     <span className="not-avail">
                         <img src={noData} alt="" />

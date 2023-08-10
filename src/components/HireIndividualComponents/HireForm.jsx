@@ -19,10 +19,6 @@ const HireForm = () =>{
     const [selectedAddress, setSelectedAddress] = useState({lat: "", lng: ""});
     const [isChecked, setIsChecked] = useState(false)
     const [projectData, setProjectData] = useState({
-        email: "",
-        firstName: "",
-        lastName: "",
-        phone: "",
         service: "",
         message: "",
         file: ""
@@ -54,7 +50,9 @@ const HireForm = () =>{
         let data = {
             ...projectData,
             ...selectedAddress,
-            user: userInfo?.data.user._id
+            user: userInfo?.data.user._id,
+            email: userInfo?.data.user.email,
+            fullname: userInfo?.data.user.fullname,
         }
 
         createNewProject(data, dispatch)
@@ -79,27 +77,7 @@ const HireForm = () =>{
                 </div>
             </div>
             <div className="hire-right">
-                <div className="hire-form">
-                    <div className="input-group">
-                        <div className="input-form">
-                            <label>Email</label>
-                            <input type="email" value={projectData.email} onChange={e => setProjectData({...projectData, email: e.target.value})} required />
-                        </div>
-                        <div className="input-form">
-                            <label>Phone number</label>
-                            <input type="text" value={projectData.phone} onChange={e => setProjectData({...projectData, phone: e.target.value})}  required />
-                        </div>
-                    </div>
-                    <div className="input-group">
-                        <div className="input-form">
-                            <label>First Name</label>
-                            <input type="text" value={projectData.firstName} onChange={e => setProjectData({...projectData, firstName: e.target.value})}  required />
-                        </div>
-                        <div className="input-form">
-                            <label>Last Name</label>
-                            <input type="text" value={projectData.lastName} onChange={e => setProjectData({...projectData, lastName: e.target.value})}  required />
-                        </div>
-                    </div>
+                <div className="hire-form">                    
                     <div className="input-form">
                         <label>What Type of Service are you Looking For?</label>
                         <select onChange={e => setProjectData({...projectData, service: e.target.value})} value={projectData.service} required>
