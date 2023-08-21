@@ -6,6 +6,9 @@ import ProtectedRoute from "./helpers/ProtectedRoute";
 
 import './App.css';
 import Home from "./pages/Home.jsx"
+import Faq from "./pages/sections/Section5.jsx"
+import Waitlist from "./pages/waitlist/Waitlist.jsx"
+import Waitlistform from './pages/waitlist/Waitlistform.jsx';
 import NormalSign from "./pages/NormalSign.jsx";
 import Login from "./pages/Login.jsx";
 import LoginHomePage from "./pages/LoginHomePage/LoginHomePage.jsx";
@@ -20,6 +23,7 @@ import IndividualSignUp from './pages/Authentication/IndividualSignUp'
 import CompanySignUp from './pages/Authentication/CompanySignUp'
 import VerifyAccount from './pages/VerifyAccount/VerifyAccount'
 import ResetPassword from './pages/ResetPassword.jsx'
+
 
 
 //Client Dashboard Account
@@ -46,7 +50,11 @@ const App = () => {
   return (
     <>
       <Routes>        
-        <Route path="/" element={<LoginHomePage />} />
+      <Route path="/" element={<Home />} /> 
+        <Route path="/waitlist" element={<Waitlist />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/waitlistform" element={<Waitlistform />} />
+        <Route path="/home" element={<LoginHomePage />} />
         <Route path="/signup" element={<NormalSign />} />
         <Route path="/login" element={<Login />} />
         <Route path="/user/:userId/verifyaccount/:token" element={<VerifyAccount />} />
